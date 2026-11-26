@@ -139,6 +139,7 @@ jobs:
           done
           if git diff --cached --quiet; then echo "sem mudanca"; exit 0; fi
           git commit --quiet -m "montagem: $hoje (run ${GITHUB_RUN_ID})"
+          git pull --quiet --rebase origin main  # um push feito durante a montagem não derruba o registro (26/11)
           git push --quiet "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
       - name: Preparar o site
         run: |
