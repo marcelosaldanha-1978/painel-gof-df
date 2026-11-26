@@ -7770,5 +7770,233 @@
  "contratos": {
   "ausente": true,
   "ressalva": "Contratos vigentes: coleta ainda não disponível (API pública fora do ar ou não coletada)."
+ },
+ "avisos": {
+  "por_omds": {
+   "DF": [
+    {
+     "ug": "160336",
+     "cor": "orange",
+     "titulo": "40 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 90573598.96,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "167336",
+     "cor": "orange",
+     "titulo": "7 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 23825.57,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "160336",
+     "cor": "blue",
+     "titulo": "RPNP de 2025 a liquidar",
+     "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
+     "valor": 131257570.68,
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+    },
+    {
+     "ug": "160336",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 92285570.67,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "160336",
+     "cor": "blue",
+     "titulo": "RPNP de 2024 a liquidar",
+     "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
+     "valor": 53649956.93,
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+    },
+    {
+     "ug": "167336",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 36715.69,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "160336",
+     "cor": "gray",
+     "titulo": "5 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 283.03,
+     "fundamento": "Dtz 6.d.2"
+    },
+    {
+     "ug": "167336",
+     "cor": "gray",
+     "titulo": "1 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 54.54,
+     "fundamento": "Dtz 6.d.2"
+    }
+   ],
+   "AGR": [
+    {
+     "ug": "167285",
+     "cor": "red",
+     "titulo": "RPNP de 2023 a liquidar",
+     "texto": "Liquidar até 29/12 para pagar ainda em 2026; prazo final 30/12. O que restar é cancelado em 31/12 e a UGE justifica à UGR.",
+     "valor": 438121.61,
+     "fundamento": "Portaria 399, ev. 26 e 27; Dtz 6.b.1; Dec. 93.872, art. 68, § 7º"
+    },
+    {
+     "ug": "160285",
+     "cor": "orange",
+     "titulo": "72 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 716591.06,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "167285",
+     "cor": "orange",
+     "titulo": "36 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 2858229.04,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "160285",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 2430307.85,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "160285",
+     "cor": "blue",
+     "titulo": "RPNP de 2024 a liquidar",
+     "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
+     "valor": 1234079.04,
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+    },
+    {
+     "ug": "160285",
+     "cor": "blue",
+     "titulo": "RPNP de 2025 a liquidar",
+     "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
+     "valor": 555692.6,
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+    },
+    {
+     "ug": "167285",
+     "cor": "blue",
+     "titulo": "RPNP de 2025 a liquidar",
+     "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
+     "valor": 5572429.9,
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+    },
+    {
+     "ug": "167285",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 3340838.58,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "167285",
+     "cor": "blue",
+     "titulo": "RPNP de 2024 a liquidar",
+     "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
+     "valor": 132000.0,
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+    },
+    {
+     "ug": "160285",
+     "cor": "gray",
+     "titulo": "12 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 602.67,
+     "fundamento": "Dtz 6.d.2"
+    },
+    {
+     "ug": "167285",
+     "cor": "gray",
+     "titulo": "2 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 55.98,
+     "fundamento": "Dtz 6.d.2"
+    }
+   ],
+   "AGSP": [
+    {
+     "ug": "160529",
+     "cor": "orange",
+     "titulo": "71 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 3878860.97,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "167529",
+     "cor": "orange",
+     "titulo": "12 NE sem liquidação há mais de 60 dias",
+     "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
+     "valor": 184032.67,
+     "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "160529",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 7179302.18,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "160529",
+     "cor": "blue",
+     "titulo": "RPNP de 2025 a liquidar",
+     "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
+     "valor": 339975.93,
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+    },
+    {
+     "ug": "167529",
+     "cor": "blue",
+     "titulo": "Empenhos de 2026 a liquidar",
+     "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
+     "valor": 261311.05,
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+    },
+    {
+     "ug": "167529",
+     "cor": "blue",
+     "titulo": "RPNP de 2025 a liquidar",
+     "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
+     "valor": 93579.33,
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+    },
+    {
+     "ug": "160529",
+     "cor": "gray",
+     "titulo": "3 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 139.84,
+     "fundamento": "Dtz 6.d.2"
+    },
+    {
+     "ug": "167529",
+     "cor": "gray",
+     "titulo": "1 NE com saldo residual",
+     "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
+     "valor": 0.6,
+     "fundamento": "Dtz 6.d.2"
+    }
+   ]
+  },
+  "n": 27,
+  "regra": "Avisos recalculados a cada publicação pela Portaria SEF/C Ex nº 399/2026 e pelo Dec. 93.872/1986, art. 68; somem quando a situação se resolve."
  }
 }
