@@ -18,6 +18,18 @@
     "arquivo": "ultimo.json",
     "sha256": "e8851185007100f031e17a16840c66199eac318a504c75e65dee58b967232e9d",
     "data_dado": "2026-11-25"
+   },
+   {
+    "nome": "regua",
+    "arquivo": "regua.json",
+    "sha256": "fc654a834c6a62a28d89eb5bb7b2475f696d027dbec469ac1f105175298aca95",
+    "data_dado": "2026-11-25"
+   },
+   {
+    "nome": "rp_por_ano",
+    "arquivo": "rp_por_ano.json",
+    "sha256": "e90b75f96c055ccc1ba001834db72d745cf25b20312236c811b464fdf8b852d4",
+    "data_dado": "2026-11-25"
    }
   ],
   "fonte_b1": "tg",
@@ -6466,10 +6478,1182 @@
    "ne": 1944
   }
  },
- "regua": null,
+ "regua": {
+  "por_omds": {
+   "DF": {
+    "por_ug": {
+     "160336": {
+      "provisao": 94174139.56,
+      "empenhado": 94041969.34,
+      "liquidado": 1756398.67,
+      "a_liquidar": 92285570.67,
+      "em_tela": 132170.22,
+      "pct_empenhado": 99.86,
+      "pct_liquidado": 1.87,
+      "rpnp_a_liquidar": 184907527.61,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 6500.16,
+      "vencido_teto": 17802.66,
+      "celulas_em_tela": 132170.22
+     },
+     "167336": {
+      "provisao": 220416.1,
+      "empenhado": 220416.1,
+      "liquidado": 183700.41,
+      "a_liquidar": 36715.69,
+      "em_tela": 0.0,
+      "pct_empenhado": 100.0,
+      "pct_liquidado": 83.34,
+      "rpnp_a_liquidar": 0.0,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 0.0,
+      "vencido_teto": 0.0,
+      "celulas_em_tela": 0.0
+     }
+    },
+    "provisao": 94394555.66,
+    "empenhado": 94262385.44,
+    "liquidado": 1940099.08,
+    "a_liquidar": 92322286.36,
+    "em_tela": 132170.22,
+    "rpnp_a_liquidar": 184907527.61,
+    "rpnp_bloqueado": 0.0,
+    "vencido_piso": 6500.16,
+    "vencido_teto": 17802.66,
+    "pct_empenhado": 99.86,
+    "pct_liquidado": 2.06,
+    "semaforo": "VERDE"
+   },
+   "AGR": {
+    "por_ug": {
+     "160285": {
+      "provisao": 4382506.74,
+      "empenhado": 4360048.29,
+      "liquidado": 1929740.44,
+      "a_liquidar": 2430307.85,
+      "em_tela": 22458.45,
+      "pct_empenhado": 99.49,
+      "pct_liquidado": 44.03,
+      "rpnp_a_liquidar": 1789771.64,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 22318.45,
+      "vencido_teto": 22318.45,
+      "celulas_em_tela": 22458.45
+     },
+     "167285": {
+      "provisao": 6041846.8,
+      "empenhado": 6040868.11,
+      "liquidado": 2700029.53,
+      "a_liquidar": 3340838.58,
+      "em_tela": 978.69,
+      "pct_empenhado": 99.98,
+      "pct_liquidado": 44.69,
+      "rpnp_a_liquidar": 6142551.51,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 978.69,
+      "vencido_teto": 978.69,
+      "celulas_em_tela": 978.69
+     }
+    },
+    "provisao": 10424353.54,
+    "empenhado": 10400916.4,
+    "liquidado": 4629769.97,
+    "a_liquidar": 5771146.43,
+    "em_tela": 23437.14,
+    "rpnp_a_liquidar": 7932323.15,
+    "rpnp_bloqueado": 0.0,
+    "vencido_piso": 23297.14,
+    "vencido_teto": 23297.14,
+    "pct_empenhado": 99.78,
+    "pct_liquidado": 44.41,
+    "semaforo": "AMARELO"
+   },
+   "AGSP": {
+    "por_ug": {
+     "160529": {
+      "provisao": 10738463.62,
+      "empenhado": 10732189.01,
+      "liquidado": 3552886.83,
+      "a_liquidar": 7179302.18,
+      "em_tela": 6274.61,
+      "pct_empenhado": 99.94,
+      "pct_liquidado": 33.09,
+      "rpnp_a_liquidar": 339975.93,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 40.15,
+      "vencido_teto": 40.15,
+      "celulas_em_tela": 6274.61
+     },
+     "167529": {
+      "provisao": 2478128.04,
+      "empenhado": 2420314.64,
+      "liquidado": 2159003.59,
+      "a_liquidar": 261311.05,
+      "em_tela": 57813.4,
+      "pct_empenhado": 97.67,
+      "pct_liquidado": 87.12,
+      "rpnp_a_liquidar": 93579.33,
+      "rpnp_bloqueado": 0.0,
+      "vencido_piso": 46878.31,
+      "vencido_teto": 57813.4,
+      "celulas_em_tela": 57813.4
+     }
+    },
+    "provisao": 13216591.66,
+    "empenhado": 13152503.65,
+    "liquidado": 5711890.42,
+    "a_liquidar": 7440613.23,
+    "em_tela": 64088.01,
+    "rpnp_a_liquidar": 433555.26,
+    "rpnp_bloqueado": 0.0,
+    "vencido_piso": 46918.46,
+    "vencido_teto": 57853.55,
+    "pct_empenhado": 99.52,
+    "pct_liquidado": 43.22,
+    "semaforo": "AMARELO"
+   }
+  },
+  "total": {
+   "provisao": 118035500.86,
+   "empenhado": 117815805.49,
+   "liquidado": 12281759.47,
+   "a_liquidar": 105534046.02,
+   "em_tela": 219695.37,
+   "rpnp_a_liquidar": 193273406.02,
+   "rpnp_bloqueado": 0.0,
+   "vencido_piso": 76715.76,
+   "vencido_teto": 98953.35,
+   "pct_empenhado": 99.81,
+   "pct_liquidado": 10.41
+  },
+  "recolhido_no_ano": {
+   "ncs": 255,
+   "valor": 332592230.02
+  },
+  "data_dado": "2026-11-25",
+  "posicao_siafi": "TG, assinaturas entregues em 26/11 (dados até 25/11)",
+  "fonte": "TG, assinaturas «Execução Crédito e RPNP por UG», «Crédito e empenho por UG, PI, ND e UGR» e «NC recebidas documento», pela ponte; NC ligadas às células pelo endereço (UG, PI, grupo da ND, UGR)",
+  "regra_vencido": "vencido = saldo da célula coberto por NC de outra UG com prazo escrito anterior a 26/11; NC de «empenho imediato» conta como vencida; piso e teto porque o TG não dá saldo por NC; ajuste de ND da própria UG não é rastreado à NC de origem (piso conservador)",
+  "atualizacao": "diária (assinaturas do TG, ponte P-041)"
+ },
  "rp_por_ano": {
-  "ausente": true,
-  "ressalva": "Restos a pagar por ano de inscrição: a leitura do TG por NE ainda não chegou ou não passou na conferência (soma por NE = item 43 da régua); a página segue com a régua."
+  "por_ug": [
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ano": 2023,
+    "bloqueio": "2025-06-30",
+    "cancelamento": "2026-12-31",
+    "inscrito": 2279994.63,
+    "liquidado": 2279994.63,
+    "cancelado": 0.0,
+    "a_liquidar": 0.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 100.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 85911269.09,
+    "liquidado": 32261312.16,
+    "cancelado": 0.0,
+    "a_liquidar": 53649956.93,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 37.55
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 133112192.12,
+    "liquidado": 1854621.44,
+    "cancelado": 0.0,
+    "a_liquidar": 131257570.68,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 1.39
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 13149568.44,
+    "liquidado": 11900602.44,
+    "cancelado": 14886.96,
+    "a_liquidar": 1234079.04,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 90.62
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 4097220.72,
+    "liquidado": 3523566.72,
+    "cancelado": 17961.4,
+    "a_liquidar": 555692.6,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 86.44
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ano": 2023,
+    "bloqueio": "2025-06-30",
+    "cancelamento": "2026-12-31",
+    "inscrito": 1461917.09,
+    "liquidado": 698925.48,
+    "cancelado": 324870.0,
+    "a_liquidar": 438121.61,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 70.03
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 848659.0,
+    "liquidado": 716659.0,
+    "cancelado": 0.0,
+    "a_liquidar": 132000.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 84.45
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 15082524.24,
+    "liquidado": 9510094.34,
+    "cancelado": 0.0,
+    "a_liquidar": 5572429.9,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 63.05
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 101.75,
+    "liquidado": 101.75,
+    "cancelado": 0.0,
+    "a_liquidar": 0.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 100.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 6106082.95,
+    "liquidado": 5725391.83,
+    "cancelado": 40715.19,
+    "a_liquidar": 339975.93,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 94.43
+   },
+   {
+    "omds": "AGSP",
+    "ug": "167529",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 25516.09,
+    "liquidado": 25516.09,
+    "cancelado": 0.0,
+    "a_liquidar": 0.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 100.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "167529",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 1224782.21,
+    "liquidado": 1126781.01,
+    "cancelado": 4421.87,
+    "a_liquidar": 93579.33,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 92.36
+   }
+  ],
+  "por_omds": [
+   {
+    "omds": "DF",
+    "rotulo": "DF",
+    "ano": 2023,
+    "bloqueio": "2025-06-30",
+    "cancelamento": "2026-12-31",
+    "inscrito": 2279994.63,
+    "liquidado": 2279994.63,
+    "cancelado": 0.0,
+    "a_liquidar": 0.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 100.0
+   },
+   {
+    "omds": "DF",
+    "rotulo": "DF",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 85911269.09,
+    "liquidado": 32261312.16,
+    "cancelado": 0.0,
+    "a_liquidar": 53649956.93,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 37.55
+   },
+   {
+    "omds": "DF",
+    "rotulo": "DF",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 133112192.12,
+    "liquidado": 1854621.44,
+    "cancelado": 0.0,
+    "a_liquidar": 131257570.68,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 1.39
+   },
+   {
+    "omds": "DF",
+    "rotulo": "DF",
+    "ano": "total",
+    "inscrito": 221303455.84,
+    "liquidado": 36395928.23,
+    "cancelado": 0.0,
+    "a_liquidar": 184907527.61,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 16.45
+   },
+   {
+    "omds": "AGR",
+    "rotulo": "AGR",
+    "ano": 2023,
+    "bloqueio": "2025-06-30",
+    "cancelamento": "2026-12-31",
+    "inscrito": 1461917.09,
+    "liquidado": 698925.48,
+    "cancelado": 324870.0,
+    "a_liquidar": 438121.61,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 70.03
+   },
+   {
+    "omds": "AGR",
+    "rotulo": "AGR",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 13998227.44,
+    "liquidado": 12617261.44,
+    "cancelado": 14886.96,
+    "a_liquidar": 1366079.04,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 90.24
+   },
+   {
+    "omds": "AGR",
+    "rotulo": "AGR",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 19179744.96,
+    "liquidado": 13033661.06,
+    "cancelado": 17961.4,
+    "a_liquidar": 6128122.5,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 68.05
+   },
+   {
+    "omds": "AGR",
+    "rotulo": "AGR",
+    "ano": "total",
+    "inscrito": 34639889.49,
+    "liquidado": 26349847.98,
+    "cancelado": 357718.36,
+    "a_liquidar": 7932323.15,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 77.1
+   },
+   {
+    "omds": "AGSP",
+    "rotulo": "AGSP",
+    "ano": 2024,
+    "bloqueio": "2026-06-30",
+    "cancelamento": "2027-12-31",
+    "inscrito": 25617.84,
+    "liquidado": 25617.84,
+    "cancelado": 0.0,
+    "a_liquidar": 0.0,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 100.0
+   },
+   {
+    "omds": "AGSP",
+    "rotulo": "AGSP",
+    "ano": 2025,
+    "bloqueio": "2027-06-30",
+    "cancelamento": "2028-12-31",
+    "inscrito": 7330865.16,
+    "liquidado": 6852172.84,
+    "cancelado": 45137.06,
+    "a_liquidar": 433555.26,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 94.09
+   },
+   {
+    "omds": "AGSP",
+    "rotulo": "AGSP",
+    "ano": "total",
+    "inscrito": 7356483.0,
+    "liquidado": 6877790.68,
+    "cancelado": 45137.06,
+    "a_liquidar": 433555.26,
+    "em_liquidacao": 0.0,
+    "bloqueado": 0.0,
+    "excetuado": 0.0,
+    "a_classificar": 0.0,
+    "indice": 94.11
+   }
+  ],
+  "alertas": [
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ano": 2023,
+    "saldo": 438121.61,
+    "evento": "cancelamento",
+    "data": "2026-12-31",
+    "texto": "RPNP de 2023 com saldo: cancela em 31/12/2026 se não liquidado"
+   }
+  ],
+  "por_ne": [
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000496",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 64651068.6
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000125",
+    "ano": 2024,
+    "favorecido": "CONSORCIO FORCA TERRESTRE",
+    "a_liquidar": 23710212.22
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000424",
+    "ano": 2025,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 18453078.6
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000505",
+    "ano": 2024,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 16162767.15
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000311",
+    "ano": 2025,
+    "favorecido": "CONSORCIO FORCA TERRESTRE",
+    "a_liquidar": 15873789.76
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000132",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 9697660.29
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000426",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3510272.87
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000426",
+    "ano": 2024,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000445",
+    "ano": 2024,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000508",
+    "ano": 2024,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000031",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000082",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000278",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000485",
+    "ano": 2025,
+    "favorecido": "IVG BRASIL LTDA",
+    "a_liquidar": 3232553.43
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000341",
+    "ano": 2024,
+    "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+    "a_liquidar": 2571266.68
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000092",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 2021195.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000149",
+    "ano": 2025,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 1995000.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000310",
+    "ano": 2025,
+    "favorecido": "CONSORCIO FORCA TERRESTRE",
+    "a_liquidar": 1293000.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000264",
+    "ano": 2025,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 1050000.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000181",
+    "ano": 2025,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 1000000.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000455",
+    "ano": 2024,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 914839.75
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000183",
+    "ano": 2025,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 848128.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012024NE000350",
+    "ano": 2024,
+    "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+    "a_liquidar": 808100.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000431",
+    "ano": 2025,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 771186.54
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000041",
+    "ano": 2025,
+    "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+    "a_liquidar": 703304.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000470",
+    "ano": 2025,
+    "favorecido": "EMBRAER S.A.",
+    "a_liquidar": 575809.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000276",
+    "ano": 2025,
+    "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+    "a_liquidar": 500000.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012023NE000152",
+    "ano": 2023,
+    "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+    "a_liquidar": 437360.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012024NE000359",
+    "ano": 2024,
+    "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+    "a_liquidar": 419568.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000091",
+    "ano": 2025,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 357588.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000049",
+    "ano": 2024,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 285972.03
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000391",
+    "ano": 2024,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 222280.04
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000179",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 180720.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000657",
+    "ano": 2025,
+    "favorecido": "CAMALEAO ENGENHARIA LTDA",
+    "a_liquidar": 159059.44
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012024NE000008",
+    "ano": 2024,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 132000.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000142",
+    "ano": 2025,
+    "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+    "a_liquidar": 130194.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000343",
+    "ano": 2025,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 127094.4
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000029",
+    "ano": 2025,
+    "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+    "a_liquidar": 95114.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000423",
+    "ano": 2025,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 86895.21
+   },
+   {
+    "omds": "AGSP",
+    "ug": "167529",
+    "ne": "167529000012025NE000009",
+    "ano": 2025,
+    "favorecido": "SUPER FINISHING DO BRASIL COMERCIAL LTDA.",
+    "a_liquidar": 84479.33
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000126",
+    "ano": 2025,
+    "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+    "a_liquidar": 80080.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000377",
+    "ano": 2024,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 79289.37
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000089",
+    "ano": 2025,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 68537.7
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000016",
+    "ano": 2025,
+    "favorecido": "AGUAS DO RIO 4 SPE S.A",
+    "a_liquidar": 62771.32
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000015",
+    "ano": 2025,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 56800.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000653",
+    "ano": 2025,
+    "favorecido": "CAMALEAO ENGENHARIA LTDA",
+    "a_liquidar": 50112.66
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000267",
+    "ano": 2025,
+    "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+    "a_liquidar": 46690.72
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000125",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 45870.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000161",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 45870.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000564",
+    "ano": 2025,
+    "favorecido": "GTF COMERCIO DE PECAS E SERVICOS LTDA",
+    "a_liquidar": 42240.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000152",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 39872.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000443",
+    "ano": 2025,
+    "favorecido": "CAMALEAO ENGENHARIA LTDA",
+    "a_liquidar": 28729.26
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000654",
+    "ano": 2025,
+    "favorecido": "CAMALEAO ENGENHARIA LTDA",
+    "a_liquidar": 28256.24
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000342",
+    "ano": 2025,
+    "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+    "a_liquidar": 24249.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000205",
+    "ano": 2025,
+    "favorecido": "SUPER FINISHING DO BRASIL COMERCIAL LTDA.",
+    "a_liquidar": 23076.05
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000081",
+    "ano": 2025,
+    "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 17879.4
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000425",
+    "ano": 2025,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 13987.84
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000344",
+    "ano": 2025,
+    "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+    "a_liquidar": 13800.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000102",
+    "ano": 2025,
+    "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 7032.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012024NE000222",
+    "ano": 2024,
+    "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+    "a_liquidar": 5669.4
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000507",
+    "ano": 2025,
+    "favorecido": "GASBALL ARMAZENADORA E DISTRIBUIDORA LTDA",
+    "a_liquidar": 4935.5
+   },
+   {
+    "omds": "AGSP",
+    "ug": "167529",
+    "ne": "167529000012025NE000466",
+    "ano": 2025,
+    "favorecido": "THADIG INDUSTRIA MECANICA LTDA",
+    "a_liquidar": 4900.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012024NE000204",
+    "ano": 2024,
+    "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+    "a_liquidar": 4297.8
+   },
+   {
+    "omds": "AGSP",
+    "ug": "167529",
+    "ne": "167529000012025NE000404",
+    "ano": 2025,
+    "favorecido": "BIGI LAVANDERIA LTDA",
+    "a_liquidar": 4200.0
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012025NE000005",
+    "ano": 2025,
+    "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+    "a_liquidar": 3207.8
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000104",
+    "ano": 2025,
+    "favorecido": "EMPRESA BRASIL DE COMUNICACAO S.A",
+    "a_liquidar": 3110.64
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000609",
+    "ano": 2025,
+    "favorecido": "EMPRESA BRASIL DE COMUNICACAO S.A",
+    "a_liquidar": 2000.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000420",
+    "ano": 2025,
+    "favorecido": "W P SISTEMAS REPROGRAFICOS E IMPRESSAO LTDA",
+    "a_liquidar": 1589.07
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000256",
+    "ano": 2025,
+    "favorecido": "CAMALEAO ENGENHARIA LTDA",
+    "a_liquidar": 1358.72
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012024NE000057",
+    "ano": 2024,
+    "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+    "a_liquidar": 1060.78
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012024NE000287",
+    "ano": 2024,
+    "favorecido": "SENAGRO INDUSTRIA E COMERCIO LTDA",
+    "a_liquidar": 1052.46
+   },
+   {
+    "omds": "AGR",
+    "ug": "160285",
+    "ne": "160285000012025NE000278",
+    "ano": 2025,
+    "favorecido": "J D DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+    "a_liquidar": 783.8
+   },
+   {
+    "omds": "AGR",
+    "ug": "167285",
+    "ne": "167285000012023NE000007",
+    "ano": 2023,
+    "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+    "a_liquidar": 761.61
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000504",
+    "ano": 2025,
+    "favorecido": "27.454.615 DONIMARA RIBEIRO DO CARMO",
+    "a_liquidar": 748.28
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000345",
+    "ano": 2025,
+    "favorecido": "CLARO S.A.",
+    "a_liquidar": 726.78
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000493",
+    "ano": 2025,
+    "favorecido": "CLARO S.A.",
+    "a_liquidar": 420.0
+   },
+   {
+    "omds": "AGSP",
+    "ug": "160529",
+    "ne": "160529000012025NE000585",
+    "ano": 2025,
+    "favorecido": "CLARO S.A.",
+    "a_liquidar": 420.0
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000262",
+    "ano": 2025,
+    "favorecido": "UNITY SOLUCOES E SERVICOS LTDA",
+    "a_liquidar": 142.5
+   },
+   {
+    "omds": "DF",
+    "ug": "160336",
+    "ne": "160336000012025NE000489",
+    "ano": 2025,
+    "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+    "a_liquidar": 0.4
+   }
+  ],
+  "data_dado": "2026-11-25",
+  "avisos": {},
+  "nes": 515,
+  "conferencia": "Σ 631100000 por NE = item 43 da régua em todas as UG; Σ531 = Σ631 em cada NE",
+  "criterio_indice": "(liquidado + cancelado) ÷ (inscrito + reinscrito), Diretriz 26-27",
+  "fonte": "TG, assinatura «PAINEL-DF-CONF-RPNP por NE» (2026-11-26_rpnp_por_ne.csv (assinatura do TG via ponte))"
  },
  "contratos": {
   "ausente": true,
