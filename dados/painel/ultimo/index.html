@@ -267,13 +267,15 @@ if(RP!==undefined){var el=sec("rpano","trpano");
  if(!RP||RP.ausente){h+='<div class="card"><p class="note orange">'+esc((RP&&RP.ressalva)||"Leitura do TG por NE ainda não disponível.")+'</p></div>';}
  else{h+='<p class="sub">Dados do TG até '+dbr(RP.data_dado)+'. Índice = (liquidado + cancelado) ÷ (inscrito + reinscrito). Conferido: soma por NE = restos a pagar da régua, UG a UG.</p>';
   function alertaRP(a){return '<p class="note '+(a.evento==="cancelamento"?"red":"orange")+'" style="margin:16px 0 0"><b>UG '+esc(a.ug)+' · '+esc(a.ano)+':</b> '+esc(a.texto)+' — '+rs(a.saldo)+'</p>';}  // alerta vai ao fim do quadro da própria OM (26/11)
+  // com os avisos do encerramento (gof_avisos) o alerta antigo sairia em dobro: só aparece se eles faltarem (26/11)
+  var AL=(D.avisos&&D.avisos.por_omds)?[]:(RP.alertas||[]);
   var por={};(RP.por_omds||[]).forEach(function(x){(por[x.omds]=por[x.omds]||[]).push(x);});
-  (RP.alertas||[]).filter(function(a){return !por[a.omds];}).forEach(function(a){h+='<div class="card">'+alertaRP(a).replace(' style="margin:16px 0 0"','')+'</div>';});
+  AL.filter(function(a){return !por[a.omds];}).forEach(function(a){h+='<div class="card">'+alertaRP(a).replace(' style="margin:16px 0 0"','')+'</div>';});
   Object.keys(por).forEach(function(o){var L=por[o];
    h+='<div class="card"><h3 class="cb">'+brasao(o,"brm")+'<span>'+esc(L[0].rotulo||o)+'</span></h3><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl.replace("padding","font-weight:600;padding")+'>Ano</th><th '+th+'>Inscrito + reinscrito</th><th '+th+'>Liquidado</th><th '+th+'>Cancelado</th><th '+th+'>A liquidar</th><th '+th+'>Bloqueado</th><th '+th+'>Índice</th><th '+th+'>Prazo legal</th></tr></thead><tbody>';
    L.forEach(function(x){var tot=x.ano==="total";
     h+='<tr'+(tot?' style="font-weight:600"':'')+'><td '+tl+'>'+(tot?"Total":esc(x.ano))+'</td><td '+td+'>'+rs(x.inscrito)+'</td><td '+td+'>'+rs(x.liquidado)+'</td><td '+td+'>'+rs(x.cancelado)+'</td><td '+td+'>'+rs(x.a_liquidar+(x.em_liquidacao||0))+'</td><td '+td+'>'+rs(x.bloqueado)+'</td><td '+td+'>'+(x.indice==null?"—":pc(x.indice))+'</td><td '+td+'>'+(tot?"":"bloq. "+esc(String(x.bloqueio).split("-").reverse().join("/"))+"<br>canc. "+esc(String(x.cancelamento).split("-").reverse().join("/")))+'</td></tr>';});
-   h+='</tbody></table></div>'+(L.some(function(x){return x.excetuado>0.005;})?'<p class="note">Inclui saldo excetuado do cancelamento (Lei 14.133/2021, art. 105).</p>':'')+(RP.alertas||[]).filter(function(a){return a.omds===o;}).map(alertaRP).join("")+'</div>';});
+   h+='</tbody></table></div>'+(L.some(function(x){return x.excetuado>0.005;})?'<p class="note">Inclui saldo excetuado do cancelamento (Lei 14.133/2021, art. 105).</p>':'')+AL.filter(function(a){return a.omds===o;}).map(alertaRP).join("")+'</div>';});
   if(RP.por_ne&&RP.por_ne.length){h+='<div class="card"><details><summary>Restos a pagar a liquidar por NE e favorecido ('+n(RP.por_ne.length)+' NE)</summary><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl+'>NE</th><th '+tl+'>OM</th><th '+th+'>Ano</th><th '+tl+'>Favorecido</th><th '+th+'>A liquidar</th></tr></thead><tbody>';
    RP.por_ne.forEach(function(x){h+='<tr><td '+tl+'>'+esc(x.ne)+'</td><td '+tl+'>'+esc(NOME[x.omds]||x.omds)+'</td><td '+td+'>'+esc(x.ano)+'</td><td '+tl+'>'+esc(x.favorecido)+'</td><td '+td+'>'+rs(x.a_liquidar)+'</td></tr>';});
    h+='</tbody></table></div></details></div>';}}
