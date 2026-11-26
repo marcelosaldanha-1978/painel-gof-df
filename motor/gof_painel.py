@@ -48,6 +48,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gcalc_transparencia as tr  # noqa: E402
+import gof_avisos  # noqa: E402
 import gof_config as cfg  # noqa: E402
 import gof_estado_tela  # noqa: E402
 from vinculo_siasg import VERSAO_REGRA as VERSAO_VINCULO_SIASG  # noqa: E402
@@ -604,6 +605,10 @@ def main(argv=None):
                                             "data_dado": lido.get(data_campo)})
         else:
             dados[bloco] = {"ausente": True, "ressalva": ressalva}
+    # avisos do encerramento por OMDS e UG, recalculados a cada montagem (decisão do usuário de 26/11/2026, opção B)
+    rp_ok = dados.get("rp_por_ano") if isinstance(dados.get("rp_por_ano"), dict) else None
+    dados["avisos"] = gof_avisos.montar(hoje, cfg.exercicio(), dados.get("regua"), dados.get("liquidacao"), rp_ok,
+                                        cfg.calendario(), gof_estado_tela.data_recolhimento(MARCOS_ENCERRAMENTO))
     s = Path(o.saida)
     s.mkdir(parents=True, exist_ok=True)
     (s / "dados.json").write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")

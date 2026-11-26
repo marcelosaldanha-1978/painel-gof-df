@@ -236,7 +236,8 @@ def agregar(linhas_ne, exercicio=None, config=None):
             vencido = canc < "%d-12-31" % exercicio
             texto = ("RPNP de %d com saldo e prazo de cancelamento vencido em %s: conferir exceção (Lei 14.133, art. 105) "
                      "ou cancelamento" % (x["ano"], "/".join(reversed(canc.split("-"))))) if vencido else (
-                     "RPNP de %d com saldo: cancela em %s se não liquidado" % (x["ano"], "/".join(reversed(canc.split("-")))))
+                     "RPNP de %d com saldo: liquidar até 30/12 (até 29/12 para pagar ainda em %d; Portaria 399, ev. 26 e 27). O que restar é cancelado em %s (Dec. 93.872, art. 68, § 7º) e a UGE justifica à UGR (Dtz 6.b.1)"
+                     % (x["ano"], exercicio, "/".join(reversed(canc.split("-")))))
             alertas.append({"omds": x["omds"], "ug": x["ug"], "ano": x["ano"], "saldo": saldo,
                             "evento": "cancelamento", "data": canc, "texto": texto})
         if abs(x["a_classificar"]) > TOL:

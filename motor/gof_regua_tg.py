@@ -100,7 +100,8 @@ def linha_regua(r):
             "a_liquidar": round(r["24"], 2), "em_tela": round(r["19"], 2),
             "pct_empenhado": round(100 * r["23"] / prov, 2) if prov else 0.0,
             "pct_liquidado": round(100 * r["25"] / prov, 2) if prov else 0.0,
-            "rpnp_a_liquidar": round(r["43"], 2), "rpnp_bloqueado": round(r["48"], 2)}
+            "rpnp_a_liquidar": round(r["43"], 2), "rpnp_bloqueado": round(r["48"], 2),
+            "liquidado_a_pagar": round(r["26"], 2), "rpnp_liquidado_a_pagar": round(r["45"], 2)}  # avisos (26/11)
 
 
 # ---------------------------------------------------------------- prazo escrito na NC (prazo_v2.py, 12nov2026)
@@ -345,7 +346,8 @@ def calcular(b_regua, b_credito, b_mov, ref):
         soma = collections.Counter()
         for x in r["por_ug"].values():
             soma.update({k: x[k] for k in ("provisao", "empenhado", "liquidado", "a_liquidar", "em_tela", "rpnp_a_liquidar",
-                                           "rpnp_bloqueado", "vencido_piso", "vencido_teto")})
+                                           "rpnp_bloqueado", "vencido_piso", "vencido_teto", "liquidado_a_pagar",
+                                           "rpnp_liquidado_a_pagar") if k in x})
         r.update({k: round(val, 2) for k, val in soma.items()})
         r["pct_empenhado"] = round(100 * r["empenhado"] / r["provisao"], 2) if r["provisao"] else 0.0
         r["pct_liquidado"] = round(100 * r["liquidado"] / r["provisao"], 2) if r["provisao"] else 0.0

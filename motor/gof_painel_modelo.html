@@ -76,6 +76,7 @@ h3.cb{display:flex;align-items:center;gap:12px;margin:0 0 14px}img.brm{width:aut
 .tag.red{background:var(--redbg)}.tag.orange{background:var(--orangebg)}.tag.green{background:var(--greenbg)}.tag.amber{background:var(--amberbg);box-shadow:inset 0 0 0 1px currentColor}.tag.blue{background:var(--bluebg)}.tag.gray{background:var(--fill)}
 .leg{margin:0 0 20px}.leg summary{cursor:pointer;color:var(--blue);font-size:15px;list-style:none}.leg summary::-webkit-details-marker{display:none}.leg ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}.leg li{display:flex;gap:12px;align-items:baseline;font-size:15px;color:var(--sec)}.leg .tag{flex:none;min-width:210px;justify-content:flex-start}
 @media (max-width:600px){.leg li{flex-direction:column;gap:6px}.leg .tag{min-width:0}}
+.av{margin-top:14px;background:var(--grp);border-radius:16px;padding:16px 20px}.av .lbl{margin:0}.av ul{list-style:none;margin:6px 0 0;padding:0}.av li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--sep)}.av li:first-child{border-top:0}.av li>.dot{margin-top:7px}.avt{flex:1;min-width:0}.avh{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:15px}.avh span{white-space:nowrap;font-variant-numeric:tabular-nums}.avt p{margin:3px 0 0;font-size:13px;color:var(--sec)}.avt p.fd{font-size:12px;opacity:.75}
 .cap b{white-space:nowrap}
 .ugs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .ug{background:var(--grp);border-radius:16px;padding:18px 20px}
@@ -197,7 +198,7 @@ el.innerHTML=h+'</div>';})();
 if(G)h+='<div class="tile"><p class="lbl">Crédito em tela</p><div class="mid">'+mi(G.total.em_tela)+'</div><p class="note">'+(function(){var fp=G.total.fora_portaria||0,ph=0;Object.keys(G.por_omds||{}).forEach(function(o){var s=G.por_omds[o].estado;if(s&&s.cod==="PRAZO_HOJE")ph+=s.valor;});return fp>0.005?'<span class="red">fora da Portaria: '+mi(fp)+'</span><br>saldo em tela depois do prazo de recolhimento (6.a.3)':(ph>0.005?'<span class="orange">recolher hoje: '+mi(ph)+'</span><br>a UGR recolhe todo o crédito que restar em tela (6.a.3)':'<span class="red">vencido: no mínimo '+mi(G.total.vencido_piso)+'</span><br>tirar da tela; o que sobrar a UGR recolhe (6.a.3)');})()+'</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">Liquidado do empenhado</p><div class="mid">'+pc(L.total.pct_liquidado)+'</div><p class="note">a liquidar '+mi(L.total.a_liquidar)+'<br>liquidar até 29/12 (evento 27)</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">A liquidar há mais de 60 dias</p><div class="mid orange">'+mi(L.total.mais60_valor)+'</div><p class="note">'+n(L.total.mais60_ne)+' NE · '+mi(L.total.mais60_sem_nenhuma_liq_valor)+' sem nenhuma liquidação</p></div>';
-if(G)h+='<div class="tile"><p class="lbl">Restos a pagar a liquidar</p><div class="mid">'+mi(G.total.rpnp_a_liquidar)+'</div><p class="note">'+(G.total.rpnp_bloqueado?'<span class="red">bloqueado '+rs(G.total.rpnp_bloqueado)+': cancela em 30/12</span>':'sem RPNP bloqueado')+'</p></div>';
+if(G)h+='<div class="tile"><p class="lbl">Restos a pagar a liquidar</p><div class="mid">'+mi(G.total.rpnp_a_liquidar)+'</div><p class="note">'+(G.total.rpnp_bloqueado?'<span class="orange">bloqueado '+rs(G.total.rpnp_bloqueado)+'</span><br>ver os avisos de cada OMDS':'sem RPNP bloqueado')+'</p></div>';
 el.innerHTML=h+'</div>';
 var R=G&&G.referencia_1rm;if(R){el.innerHTML+='<details><summary>Restos a pagar: comparação com a __REF_REGIONAL__</summary><div class="card" style="margin-top:12px"><div class="tiles" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">'+R.indices.map(function(x){return '<div><p class="lbl">'+esc(x.nome)+'</p><div class="mid">'+pc(x.indice)+'</div></div>';}).join("")+'</div><p class="note">'+esc(R.nota)+'</p></div></details>';}
 })();
@@ -228,7 +229,10 @@ ORDEM.forEach(function(o){var g=G&&G.por_omds[o],l=L&&L.por_omds[o],e=b1[o];if(!
    h+='<div class="kv"><span>A liquidar</span>'+val(lu.a_liquidar)+(lu.mais60_valor>0.005?'<small class="orange">'+rs(lu.mais60_valor)+' há +60 dias · '+n(lu.mais60_ne)+' NE</small>':'')+(lu.a_liquidar>0.005?'</b>':'')+'</div>';}
   if(gu)h+='<div class="kv"><span>Restos a pagar</span>'+val(gu.rpnp_a_liquidar)+(gu.rpnp_bloqueado?'<small class="red">bloqueado '+rs(gu.rpnp_bloqueado)+'</small>':'')+(gu.rpnp_a_liquidar>0.005?'</b>':'')+'</div>';
   h+='</div>';});
- h+='</div></div>';});
+ h+='</div>';
+ var AV=D.avisos&&D.avisos.por_omds&&D.avisos.por_omds[o];  // avisos do encerramento, recalculados a cada publicação
+ if(AV&&AV.length)h+='<div class="av"><p class="lbl">Avisos do encerramento</p><ul>'+AV.map(function(a){return '<li><span class="dot '+esc(a.cor)+'"></span><div class="avt"><div class="avh"><b class="'+esc(a.cor)+'">'+esc(a.titulo)+'</b><span>'+rs(a.valor)+'</span></div><p>UG '+esc(a.ug)+' · '+esc(a.texto)+'</p><p class="fd">'+esc(a.fundamento)+'</p></div></li>';}).join('')+'</ul></div>';
+ h+='</div>';});
 h+='</div>';
 el.innerHTML=h;})();
 
