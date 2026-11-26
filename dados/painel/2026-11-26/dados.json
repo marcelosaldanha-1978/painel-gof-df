@@ -34,7 +34,7 @@
    {
     "nome": "vedados_rpnp",
     "arquivo": "vedados_rpnp.json",
-    "sha256": "f79fbc2db3ad675a1489251a9378748320df8e7211849d7d097b1f9ad114fea8",
+    "sha256": "8b345399a7fabe358a07ebcf30bbdbd3baa04f2cf791ffba44995856a4ebabbd",
     "data_dado": "2026-11-25"
    }
   ],
@@ -7786,7 +7786,250 @@
      "titulo": "40 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 90573598.96,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 40,
+     "itens": [
+      {
+       "ne": "160336000012026NE000193",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 80115707.54,
+       "dias": 180
+      },
+      {
+       "ne": "160336000012026NE000024",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43,
+       "dias": 313
+      },
+      {
+       "ne": "160336000012026NE000219",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 2776750.0,
+       "dias": 160
+      },
+      {
+       "ne": "160336000012026NE000267",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 1871138.08,
+       "dias": 112
+      },
+      {
+       "ne": "160336000012026NE000310",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 1300898.0,
+       "dias": 86
+      },
+      {
+       "ne": "160336000012026NE000092",
+       "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+       "valor": 824082.03,
+       "dias": 254
+      },
+      {
+       "ne": "160336000012026NE000342",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 372869.34,
+       "dias": 68
+      },
+      {
+       "ne": "160336000012026NE000345",
+       "favorecido": "CRANFIELD UNIVERSITY",
+       "valor": 30000.0,
+       "dias": 64
+      },
+      {
+       "ne": "160336000012026NE000189",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 6136.47,
+       "dias": 181
+      },
+      {
+       "ne": "160336000012026NE000098",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 5000.0,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000347",
+       "favorecido": "W P SISTEMAS REPROGRAFICOS E IMPRESSAO LTDA",
+       "valor": 4959.48,
+       "dias": 62
+      },
+      {
+       "ne": "160336000012026NE000090",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 3825.82,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000089",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 3635.0,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000126",
+       "favorecido": "MARIA MARIAH FLORES LTDA",
+       "valor": 3213.0,
+       "dias": 223
+      },
+      {
+       "ne": "160336000012026NE000187",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 2375.15,
+       "dias": 181
+      },
+      {
+       "ne": "160336000012026NE000247",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1980.54,
+       "dias": 138
+      },
+      {
+       "ne": "160336000012026NE000260",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1822.76,
+       "dias": 128
+      },
+      {
+       "ne": "160336000012026NE000262",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1622.5,
+       "dias": 113
+      },
+      {
+       "ne": "160336000012026NE000173",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1531.18,
+       "dias": 189
+      },
+      {
+       "ne": "160336000012026NE000088",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1455.0,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000128",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1388.18,
+       "dias": 217
+      },
+      {
+       "ne": "160336000012026NE000334",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1347.59,
+       "dias": 70
+      },
+      {
+       "ne": "160336000012026NE000125",
+       "favorecido": "A ROSEIRAL DECORACOES LTDA",
+       "valor": 1290.0,
+       "dias": 223
+      },
+      {
+       "ne": "160336000012026NE000132",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1055.04,
+       "dias": 215
+      },
+      {
+       "ne": "160336000012026NE000096",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 932.5,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000097",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 932.5,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000245",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 715.0,
+       "dias": 138
+      },
+      {
+       "ne": "160336000012026NE000135",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 700.0,
+       "dias": 211
+      },
+      {
+       "ne": "160336000012026NE000304",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 700.0,
+       "dias": 89
+      },
+      {
+       "ne": "160336000012026NE000250",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 634.92,
+       "dias": 135
+      },
+      {
+       "ne": "160336000012026NE000344",
+       "favorecido": "IDEIAS TURISMO LTDA",
+       "valor": 627.09,
+       "dias": 65
+      },
+      {
+       "ne": "160336000012026NE000127",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 520.0,
+       "dias": 217
+      },
+      {
+       "ne": "160336000012026NE000217",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 350.0,
+       "dias": 161
+      },
+      {
+       "ne": "160336000012026NE000272",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 350.0,
+       "dias": 107
+      },
+      {
+       "ne": "160336000012026NE000213",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 147.5,
+       "dias": 161
+      },
+      {
+       "ne": "160336000012026NE000091",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 133.01,
+       "dias": 257
+      },
+      {
+       "ne": "160336000012026NE000215",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 95.3,
+       "dias": 161
+      },
+      {
+       "ne": "160336000012026NE000134",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 62.5,
+       "dias": 212
+      },
+      {
+       "ne": "160336000012026NE000305",
+       "favorecido": "CLARO S.A.",
+       "valor": 45.46,
+       "dias": 89
+      },
+      {
+       "ne": "160336000012026NE000186",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 17.05,
+       "dias": 182
+      }
+     ]
     },
     {
      "ug": "160336",
@@ -7794,7 +8037,115 @@
      "titulo": "21 NE de diárias a liquidar",
      "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
      "valor": 29420.23,
-     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27",
+     "n_itens": 21,
+     "itens": [
+      {
+       "ne": "160336000012026NE000089",
+       "natureza": "diárias",
+       "valor": 3635.0
+      },
+      {
+       "ne": "160336000012026NE000354",
+       "natureza": "diárias",
+       "valor": 3000.0
+      },
+      {
+       "ne": "160336000012026NE000379",
+       "natureza": "diárias",
+       "valor": 3000.0
+      },
+      {
+       "ne": "160336000012026NE000381",
+       "natureza": "diárias",
+       "valor": 3000.0
+      },
+      {
+       "ne": "160336000012026NE000187",
+       "natureza": "diárias",
+       "valor": 2375.15
+      },
+      {
+       "ne": "160336000012026NE000412",
+       "natureza": "diárias",
+       "valor": 2277.5
+      },
+      {
+       "ne": "160336000012026NE000262",
+       "natureza": "diárias",
+       "valor": 1622.5
+      },
+      {
+       "ne": "160336000012026NE000417",
+       "natureza": "diárias",
+       "valor": 1500.0
+      },
+      {
+       "ne": "160336000012026NE000088",
+       "natureza": "diárias",
+       "valor": 1455.0
+      },
+      {
+       "ne": "160336000012026NE000132",
+       "natureza": "diárias",
+       "valor": 1055.04
+      },
+      {
+       "ne": "160336000012026NE000419",
+       "natureza": "diárias",
+       "valor": 1045.0
+      },
+      {
+       "ne": "160336000012026NE000096",
+       "natureza": "diárias",
+       "valor": 932.5
+      },
+      {
+       "ne": "160336000012026NE000097",
+       "natureza": "diárias",
+       "valor": 932.5
+      },
+      {
+       "ne": "160336000012026NE000390",
+       "natureza": "diárias",
+       "valor": 880.0
+      },
+      {
+       "ne": "160336000012026NE000245",
+       "natureza": "diárias",
+       "valor": 715.0
+      },
+      {
+       "ne": "160336000012026NE000410",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "160336000012026NE000127",
+       "natureza": "diárias",
+       "valor": 520.0
+      },
+      {
+       "ne": "160336000012026NE000428",
+       "natureza": "diárias",
+       "valor": 335.0
+      },
+      {
+       "ne": "160336000012026NE000373",
+       "natureza": "diárias",
+       "valor": 230.04
+      },
+      {
+       "ne": "160336000012026NE000213",
+       "natureza": "diárias",
+       "valor": 147.5
+      },
+      {
+       "ne": "160336000012026NE000134",
+       "natureza": "diárias",
+       "valor": 62.5
+      }
+     ]
     },
     {
      "ug": "167336",
@@ -7802,7 +8153,52 @@
      "titulo": "7 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 23825.57,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 7,
+     "itens": [
+      {
+       "ne": "167336000012026NE000059",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 12509.0,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000034",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 4430.0,
+       "dias": 132
+      },
+      {
+       "ne": "167336000012026NE000033",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 3264.4,
+       "dias": 132
+      },
+      {
+       "ne": "167336000012026NE000057",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1246.84,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000058",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1045.0,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000035",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 725.0,
+       "dias": 125
+      },
+      {
+       "ne": "167336000012026NE000047",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 605.33,
+       "dias": 100
+      }
+     ]
     },
     {
      "ug": "167336",
@@ -7810,7 +8206,30 @@
      "titulo": "4 NE de diárias a liquidar",
      "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
      "valor": 4516.84,
-     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27",
+     "n_itens": 4,
+     "itens": [
+      {
+       "ne": "167336000012026NE000072",
+       "natureza": "diárias",
+       "valor": 1500.0
+      },
+      {
+       "ne": "167336000012026NE000057",
+       "natureza": "diárias",
+       "valor": 1246.84
+      },
+      {
+       "ne": "167336000012026NE000058",
+       "natureza": "diárias",
+       "valor": 1045.0
+      },
+      {
+       "ne": "167336000012026NE000035",
+       "natureza": "diárias",
+       "valor": 725.0
+      }
+     ]
     },
     {
      "ug": "160336",
@@ -7818,7 +8237,120 @@
      "titulo": "RPNP de 2025 a liquidar",
      "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
      "valor": 131257570.68,
-     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º",
+     "n_itens": 22,
+     "itens": [
+      {
+       "ne": "160336000012025NE000496",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 64651068.6
+      },
+      {
+       "ne": "160336000012025NE000424",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 18453078.6
+      },
+      {
+       "ne": "160336000012025NE000311",
+       "favorecido": "CONSORCIO FORCA TERRESTRE",
+       "valor": 15873789.76
+      },
+      {
+       "ne": "160336000012025NE000132",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 9697660.29
+      },
+      {
+       "ne": "160336000012025NE000426",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3510272.87
+      },
+      {
+       "ne": "160336000012025NE000031",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012025NE000082",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012025NE000278",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012025NE000485",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012025NE000310",
+       "favorecido": "CONSORCIO FORCA TERRESTRE",
+       "valor": 1293000.0
+      },
+      {
+       "ne": "160336000012025NE000264",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 1050000.0
+      },
+      {
+       "ne": "160336000012025NE000181",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 1000000.0
+      },
+      {
+       "ne": "160336000012025NE000183",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 848128.0
+      },
+      {
+       "ne": "160336000012025NE000431",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 771186.54
+      },
+      {
+       "ne": "160336000012025NE000470",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 575809.0
+      },
+      {
+       "ne": "160336000012025NE000276",
+       "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+       "valor": 500000.0
+      },
+      {
+       "ne": "160336000012025NE000423",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 86895.21
+      },
+      {
+       "ne": "160336000012025NE000425",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 13987.84
+      },
+      {
+       "ne": "160336000012025NE000420",
+       "favorecido": "W P SISTEMAS REPROGRAFICOS E IMPRESSAO LTDA",
+       "valor": 1589.07
+      },
+      {
+       "ne": "160336000012025NE000504",
+       "favorecido": "27.454.615 DONIMARA RIBEIRO DO CARMO",
+       "valor": 748.28
+      },
+      {
+       "ne": "160336000012025NE000262",
+       "favorecido": "UNITY SOLUCOES E SERVICOS LTDA",
+       "valor": 142.5
+      },
+      {
+       "ne": "160336000012025NE000489",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 0.4
+      }
+     ]
     },
     {
      "ug": "160336",
@@ -7826,7 +8358,370 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 92285570.67,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 83,
+     "itens": [
+      {
+       "ne": "160336000012026NE000193",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 80115707.54,
+       "dias": 180
+      },
+      {
+       "ne": "160336000012026NE000024",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43,
+       "dias": 313
+      },
+      {
+       "ne": "160336000012026NE000219",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 2776750.0,
+       "dias": 160
+      },
+      {
+       "ne": "160336000012026NE000267",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 1871138.08,
+       "dias": 112
+      },
+      {
+       "ne": "160336000012026NE000358",
+       "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+       "valor": 1454093.38,
+       "dias": 50
+      },
+      {
+       "ne": "160336000012026NE000310",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 1300898.0,
+       "dias": 86
+      },
+      {
+       "ne": "160336000012026NE000092",
+       "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+       "valor": 824082.03,
+       "dias": 254
+      },
+      {
+       "ne": "160336000012026NE000342",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 372869.34,
+       "dias": 68
+      },
+      {
+       "ne": "160336000012026NE000421",
+       "favorecido": "TAMANDARE INFORMATICA LTDA",
+       "valor": 44470.0,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000365",
+       "favorecido": "SANT'COSTA LIMPEZA E TERCEIRIZACAO LTDA",
+       "valor": 32096.92,
+       "dias": 41
+      },
+      {
+       "ne": "160336000012026NE000345",
+       "favorecido": "CRANFIELD UNIVERSITY",
+       "valor": 30000.0,
+       "dias": 64
+      },
+      {
+       "ne": "160336000012026NE000352",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 26755.0,
+       "dias": 54
+      },
+      {
+       "ne": "160336000012026NE000348",
+       "favorecido": "REDWOOD COMERCIO E SISTEMAS LTDA",
+       "valor": 22750.0,
+       "dias": 57
+      },
+      {
+       "ne": "160336000012026NE000395",
+       "favorecido": "HOMEOFFICE CADEIRAS LTDA",
+       "valor": 14997.0,
+       "dias": 27
+      },
+      {
+       "ne": "160336000012026NE000420",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 14000.0,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000392",
+       "favorecido": "REDWOOD COMERCIO E SISTEMAS LTDA",
+       "valor": 13650.0,
+       "dias": 27
+      },
+      {
+       "ne": "160336000012026NE000408",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 11298.21,
+       "dias": 14
+      },
+      {
+       "ne": "160336000012026NE000409",
+       "favorecido": "61.574.995 RICARDO BRAGA DA SILVA",
+       "valor": 8763.98,
+       "dias": 13
+      },
+      {
+       "ne": "160336000012026NE000394",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 7500.0,
+       "dias": 27
+      },
+      {
+       "ne": "160336000012026NE000189",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 6136.47,
+       "dias": 181
+      },
+      {
+       "ne": "160336000012026NE000098",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 5000.0,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000353",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 5000.0,
+       "dias": 54
+      },
+      {
+       "ne": "160336000012026NE000347",
+       "favorecido": "W P SISTEMAS REPROGRAFICOS E IMPRESSAO LTDA",
+       "valor": 4959.48,
+       "dias": 62
+      },
+      {
+       "ne": "160336000012026NE000402",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 4842.96,
+       "dias": 21
+      },
+      {
+       "ne": "160336000012026NE000349",
+       "favorecido": "REDWOOD COMERCIO E SISTEMAS LTDA",
+       "valor": 4550.0,
+       "dias": 56
+      },
+      {
+       "ne": "160336000012026NE000411",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 4476.84,
+       "dias": 13
+      },
+      {
+       "ne": "160336000012026NE000413",
+       "favorecido": "62.921.672 JEAN SILVA DA CUNHA",
+       "valor": 4088.82,
+       "dias": 12
+      },
+      {
+       "ne": "160336000012026NE000415",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 4047.11,
+       "dias": 8
+      },
+      {
+       "ne": "160336000012026NE000090",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 3825.82,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000089",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 3635.0,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000126",
+       "favorecido": "MARIA MARIAH FLORES LTDA",
+       "valor": 3213.0,
+       "dias": 223
+      },
+      {
+       "ne": "160336000012026NE000354",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 3000.0,
+       "dias": 50
+      },
+      {
+       "ne": "160336000012026NE000379",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 3000.0,
+       "dias": 29
+      },
+      {
+       "ne": "160336000012026NE000381",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 3000.0,
+       "dias": 29
+      },
+      {
+       "ne": "160336000012026NE000187",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 2375.15,
+       "dias": 181
+      },
+      {
+       "ne": "160336000012026NE000412",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 2277.5,
+       "dias": 13
+      },
+      {
+       "ne": "160336000012026NE000400",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 2197.46,
+       "dias": 22
+      },
+      {
+       "ne": "160336000012026NE000385",
+       "favorecido": "B2G PARTICIPACOES LTDA",
+       "valor": 2120.74,
+       "dias": 29
+      },
+      {
+       "ne": "160336000012026NE000391",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 2022.6,
+       "dias": 28
+      },
+      {
+       "ne": "160336000012026NE000406",
+       "favorecido": "68.694.230 EDGARD DOS SANTOS NASCIMENTO",
+       "valor": 1994.99,
+       "dias": 15
+      },
+      {
+       "ne": "160336000012026NE000247",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1980.54,
+       "dias": 138
+      },
+      {
+       "ne": "160336000012026NE000405",
+       "favorecido": "64.770.318 FERNANDO VINICIOS GOMES DA SILVA",
+       "valor": 1950.0,
+       "dias": 16
+      },
+      {
+       "ne": "160336000012026NE000260",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1822.76,
+       "dias": 128
+      },
+      {
+       "ne": "160336000012026NE000426",
+       "favorecido": "JCD COMERCIO LTDA",
+       "valor": 1766.26,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000262",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1622.5,
+       "dias": 113
+      },
+      {
+       "ne": "160336000012026NE000355",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1538.44,
+       "dias": 50
+      },
+      {
+       "ne": "160336000012026NE000173",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1531.18,
+       "dias": 189
+      },
+      {
+       "ne": "160336000012026NE000417",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1500.0,
+       "dias": 7
+      },
+      {
+       "ne": "160336000012026NE000088",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1455.0,
+       "dias": 258
+      },
+      {
+       "ne": "160336000012026NE000128",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1388.18,
+       "dias": 217
+      },
+      {
+       "ne": "160336000012026NE000334",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 1347.59,
+       "dias": 70
+      },
+      {
+       "ne": "160336000012026NE000125",
+       "favorecido": "A ROSEIRAL DECORACOES LTDA",
+       "valor": 1290.0,
+       "dias": 223
+      },
+      {
+       "ne": "160336000012026NE000422",
+       "favorecido": "TT MATERIAL DE CONSTRUCAO LTDA",
+       "valor": 1117.08,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000132",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1055.04,
+       "dias": 215
+      },
+      {
+       "ne": "160336000012026NE000419",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1045.0,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000363",
+       "favorecido": "CLARO S.A.",
+       "valor": 940.0,
+       "dias": 47
+      },
+      {
+       "ne": "160336000012026NE000096",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 932.5,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000097",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 932.5,
+       "dias": 251
+      },
+      {
+       "ne": "160336000012026NE000390",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 880.0,
+       "dias": 28
+      },
+      {
+       "ne": "160336000012026NE000425",
+       "favorecido": "64.998.046 KEVEN JACAUNA FERNANDES",
+       "valor": 737.98,
+       "dias": 6
+      }
+     ]
     },
     {
      "ug": "160336",
@@ -7834,7 +8729,65 @@
      "titulo": "RPNP de 2024 a liquidar",
      "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
      "valor": 53649956.93,
-     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º",
+     "n_itens": 11,
+     "itens": [
+      {
+       "ne": "160336000012024NE000125",
+       "favorecido": "CONSORCIO FORCA TERRESTRE",
+       "valor": 23710212.22
+      },
+      {
+       "ne": "160336000012024NE000505",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 16162767.15
+      },
+      {
+       "ne": "160336000012024NE000426",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012024NE000445",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012024NE000508",
+       "favorecido": "IVG BRASIL LTDA",
+       "valor": 3232553.43
+      },
+      {
+       "ne": "160336000012024NE000341",
+       "favorecido": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL SENAI",
+       "valor": 2571266.68
+      },
+      {
+       "ne": "160336000012024NE000455",
+       "favorecido": "EMBRAER S.A.",
+       "valor": 914839.75
+      },
+      {
+       "ne": "160336000012024NE000049",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 285972.03
+      },
+      {
+       "ne": "160336000012024NE000391",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 222280.04
+      },
+      {
+       "ne": "160336000012024NE000377",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 79289.37
+      },
+      {
+       "ne": "160336000012024NE000222",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 5669.4
+      }
+     ]
     },
     {
      "ug": "167336",
@@ -7842,7 +8795,88 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 36715.69,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 13,
+     "itens": [
+      {
+       "ne": "167336000012026NE000059",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 12509.0,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000074",
+       "favorecido": "ATLAS COMERCIO LTDA",
+       "valor": 6130.0,
+       "dias": 26
+      },
+      {
+       "ne": "167336000012026NE000034",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 4430.0,
+       "dias": 132
+      },
+      {
+       "ne": "167336000012026NE000073",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 4000.0,
+       "dias": 27
+      },
+      {
+       "ne": "167336000012026NE000033",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 3264.4,
+       "dias": 132
+      },
+      {
+       "ne": "167336000012026NE000072",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1500.0,
+       "dias": 27
+      },
+      {
+       "ne": "167336000012026NE000057",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1246.84,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000058",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 1045.0,
+       "dias": 71
+      },
+      {
+       "ne": "167336000012026NE000077",
+       "favorecido": "64.013.768 MARIANA BORGES DE MORAES",
+       "valor": 758.4,
+       "dias": 6
+      },
+      {
+       "ne": "167336000012026NE000035",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 725.0,
+       "dias": 125
+      },
+      {
+       "ne": "167336000012026NE000047",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 605.33,
+       "dias": 100
+      },
+      {
+       "ne": "167336000012026NE000078",
+       "favorecido": "61.902.637 MARCELA VICTORIA RODRIGUES LOPES SIMIONI",
+       "valor": 447.18,
+       "dias": 6
+      },
+      {
+       "ne": "167336000012026NE000079",
+       "favorecido": "ALAIDE ALVES DOS SANTOS",
+       "valor": 54.54,
+       "dias": 6
+      }
+     ]
     },
     {
      "ug": "160336",
@@ -7850,7 +8884,40 @@
      "titulo": "5 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 283.03,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 5,
+     "itens": [
+      {
+       "ne": "160336000012026NE000215",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 95.3,
+       "dias": 161
+      },
+      {
+       "ne": "160336000012026NE000423",
+       "favorecido": "MARCOS E BERTA LTDA",
+       "valor": 62.72,
+       "dias": 6
+      },
+      {
+       "ne": "160336000012026NE000134",
+       "favorecido": "DIRETORIA DE FABRICACAO",
+       "valor": 62.5,
+       "dias": 212
+      },
+      {
+       "ne": "160336000012026NE000305",
+       "favorecido": "CLARO S.A.",
+       "valor": 45.46,
+       "dias": 89
+      },
+      {
+       "ne": "160336000012026NE000186",
+       "favorecido": "G4 SERVICO E COMERCIO DE PRODUTOS INDUSTRIAIS, AUTOMOTI",
+       "valor": 17.05,
+       "dias": 182
+      }
+     ]
     },
     {
      "ug": "167336",
@@ -7858,7 +8925,16 @@
      "titulo": "1 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 54.54,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 1,
+     "itens": [
+      {
+       "ne": "167336000012026NE000079",
+       "favorecido": "ALAIDE ALVES DOS SANTOS",
+       "valor": 54.54,
+       "dias": 6
+      }
+     ]
     }
    ],
    "AGR": [
@@ -7868,7 +8944,20 @@
      "titulo": "RPNP de 2023 a liquidar",
      "texto": "Liquidar até 29/12 para pagar ainda em 2026; prazo final 30/12. O que restar é cancelado em 31/12 e a UGE justifica à UGR.",
      "valor": 438121.61,
-     "fundamento": "Portaria 399, ev. 26 e 27; Dtz 6.b.1; Dec. 93.872, art. 68, § 7º"
+     "fundamento": "Portaria 399, ev. 26 e 27; Dtz 6.b.1; Dec. 93.872, art. 68, § 7º",
+     "n_itens": 2,
+     "itens": [
+      {
+       "ne": "167285000012023NE000152",
+       "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+       "valor": 437360.0
+      },
+      {
+       "ne": "167285000012023NE000007",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 761.61
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7876,7 +8965,370 @@
      "titulo": "72 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 716591.06,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 72,
+     "itens": [
+      {
+       "ne": "160285000012026NE000165",
+       "favorecido": "REPREMIG REPRESENTACAO E COMERCIO DE MINAS GERAIS LTDA",
+       "valor": 137500.0,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000153",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 113725.54,
+       "dias": 84
+      },
+      {
+       "ne": "160285000012026NE000155",
+       "favorecido": "MULTITEINER COMERCIO E LOCACAO DE CONTEINERES LTDA",
+       "valor": 84000.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000164",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 39891.59,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000069",
+       "favorecido": "BISCHOFF & CIA LTDA",
+       "valor": 36898.0,
+       "dias": 209
+      },
+      {
+       "ne": "160285000012026NE000005",
+       "favorecido": "CHADA COMERCIO E SERVICOS LTDA",
+       "valor": 32334.86,
+       "dias": 296
+      },
+      {
+       "ne": "160285000012026NE000094",
+       "favorecido": "COMSUP COMERCIAL DE ALIMENTOS LTDA",
+       "valor": 27550.2,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000154",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 23600.0,
+       "dias": 84
+      },
+      {
+       "ne": "160285000012026NE000010",
+       "favorecido": "DELURB AMBIENTAL LTDA",
+       "valor": 21433.51,
+       "dias": 293
+      },
+      {
+       "ne": "160285000012026NE000097",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 16648.9,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000096",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 13123.36,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000163",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 11604.92,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000207",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 11435.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000192",
+       "favorecido": "JTA ASSESSORIA E MATERIAIS LTDA",
+       "valor": 11368.07,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000227",
+       "favorecido": "SUPRY OFFICE DISTRIBUIDORA DE MATERIAIS E SERVICOS LTDA",
+       "valor": 10500.0,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000156",
+       "favorecido": "FNGTECH INFORMATICA LTDA",
+       "valor": 9700.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000202",
+       "favorecido": "ISUPRY COMERCIAL E SERVICOS LTDA",
+       "valor": 9585.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000099",
+       "favorecido": "BTM DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 9127.45,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000204",
+       "favorecido": "VISIONARIA COMERCIO E SERVICOS EM GERAL LTDA",
+       "valor": 8320.5,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000182",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 8100.0,
+       "dias": 65
+      },
+      {
+       "ne": "160285000012026NE000087",
+       "favorecido": "SEAOPEN REFRIGERACAO E MOVEIS LTDA",
+       "valor": 6420.03,
+       "dias": 188
+      },
+      {
+       "ne": "160285000012026NE000193",
+       "favorecido": "SANTOS & LIMA SOLUCOES LTDA",
+       "valor": 5877.9,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000209",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 5425.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000201",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 5121.9,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000095",
+       "favorecido": "N S FATIMA DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 4883.92,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000160",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 4431.98,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000064",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 3628.63,
+       "dias": 225
+      },
+      {
+       "ne": "160285000012026NE000208",
+       "favorecido": "N S FATIMA DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 3390.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000004",
+       "favorecido": "ELEVADORES IVIMAIA LTDA",
+       "valor": 3000.0,
+       "dias": 300
+      },
+      {
+       "ne": "160285000012026NE000199",
+       "favorecido": "COMALTA COMERCIO DE ALIMENTOS LTDA",
+       "valor": 2927.5,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000162",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 2800.0,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000105",
+       "favorecido": "ROJAO COMERCIAL DE ALIMENTOS LTDA",
+       "valor": 2792.5,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000051",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 2299.22,
+       "dias": 239
+      },
+      {
+       "ne": "160285000012026NE000223",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 2250.0,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000200",
+       "favorecido": "FORTE AFONSOS DISTRIBUIDORA DE ALIMENTOS LTDA",
+       "valor": 2214.6,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000215",
+       "favorecido": "LIMP DESC COMERCIO DE MATERIAIS DE LIMPEZA E DESCARTAVE",
+       "valor": 1985.4,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000158",
+       "favorecido": "LANCA PRODUTOS - COMERCIO E SERVICOS LTDA",
+       "valor": 1578.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000100",
+       "favorecido": "FIEIS DA TERRA ATACADISTA LTDA",
+       "valor": 1551.5,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000205",
+       "favorecido": "BTM DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 1485.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000159",
+       "favorecido": "L S RODRIGUES COMERCIO INFORMATICA LTDA",
+       "valor": 1226.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000198",
+       "favorecido": "ALK COMERCIO E SERVICOS DE ALIMENTACAO LTDA",
+       "valor": 1085.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000194",
+       "favorecido": "POLO DISTRIBUIDORA E PRESTADORA DE SERVICOS LTDA",
+       "valor": 1038.4,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000135",
+       "favorecido": "REFINAR EMPRESARIAL ASSESSORIA EM CONTROLES ADMINISTRA",
+       "valor": 977.18,
+       "dias": 104
+      },
+      {
+       "ne": "160285000012026NE000046",
+       "favorecido": "TIM S A",
+       "valor": 802.94,
+       "dias": 244
+      },
+      {
+       "ne": "160285000012026NE000220",
+       "favorecido": "MATERIAIS DE CONSTRUCAO DINO LTDA",
+       "valor": 750.4,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000195",
+       "favorecido": "JMP MATERIAIS E SOLUCOES LTDA",
+       "valor": 750.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000221",
+       "favorecido": "LABUTAR DISTRIBUIDORA E PRESTADORA DE SERVICO LTDA",
+       "valor": 708.48,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000001",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 667.83,
+       "dias": 302
+      },
+      {
+       "ne": "160285000012026NE000157",
+       "favorecido": "REFINAR EMPRESARIAL ASSESSORIA EM CONTROLES ADMINISTRA",
+       "valor": 665.8,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000214",
+       "favorecido": "RBX XAVIER COMERCIO E SERVICOS DE INFORMATICA LTDA",
+       "valor": 641.63,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000167",
+       "favorecido": "H&A  VENDAS E SERVICOS  LTDA",
+       "valor": 638.0,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000070",
+       "favorecido": "C C S COMANDO COMERCIO SERVICOS LTDA",
+       "valor": 597.0,
+       "dias": 209
+      },
+      {
+       "ne": "160285000012026NE000161",
+       "favorecido": "EREMASTER DISTRIBUIDORA DE FERRAGENS E FERRAMENTAS LTDA",
+       "valor": 583.2,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000206",
+       "favorecido": "FIEIS DA TERRA ATACADISTA LTDA",
+       "valor": 500.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000184",
+       "favorecido": "68.250.160 JOSIAS TIAGO DA SILVA PEREIRA",
+       "valor": 496.0,
+       "dias": 65
+      },
+      {
+       "ne": "160285000012026NE000044",
+       "favorecido": "CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO DE J",
+       "valor": 490.44,
+       "dias": 252
+      },
+      {
+       "ne": "160285000012026NE000166",
+       "favorecido": "H&A  VENDAS E SERVICOS  LTDA",
+       "valor": 479.0,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000103",
+       "favorecido": "ALK COMERCIO E SERVICOS DE ALIMENTACAO LTDA",
+       "valor": 450.0,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000102",
+       "favorecido": "ISUPRY COMERCIAL E SERVICOS LTDA",
+       "valor": 387.0,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000196",
+       "favorecido": "LABUTAR DISTRIBUIDORA E PRESTADORA DE SERVICO LTDA",
+       "valor": 363.32,
+       "dias": 62
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7884,7 +9336,40 @@
      "titulo": "6 NE de ajuda de custo, diárias, indenização de transporte e ressarcimento de passagens a liquidar",
      "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
      "valor": 36440.24,
-     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27",
+     "n_itens": 6,
+     "itens": [
+      {
+       "ne": "160285000012026NE000336",
+       "natureza": "ajuda de custo",
+       "valor": 27372.16
+      },
+      {
+       "ne": "160285000012026NE000338",
+       "natureza": "indenização de transporte",
+       "valor": 6242.16
+      },
+      {
+       "ne": "160285000012026NE000337",
+       "natureza": "ressarcimento de passagens",
+       "valor": 1130.92
+      },
+      {
+       "ne": "160285000012026NE000233",
+       "natureza": "diárias",
+       "valor": 1097.5
+      },
+      {
+       "ne": "160285000012026NE000288",
+       "natureza": "diárias",
+       "valor": 352.5
+      },
+      {
+       "ne": "160285000012026NE000049",
+       "natureza": "diárias",
+       "valor": 245.0
+      }
+     ]
     },
     {
      "ug": "167285",
@@ -7892,7 +9377,226 @@
      "titulo": "36 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 2858229.04,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 36,
+     "itens": [
+      {
+       "ne": "167285000012026NE000036",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 1068202.92,
+       "dias": 77
+      },
+      {
+       "ne": "167285000012026NE000023",
+       "favorecido": "ENGEFISI CONSTRUCAO, MANUTENCAO, PROJETO E REFORMA LTD",
+       "valor": 844020.0,
+       "dias": 84
+      },
+      {
+       "ne": "167285000012026NE000024",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 534055.66,
+       "dias": 84
+      },
+      {
+       "ne": "167285000012026NE000053",
+       "favorecido": "DEBRIN BRASIL LTDA",
+       "valor": 118500.0,
+       "dias": 62
+      },
+      {
+       "ne": "167285000012026NE000033",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 79200.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000034",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 77220.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000004",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 50172.0,
+       "dias": 279
+      },
+      {
+       "ne": "167285000012026NE000028",
+       "favorecido": "GGV COMERCIAL LTDA",
+       "valor": 20697.6,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000027",
+       "favorecido": "JW PECAS E ACESSORIOS LTDA",
+       "valor": 13895.4,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000019",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 7292.0,
+       "dias": 110
+      },
+      {
+       "ne": "167285000012026NE000025",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 5976.95,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000045",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 5200.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000035",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 5040.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000030",
+       "favorecido": "BTS DISTRIBUIDORA E CONSTRUTORA LTDA",
+       "valor": 4118.4,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000029",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 3300.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000041",
+       "favorecido": "CIRCULAR INSTALACOES DE REDES DE GASES LTDA",
+       "valor": 3077.77,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000042",
+       "favorecido": "LANCA PRODUTOS - COMERCIO E SERVICOS LTDA",
+       "valor": 2994.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000018",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 2700.0,
+       "dias": 110
+      },
+      {
+       "ne": "167285000012026NE000032",
+       "favorecido": "FERGAVI COMERCIAL LTDA",
+       "valor": 2344.8,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000005",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 1320.0,
+       "dias": 279
+      },
+      {
+       "ne": "167285000012026NE000044",
+       "favorecido": "REVO FERRAMENTAS DE CORTE LTDA",
+       "valor": 1212.38,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000016",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 1099.95,
+       "dias": 131
+      },
+      {
+       "ne": "167285000012026NE000046",
+       "favorecido": "LANCA PRODUTOS - COMERCIO E SERVICOS LTDA",
+       "valor": 1055.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000043",
+       "favorecido": "BW OFFICE DISTRIBUICAO E IMPORTACAO LTDA",
+       "valor": 689.63,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000040",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 586.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000048",
+       "favorecido": "A A COSTA CONSTRUCOES LTDA",
+       "valor": 580.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000037",
+       "favorecido": "GENTILEZA COMERCIO DE MATERIAIS E SERVICOS LTDA",
+       "valor": 539.8,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000047",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 500.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000050",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 500.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000026",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 449.4,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000038",
+       "favorecido": "A A COSTA CONSTRUCOES LTDA",
+       "valor": 440.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000049",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 412.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000039",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 334.8,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000031",
+       "favorecido": "FERGAVI COMERCIAL LTDA",
+       "valor": 322.8,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000022",
+       "favorecido": "VIDOR & HEINECKE REPRESENTACOES COMERCIAIS LTDA",
+       "valor": 159.8,
+       "dias": 85
+      },
+      {
+       "ne": "167285000012026NE000051",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 19.98,
+       "dias": 72
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7900,7 +9604,370 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 2430307.85,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 203,
+     "itens": [
+      {
+       "ne": "160285000012026NE000333",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 600000.0,
+       "dias": 26
+      },
+      {
+       "ne": "160285000012026NE000165",
+       "favorecido": "REPREMIG REPRESENTACAO E COMERCIO DE MINAS GERAIS LTDA",
+       "valor": 137500.0,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000380",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 119960.44,
+       "dias": 7
+      },
+      {
+       "ne": "160285000012026NE000153",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 113725.54,
+       "dias": 84
+      },
+      {
+       "ne": "160285000012026NE000343",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 101734.85,
+       "dias": 14
+      },
+      {
+       "ne": "160285000012026NE000155",
+       "favorecido": "MULTITEINER COMERCIO E LOCACAO DE CONTEINERES LTDA",
+       "valor": 84000.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000358",
+       "favorecido": "JMP MATERIAIS E SOLUCOES LTDA",
+       "valor": 72828.0,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000276",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 67920.0,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000291",
+       "favorecido": "AGUAS DO RIO 4 SPE S.A",
+       "valor": 53235.0,
+       "dias": 36
+      },
+      {
+       "ne": "160285000012026NE000290",
+       "favorecido": "AIRES TURISMO LTDA",
+       "valor": 52500.0,
+       "dias": 37
+      },
+      {
+       "ne": "160285000012026NE000293",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 46364.67,
+       "dias": 35
+      },
+      {
+       "ne": "160285000012026NE000261",
+       "favorecido": "GGV COMERCIAL LTDA",
+       "valor": 45226.15,
+       "dias": 49
+      },
+      {
+       "ne": "160285000012026NE000164",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 39891.59,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000069",
+       "favorecido": "BISCHOFF & CIA LTDA",
+       "valor": 36898.0,
+       "dias": 209
+      },
+      {
+       "ne": "160285000012026NE000005",
+       "favorecido": "CHADA COMERCIO E SERVICOS LTDA",
+       "valor": 32334.86,
+       "dias": 296
+      },
+      {
+       "ne": "160285000012026NE000279",
+       "favorecido": "USIFLEX SERVICOS DE USINAGEM E COMERCIO LTDA",
+       "valor": 31350.0,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000268",
+       "favorecido": "GGV COMERCIAL LTDA",
+       "valor": 29988.84,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000292",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 28895.13,
+       "dias": 36
+      },
+      {
+       "ne": "160285000012026NE000094",
+       "favorecido": "COMSUP COMERCIAL DE ALIMENTOS LTDA",
+       "valor": 27550.2,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000336",
+       "favorecido": "THALLYO YURI CAETANO PEREIRA",
+       "valor": 27372.16,
+       "dias": 19
+      },
+      {
+       "ne": "160285000012026NE000154",
+       "favorecido": "LIGHT SERVICOS DE ELETRICIDADE S A",
+       "valor": 23600.0,
+       "dias": 84
+      },
+      {
+       "ne": "160285000012026NE000363",
+       "favorecido": "PRINCESS SOLUCOES EM SERVICOS E COMERCIO LTDA",
+       "valor": 22711.0,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000010",
+       "favorecido": "DELURB AMBIENTAL LTDA",
+       "valor": 21433.51,
+       "dias": 293
+      },
+      {
+       "ne": "160285000012026NE000277",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 20613.5,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000278",
+       "favorecido": "40MX COMERCIO E SERVICOS DE REFRIGERACAO E ALIMENTOS L",
+       "valor": 19984.87,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000298",
+       "favorecido": "ISUPRY COMERCIAL E SERVICOS LTDA",
+       "valor": 18282.0,
+       "dias": 29
+      },
+      {
+       "ne": "160285000012026NE000310",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 17439.37,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000286",
+       "favorecido": "FERRAMENTAS E PNEUMATICOS 1001 LTDA",
+       "valor": 17040.0,
+       "dias": 41
+      },
+      {
+       "ne": "160285000012026NE000097",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 16648.9,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000367",
+       "favorecido": "SANTOS & LIMA SOLUCOES LTDA",
+       "valor": 16554.6,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000245",
+       "favorecido": "AJAX R2 COMERCIO DE MATERIAIS LTDA",
+       "valor": 15692.5,
+       "dias": 54
+      },
+      {
+       "ne": "160285000012026NE000303",
+       "favorecido": "J D DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 14652.16,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000312",
+       "favorecido": "COMSUP COMERCIAL DE ALIMENTOS LTDA",
+       "valor": 13932.4,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000096",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 13123.36,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000262",
+       "favorecido": "JW PECAS E ACESSORIOS LTDA",
+       "valor": 12177.8,
+       "dias": 49
+      },
+      {
+       "ne": "160285000012026NE000163",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 11604.92,
+       "dias": 71
+      },
+      {
+       "ne": "160285000012026NE000207",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 11435.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000192",
+       "favorecido": "JTA ASSESSORIA E MATERIAIS LTDA",
+       "valor": 11368.07,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000227",
+       "favorecido": "SUPRY OFFICE DISTRIBUIDORA DE MATERIAIS E SERVICOS LTDA",
+       "valor": 10500.0,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000377",
+       "favorecido": "LIMP DESC COMERCIO DE MATERIAIS DE LIMPEZA E DESCARTAVE",
+       "valor": 9798.55,
+       "dias": 7
+      },
+      {
+       "ne": "160285000012026NE000156",
+       "favorecido": "FNGTECH INFORMATICA LTDA",
+       "valor": 9700.0,
+       "dias": 75
+      },
+      {
+       "ne": "160285000012026NE000202",
+       "favorecido": "ISUPRY COMERCIAL E SERVICOS LTDA",
+       "valor": 9585.0,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000334",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 9200.0,
+       "dias": 26
+      },
+      {
+       "ne": "160285000012026NE000099",
+       "favorecido": "BTM DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 9127.45,
+       "dias": 177
+      },
+      {
+       "ne": "160285000012026NE000204",
+       "favorecido": "VISIONARIA COMERCIO E SERVICOS EM GERAL LTDA",
+       "valor": 8320.5,
+       "dias": 62
+      },
+      {
+       "ne": "160285000012026NE000300",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 8250.0,
+       "dias": 29
+      },
+      {
+       "ne": "160285000012026NE000182",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 8100.0,
+       "dias": 65
+      },
+      {
+       "ne": "160285000012026NE000316",
+       "favorecido": "BTM DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 8006.19,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000297",
+       "favorecido": "COMALTA COMERCIO DE ALIMENTOS LTDA",
+       "valor": 7958.5,
+       "dias": 29
+      },
+      {
+       "ne": "160285000012026NE000309",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 7951.8,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000264",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 7564.0,
+       "dias": 49
+      },
+      {
+       "ne": "160285000012026NE000271",
+       "favorecido": "R. C. COMERCIO DE PRODUTOS METALURGICOS FERROVIARIOS LT",
+       "valor": 7137.0,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000248",
+       "favorecido": "GALERIA HORT COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 6791.2,
+       "dias": 54
+      },
+      {
+       "ne": "160285000012026NE000263",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 6710.0,
+       "dias": 49
+      },
+      {
+       "ne": "160285000012026NE000325",
+       "favorecido": "AJAX R2 COMERCIO DE MATERIAIS LTDA",
+       "valor": 6528.08,
+       "dias": 28
+      },
+      {
+       "ne": "160285000012026NE000087",
+       "favorecido": "SEAOPEN REFRIGERACAO E MOVEIS LTDA",
+       "valor": 6420.03,
+       "dias": 188
+      },
+      {
+       "ne": "160285000012026NE000265",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 6340.74,
+       "dias": 48
+      },
+      {
+       "ne": "160285000012026NE000338",
+       "favorecido": "THALLYO YURI CAETANO PEREIRA",
+       "valor": 6242.16,
+       "dias": 19
+      },
+      {
+       "ne": "160285000012026NE000299",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 6015.0,
+       "dias": 29
+      },
+      {
+       "ne": "160285000012026NE000239",
+       "favorecido": "VIRTUS COMERCIO E SERVICOS DE MAQUINAS E EQUIPAMENTOS L",
+       "valor": 5925.0,
+       "dias": 54
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7908,7 +9975,35 @@
      "titulo": "RPNP de 2024 a liquidar",
      "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
      "valor": 1234079.04,
-     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º",
+     "n_itens": 5,
+     "itens": [
+      {
+       "ne": "160285000012024NE000350",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 808100.0
+      },
+      {
+       "ne": "160285000012024NE000359",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 419568.0
+      },
+      {
+       "ne": "160285000012024NE000204",
+       "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+       "valor": 4297.8
+      },
+      {
+       "ne": "160285000012024NE000057",
+       "favorecido": "EMPRESA BRASILEIRA DE CORREIOS E TELEGRAFOS",
+       "valor": 1060.78
+      },
+      {
+       "ne": "160285000012024NE000287",
+       "favorecido": "SENAGRO INDUSTRIA E COMERCIO LTDA",
+       "valor": 1052.46
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7916,7 +10011,60 @@
      "titulo": "RPNP de 2025 a liquidar",
      "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
      "valor": 555692.6,
-     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º",
+     "n_itens": 10,
+     "itens": [
+      {
+       "ne": "160285000012025NE000179",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 180720.0
+      },
+      {
+       "ne": "160285000012025NE000343",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 127094.4
+      },
+      {
+       "ne": "160285000012025NE000029",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 95114.0
+      },
+      {
+       "ne": "160285000012025NE000016",
+       "favorecido": "AGUAS DO RIO 4 SPE S.A",
+       "valor": 62771.32
+      },
+      {
+       "ne": "160285000012025NE000267",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 46690.72
+      },
+      {
+       "ne": "160285000012025NE000342",
+       "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+       "valor": 24249.0
+      },
+      {
+       "ne": "160285000012025NE000344",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 13800.0
+      },
+      {
+       "ne": "160285000012025NE000104",
+       "favorecido": "EMPRESA BRASIL DE COMUNICACAO S.A",
+       "valor": 3110.64
+      },
+      {
+       "ne": "160285000012025NE000256",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 1358.72
+      },
+      {
+       "ne": "160285000012025NE000278",
+       "favorecido": "J D DISTRIBUIDORA DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 783.8
+      }
+     ]
     },
     {
      "ug": "167285",
@@ -7924,7 +10072,80 @@
      "titulo": "RPNP de 2025 a liquidar",
      "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
      "valor": 5572429.9,
-     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º",
+     "n_itens": 14,
+     "itens": [
+      {
+       "ne": "167285000012025NE000092",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 2021195.0
+      },
+      {
+       "ne": "167285000012025NE000149",
+       "favorecido": "ARES AEROESPACIAL E DEFESA S.A.",
+       "valor": 1995000.0
+      },
+      {
+       "ne": "167285000012025NE000041",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 703304.0
+      },
+      {
+       "ne": "167285000012025NE000091",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 357588.0
+      },
+      {
+       "ne": "167285000012025NE000142",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 130194.0
+      },
+      {
+       "ne": "167285000012025NE000126",
+       "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+       "valor": 80080.0
+      },
+      {
+       "ne": "167285000012025NE000089",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 68537.7
+      },
+      {
+       "ne": "167285000012025NE000015",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 56800.0
+      },
+      {
+       "ne": "167285000012025NE000125",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 45870.0
+      },
+      {
+       "ne": "167285000012025NE000161",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 45870.0
+      },
+      {
+       "ne": "167285000012025NE000152",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 39872.0
+      },
+      {
+       "ne": "167285000012025NE000081",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 17879.4
+      },
+      {
+       "ne": "167285000012025NE000102",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 7032.0
+      },
+      {
+       "ne": "167285000012025NE000005",
+       "favorecido": "BRASTEC INDUSTRIA COMERCIO E SERVICOS LTDA",
+       "valor": 3207.8
+      }
+     ]
     },
     {
      "ug": "167285",
@@ -7932,7 +10153,370 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 3340838.58,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 71,
+     "itens": [
+      {
+       "ne": "167285000012026NE000036",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 1068202.92,
+       "dias": 77
+      },
+      {
+       "ne": "167285000012026NE000023",
+       "favorecido": "ENGEFISI CONSTRUCAO, MANUTENCAO, PROJETO E REFORMA LTD",
+       "valor": 844020.0,
+       "dias": 84
+      },
+      {
+       "ne": "167285000012026NE000024",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 534055.66,
+       "dias": 84
+      },
+      {
+       "ne": "167285000012026NE000071",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 151140.0,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000053",
+       "favorecido": "DEBRIN BRASIL LTDA",
+       "valor": 118500.0,
+       "dias": 62
+      },
+      {
+       "ne": "167285000012026NE000033",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 79200.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000034",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 77220.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000056",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 60000.0,
+       "dias": 57
+      },
+      {
+       "ne": "167285000012026NE000004",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 50172.0,
+       "dias": 279
+      },
+      {
+       "ne": "167285000012026NE000072",
+       "favorecido": "DEBRIN BRASIL LTDA",
+       "valor": 42540.0,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000081",
+       "favorecido": "ZIRTEC INDUSTRIA E COMERCIO LTDA",
+       "valor": 27732.7,
+       "dias": 37
+      },
+      {
+       "ne": "167285000012026NE000055",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 24850.0,
+       "dias": 57
+      },
+      {
+       "ne": "167285000012026NE000087",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 22605.57,
+       "dias": 12
+      },
+      {
+       "ne": "167285000012026NE000028",
+       "favorecido": "GGV COMERCIAL LTDA",
+       "valor": 20697.6,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000086",
+       "favorecido": "UHP COMERCIO DE SISTEMAS ESPECIAIS LTDA",
+       "valor": 20500.0,
+       "dias": 14
+      },
+      {
+       "ne": "167285000012026NE000064",
+       "favorecido": "BIG FIELD HOBBY AEROMODELISMO LTDA",
+       "valor": 19929.4,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000085",
+       "favorecido": "ATELIER MARIO PITANGUY LTDA",
+       "valor": 18900.0,
+       "dias": 14
+      },
+      {
+       "ne": "167285000012026NE000054",
+       "favorecido": "EREMASTER DISTRIBUIDORA DE FERRAGENS E FERRAMENTAS LTDA",
+       "valor": 14531.56,
+       "dias": 57
+      },
+      {
+       "ne": "167285000012026NE000027",
+       "favorecido": "JW PECAS E ACESSORIOS LTDA",
+       "valor": 13895.4,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000066",
+       "favorecido": "BIG FIELD HOBBY AEROMODELISMO LTDA",
+       "valor": 12018.96,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000079",
+       "favorecido": "ZIRTEC INDUSTRIA E COMERCIO LTDA",
+       "valor": 8679.7,
+       "dias": 47
+      },
+      {
+       "ne": "167285000012026NE000019",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 7292.0,
+       "dias": 110
+      },
+      {
+       "ne": "167285000012026NE000076",
+       "favorecido": "GGV COMERCIAL LTDA",
+       "valor": 7287.3,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000070",
+       "favorecido": "R. C. COMERCIO DE PRODUTOS METALURGICOS FERROVIARIOS LT",
+       "valor": 6600.0,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000059",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 6060.13,
+       "dias": 57
+      },
+      {
+       "ne": "167285000012026NE000025",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 5976.95,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000088",
+       "favorecido": "PRINCESS SOLUCOES EM SERVICOS E COMERCIO LTDA",
+       "valor": 5933.3,
+       "dias": 0
+      },
+      {
+       "ne": "167285000012026NE000045",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 5200.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000035",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 5040.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000090",
+       "favorecido": "JTA ASSESSORIA E MATERIAIS LTDA",
+       "valor": 4436.32,
+       "dias": 0
+      },
+      {
+       "ne": "167285000012026NE000030",
+       "favorecido": "BTS DISTRIBUIDORA E CONSTRUTORA LTDA",
+       "valor": 4118.4,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000063",
+       "favorecido": "BIG FIELD HOBBY AEROMODELISMO LTDA",
+       "valor": 3359.11,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000029",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 3300.0,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000041",
+       "favorecido": "CIRCULAR INSTALACOES DE REDES DE GASES LTDA",
+       "valor": 3077.77,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000078",
+       "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
+       "valor": 3039.68,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000042",
+       "favorecido": "LANCA PRODUTOS - COMERCIO E SERVICOS LTDA",
+       "valor": 2994.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000082",
+       "favorecido": "MULTIFARMA COMERCIO E REPRESENTACOES LTDA.",
+       "valor": 2844.0,
+       "dias": 28
+      },
+      {
+       "ne": "167285000012026NE000018",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 2700.0,
+       "dias": 110
+      },
+      {
+       "ne": "167285000012026NE000084",
+       "favorecido": "DIPAR FERRAGENS LTDA",
+       "valor": 2520.0,
+       "dias": 19
+      },
+      {
+       "ne": "167285000012026NE000068",
+       "favorecido": "JW PECAS E ACESSORIOS LTDA",
+       "valor": 2515.8,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000032",
+       "favorecido": "FERGAVI COMERCIAL LTDA",
+       "valor": 2344.8,
+       "dias": 82
+      },
+      {
+       "ne": "167285000012026NE000069",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 2139.0,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000073",
+       "favorecido": "N C F COMERCIO E SERVICOS",
+       "valor": 2023.54,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000061",
+       "favorecido": "FERRAMENTAS E PNEUMATICOS 1001 LTDA",
+       "valor": 1870.0,
+       "dias": 57
+      },
+      {
+       "ne": "167285000012026NE000077",
+       "favorecido": "CIPAFLEX COMERCIO E REPRESENTACOES LTDA",
+       "valor": 1650.0,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000080",
+       "favorecido": "MASTERTEC SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 1604.6,
+       "dias": 41
+      },
+      {
+       "ne": "167285000012026NE000062",
+       "favorecido": "BIG FIELD HOBBY AEROMODELISMO LTDA",
+       "valor": 1322.2,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000005",
+       "favorecido": "VENTRALIS TECNICA COMERCIAL LTDA",
+       "valor": 1320.0,
+       "dias": 279
+      },
+      {
+       "ne": "167285000012026NE000044",
+       "favorecido": "REVO FERRAMENTAS DE CORTE LTDA",
+       "valor": 1212.38,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000016",
+       "favorecido": "COMPANHIA DISTRIBUIDORA DE GAS DO RIO DE JANEIRO - CEG",
+       "valor": 1099.95,
+       "dias": 131
+      },
+      {
+       "ne": "167285000012026NE000065",
+       "favorecido": "BIG FIELD HOBBY AEROMODELISMO LTDA",
+       "valor": 1074.54,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000046",
+       "favorecido": "LANCA PRODUTOS - COMERCIO E SERVICOS LTDA",
+       "valor": 1055.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000075",
+       "favorecido": "JW PECAS E ACESSORIOS LTDA",
+       "valor": 1013.08,
+       "dias": 50
+      },
+      {
+       "ne": "167285000012026NE000091",
+       "favorecido": "JTA ASSESSORIA E MATERIAIS LTDA",
+       "valor": 917.6,
+       "dias": 0
+      },
+      {
+       "ne": "167285000012026NE000043",
+       "favorecido": "BW OFFICE DISTRIBUICAO E IMPORTACAO LTDA",
+       "valor": 689.63,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000040",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 586.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000048",
+       "favorecido": "A A COSTA CONSTRUCOES LTDA",
+       "valor": 580.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000037",
+       "favorecido": "GENTILEZA COMERCIO DE MATERIAIS E SERVICOS LTDA",
+       "valor": 539.8,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000047",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 500.0,
+       "dias": 72
+      },
+      {
+       "ne": "167285000012026NE000050",
+       "favorecido": "HOPE RIO DISTRIBUIDORA LTDA",
+       "valor": 500.0,
+       "dias": 72
+      }
+     ]
     },
     {
      "ug": "167285",
@@ -7940,7 +10524,15 @@
      "titulo": "RPNP de 2024 a liquidar",
      "texto": "Priorizar a liquidação até 30/12. Se não for liquidado, é cancelado em 31/12/2027.",
      "valor": 132000.0,
-     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"
+     "fundamento": "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º",
+     "n_itens": 1,
+     "itens": [
+      {
+       "ne": "167285000012024NE000008",
+       "favorecido": "ALPHA SERVICE INDUSTRIA E COMERCIO LTDA",
+       "valor": 132000.0
+      }
+     ]
     },
     {
      "ug": "160285",
@@ -7948,7 +10540,82 @@
      "titulo": "12 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 602.67,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 12,
+     "itens": [
+      {
+       "ne": "160285000012026NE000246",
+       "favorecido": "SHEWLA COMERCIO E SERVICOS DE CONTROLE DE QUALIDADE LTD",
+       "valor": 80.0,
+       "dias": 54
+      },
+      {
+       "ne": "160285000012026NE000364",
+       "favorecido": "R T COSTA FELICIANO",
+       "valor": 79.4,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000185",
+       "favorecido": "66.017.417 VITORIA QUIRINO CUNHA",
+       "valor": 76.0,
+       "dias": 65
+      },
+      {
+       "ne": "160285000012026NE000357",
+       "favorecido": "AJAX R2 COMERCIO DE MATERIAS E SERVICOS LTDA",
+       "valor": 72.8,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000222",
+       "favorecido": "RB COMERCIO VAREJISTA EM MATERAIS LTDA",
+       "valor": 56.0,
+       "dias": 61
+      },
+      {
+       "ne": "160285000012026NE000370",
+       "favorecido": "FGS COMERCIAL LTDA",
+       "valor": 51.45,
+       "dias": 7
+      },
+      {
+       "ne": "160285000012026NE000247",
+       "favorecido": "LABUTAR DISTRIBUIDORA E PRESTADORA DE SERVICO LTDA",
+       "valor": 46.24,
+       "dias": 54
+      },
+      {
+       "ne": "160285000012026NE000249",
+       "favorecido": "R T COSTA FELICIANO",
+       "valor": 39.7,
+       "dias": 54
+      },
+      {
+       "ne": "160285000012026NE000375",
+       "favorecido": "SUPRY OFFICE DISTRIBUIDORA DE MATERIAIS E SERVICOS LTDA",
+       "valor": 38.0,
+       "dias": 7
+      },
+      {
+       "ne": "160285000012026NE000356",
+       "favorecido": "VRM COMERCIO E SERVICOS LTDA",
+       "valor": 32.08,
+       "dias": 8
+      },
+      {
+       "ne": "160285000012026NE000060",
+       "favorecido": "AMAR TRANSPORTES DE CARGAS E COMERCIO DE ARMARINHOS EM",
+       "valor": 30.0,
+       "dias": 238
+      },
+      {
+       "ne": "160285000012026NE000145",
+       "favorecido": "AGUAS DO RIO 4 SPE S.A",
+       "valor": 1.0,
+       "dias": 91
+      }
+     ]
     },
     {
      "ug": "167285",
@@ -7956,7 +10623,22 @@
      "titulo": "2 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 55.98,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 2,
+     "itens": [
+      {
+       "ne": "167285000012026NE000083",
+       "favorecido": "MULTIFARMA COMERCIO E REPRESENTACOES LTDA.",
+       "valor": 36.0,
+       "dias": 28
+      },
+      {
+       "ne": "167285000012026NE000051",
+       "favorecido": "14.102.351 INGRID PIMENTA DOS SANTOS",
+       "valor": 19.98,
+       "dias": 72
+      }
+     ]
     }
    ],
    "AGSP": [
@@ -7966,7 +10648,370 @@
      "titulo": "71 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 3878860.97,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 71,
+     "itens": [
+      {
+       "ne": "160529000012026NE000414",
+       "favorecido": "ADS ENGENHARIA LTDA",
+       "valor": 1319900.0,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000385",
+       "favorecido": "ADS ENGENHARIA LTDA",
+       "valor": 565900.0,
+       "dias": 82
+      },
+      {
+       "ne": "160529000012026NE000207",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 226266.76,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000354",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 191830.03,
+       "dias": 103
+      },
+      {
+       "ne": "160529000012026NE000012",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 180825.75,
+       "dias": 288
+      },
+      {
+       "ne": "160529000012026NE000251",
+       "favorecido": "FRANCA MAQUINAS LTDA",
+       "valor": 94940.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000365",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 93615.85,
+       "dias": 91
+      },
+      {
+       "ne": "160529000012026NE000324",
+       "favorecido": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO -",
+       "valor": 89243.95,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000291",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 74901.0,
+       "dias": 140
+      },
+      {
+       "ne": "160529000012026NE000344",
+       "favorecido": "JCS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 70340.0,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000197",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 65507.03,
+       "dias": 209
+      },
+      {
+       "ne": "160529000012026NE000415",
+       "favorecido": "FLEXWAYS SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 64831.32,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000297",
+       "favorecido": "AREA MILITAR COMERCIAL E SERVICOS LTDA",
+       "valor": 61710.0,
+       "dias": 131
+      },
+      {
+       "ne": "160529000012026NE000417",
+       "favorecido": "PATRICIA CRISTINA DE ABREU",
+       "valor": 56490.2,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000374",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 45991.15,
+       "dias": 89
+      },
+      {
+       "ne": "160529000012026NE000373",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 45988.85,
+       "dias": 89
+      },
+      {
+       "ne": "160529000012026NE000296",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 42595.76,
+       "dias": 131
+      },
+      {
+       "ne": "160529000012026NE000214",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 41079.0,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000351",
+       "favorecido": "MARISTELA DA SILVA SOUSA",
+       "valor": 34954.93,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000316",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 33676.98,
+       "dias": 111
+      },
+      {
+       "ne": "160529000012026NE000290",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 31000.0,
+       "dias": 140
+      },
+      {
+       "ne": "160529000012026NE000169",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 29614.59,
+       "dias": 212
+      },
+      {
+       "ne": "160529000012026NE000347",
+       "favorecido": "NUTRITE COMERCIO DE ALIMENTOS LTDA",
+       "valor": 29238.71,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000418",
+       "favorecido": "D & C COMERCIO E SERVICOS LTDA",
+       "valor": 27360.0,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000267",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 27313.11,
+       "dias": 149
+      },
+      {
+       "ne": "160529000012026NE000210",
+       "favorecido": "FABIANE KROLOW LTDA",
+       "valor": 24600.0,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000329",
+       "favorecido": "AMA COMERCIO E SERVICOS DE INSTALACOES DE GAS LTDA.",
+       "valor": 24270.0,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000223",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 22996.23,
+       "dias": 183
+      },
+      {
+       "ne": "160529000012026NE000326",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 22995.08,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000325",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 22994.92,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000224",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 22993.77,
+       "dias": 183
+      },
+      {
+       "ne": "160529000012026NE000239",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 20970.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000240",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 17350.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000420",
+       "favorecido": "NUTRICELLI COMERCIO DE ALIMENTOS LTDA",
+       "valor": 14630.4,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000328",
+       "favorecido": "MARCELO DOS SANTOS BARBOSA",
+       "valor": 11885.6,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000346",
+       "favorecido": "NUTRICELLI COMERCIO DE ALIMENTOS LTDA",
+       "valor": 11297.81,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000212",
+       "favorecido": "FOCUS SERVICOS DE CONTROLE DE PRAGAS URBANAS LTDA",
+       "valor": 10635.0,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000327",
+       "favorecido": "CASOLE COMERCIO E DISTRIBUIDORA DE ALIMENTOS LTDA",
+       "valor": 9434.9,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000419",
+       "favorecido": "42.735.272 MURILO TOBIAS BOAVENTURA",
+       "valor": 8940.0,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000413",
+       "favorecido": "PROATIVA COMERCIO DE PECAS E ACESSORIOS AUTOMOTORES LT",
+       "valor": 8745.05,
+       "dias": 69
+      },
+      {
+       "ne": "160529000012026NE000331",
+       "favorecido": "COOPERATIVA DE AGRICULTORES FAMILIARES DE ITARARE - AG",
+       "valor": 8585.62,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000350",
+       "favorecido": "GLOBAL COMERCIO DE ARTIGOS EM GERAL LTDA",
+       "valor": 7209.5,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000198",
+       "favorecido": "THADIG INDUSTRIA MECANICA LTDA",
+       "valor": 6580.0,
+       "dias": 209
+      },
+      {
+       "ne": "160529000012026NE000416",
+       "favorecido": "JCS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 6167.2,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000236",
+       "favorecido": "GRAFICA & EDITORA TRIUNFAL LTDA",
+       "valor": 6160.0,
+       "dias": 166
+      },
+      {
+       "ne": "160529000012026NE000199",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 5545.0,
+       "dias": 209
+      },
+      {
+       "ne": "160529000012026NE000241",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 4900.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000368",
+       "favorecido": "L. DE NARDIN LTDA",
+       "valor": 4392.4,
+       "dias": 91
+      },
+      {
+       "ne": "160529000012026NE000317",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 3807.29,
+       "dias": 111
+      },
+      {
+       "ne": "160529000012026NE000411",
+       "favorecido": "PROATIVA COMERCIO DE PECAS E ACESSORIOS AUTOMOTORES LT",
+       "valor": 3799.82,
+       "dias": 69
+      },
+      {
+       "ne": "160529000012026NE000330",
+       "favorecido": "COOPERATIVA DE MULHERES DA AGRICULTURA FAMILIAR DE PIL",
+       "valor": 3668.4,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000150",
+       "favorecido": "CASOLE COMERCIO E DISTRIBUIDORA DE ALIMENTOS LTDA",
+       "valor": 2599.3,
+       "dias": 229
+      },
+      {
+       "ne": "160529000012026NE000151",
+       "favorecido": "MARCELO DOS SANTOS BARBOSA",
+       "valor": 2385.5,
+       "dias": 229
+      },
+      {
+       "ne": "160529000012026NE000168",
+       "favorecido": "EMPRESA BRASIL DE COMUNICACAO S.A",
+       "valor": 1670.0,
+       "dias": 215
+      },
+      {
+       "ne": "160529000012026NE000315",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 1665.45,
+       "dias": 111
+      },
+      {
+       "ne": "160529000012026NE000400",
+       "favorecido": "BRAVE DISTRIBUIDORA LTDA",
+       "valor": 1318.88,
+       "dias": 71
+      },
+      {
+       "ne": "160529000012026NE000422",
+       "favorecido": "ARSENAL DE GUERRA DE SAO PAULO",
+       "valor": 1281.54,
+       "dias": 64
+      },
+      {
+       "ne": "160529000012026NE000372",
+       "favorecido": "PODIUM SOLUCOES LTDA",
+       "valor": 1080.0,
+       "dias": 90
+      },
+      {
+       "ne": "160529000012026NE000049",
+       "favorecido": "DISTRIBUIDORA MARINHO & BARBOSA LTDA",
+       "valor": 998.0,
+       "dias": 280
+      },
+      {
+       "ne": "160529000012026NE000345",
+       "favorecido": "TERRA NOVA ALIMENTOS & BEBIDAS LTDA",
+       "valor": 870.0,
+       "dias": 104
+      }
+     ]
     },
     {
      "ug": "160529",
@@ -7974,7 +11019,75 @@
      "titulo": "13 NE de diárias a liquidar",
      "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
      "valor": 16415.0,
-     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27",
+     "n_itens": 13,
+     "itens": [
+      {
+       "ne": "160529000012026NE000476",
+       "natureza": "diárias",
+       "valor": 4845.0
+      },
+      {
+       "ne": "160529000012026NE000505",
+       "natureza": "diárias",
+       "valor": 2550.0
+      },
+      {
+       "ne": "160529000012026NE000471",
+       "natureza": "diárias",
+       "valor": 1467.5
+      },
+      {
+       "ne": "160529000012026NE000502",
+       "natureza": "diárias",
+       "valor": 1172.5
+      },
+      {
+       "ne": "160529000012026NE000503",
+       "natureza": "diárias",
+       "valor": 1172.5
+      },
+      {
+       "ne": "160529000012026NE000504",
+       "natureza": "diárias",
+       "valor": 1172.5
+      },
+      {
+       "ne": "160529000012026NE000484",
+       "natureza": "diárias",
+       "valor": 1157.5
+      },
+      {
+       "ne": "160529000012026NE000479",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "160529000012026NE000480",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "160529000012026NE000478",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "160529000012026NE000499",
+       "natureza": "diárias",
+       "valor": 167.5
+      },
+      {
+       "ne": "160529000012026NE000500",
+       "natureza": "diárias",
+       "valor": 167.5
+      },
+      {
+       "ne": "160529000012026NE000501",
+       "natureza": "diárias",
+       "valor": 167.5
+      }
+     ]
     },
     {
      "ug": "167529",
@@ -7982,7 +11095,82 @@
      "titulo": "12 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 184032.67,
-     "fundamento": "Dtz 6.d.1 e 6.e.1"
+     "fundamento": "Dtz 6.d.1 e 6.e.1",
+     "n_itens": 12,
+     "itens": [
+      {
+       "ne": "167529000012026NE000144",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 94425.0,
+       "dias": 215
+      },
+      {
+       "ne": "167529000012026NE000141",
+       "favorecido": "MINAS STEEL MECANICA E COMERCIO LTDA",
+       "valor": 48133.36,
+       "dias": 215
+      },
+      {
+       "ne": "167529000012026NE000380",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 26181.59,
+       "dias": 62
+      },
+      {
+       "ne": "167529000012026NE000338",
+       "favorecido": "CLINICA DE OFTALMOLOGIA DE OSASCO LTDA",
+       "valor": 3723.29,
+       "dias": 99
+      },
+      {
+       "ne": "167529000012026NE000327",
+       "favorecido": "61.634.664 MARIA DE FATIMA DA COSTA SILVA",
+       "valor": 3163.93,
+       "dias": 124
+      },
+      {
+       "ne": "167529000012026NE000326",
+       "favorecido": "61.634.664 MARIA DE FATIMA DA COSTA SILVA",
+       "valor": 3003.34,
+       "dias": 124
+      },
+      {
+       "ne": "167529000012026NE000202",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 1534.54,
+       "dias": 202
+      },
+      {
+       "ne": "167529000012026NE000328",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 1299.91,
+       "dias": 121
+      },
+      {
+       "ne": "167529000012026NE000340",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 1014.07,
+       "dias": 99
+      },
+      {
+       "ne": "167529000012026NE000098",
+       "favorecido": "59.999.498 MARCIO AGUIAR BRAGA",
+       "valor": 960.0,
+       "dias": 243
+      },
+      {
+       "ne": "167529000012026NE000308",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 593.04,
+       "dias": 127
+      },
+      {
+       "ne": "167529000012026NE000299",
+       "favorecido": "CLINICA CIRURGICA JANDIRA LTDA",
+       "valor": 0.6,
+       "dias": 127
+      }
+     ]
     },
     {
      "ug": "167529",
@@ -7990,7 +11178,135 @@
      "titulo": "25 NE de diárias a liquidar",
      "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
      "valor": 19990.0,
-     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27",
+     "n_itens": 25,
+     "itens": [
+      {
+       "ne": "167529000012026NE000435",
+       "natureza": "diárias",
+       "valor": 1540.0
+      },
+      {
+       "ne": "167529000012026NE000411",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000412",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000413",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000414",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000415",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000416",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000417",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000418",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000419",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000420",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000421",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000422",
+       "natureza": "diárias",
+       "valor": 837.5
+      },
+      {
+       "ne": "167529000012026NE000423",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000424",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000425",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000426",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000427",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000428",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000429",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000430",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000431",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000432",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000433",
+       "natureza": "diárias",
+       "valor": 700.0
+      },
+      {
+       "ne": "167529000012026NE000434",
+       "natureza": "diárias",
+       "valor": 700.0
+      }
+     ]
     },
     {
      "ug": "160529",
@@ -7998,7 +11314,370 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 7179302.18,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 137,
+     "itens": [
+      {
+       "ne": "160529000012026NE000414",
+       "favorecido": "ADS ENGENHARIA LTDA",
+       "valor": 1319900.0,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000513",
+       "favorecido": "ARSENAL DE GUERRA DE SAO PAULO",
+       "valor": 800000.0,
+       "dias": 7
+      },
+      {
+       "ne": "160529000012026NE000385",
+       "favorecido": "ADS ENGENHARIA LTDA",
+       "valor": 565900.0,
+       "dias": 82
+      },
+      {
+       "ne": "160529000012026NE000462",
+       "favorecido": "ARSENAL DE GUERRA DE SAO PAULO",
+       "valor": 281666.48,
+       "dias": 41
+      },
+      {
+       "ne": "160529000012026NE000465",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 241882.9,
+       "dias": 40
+      },
+      {
+       "ne": "160529000012026NE000207",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 226266.76,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000506",
+       "favorecido": "INDUSTRIA DE MATERIAL BELICO DO BRASIL/FI",
+       "valor": 199996.16,
+       "dias": 14
+      },
+      {
+       "ne": "160529000012026NE000354",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 191830.03,
+       "dias": 103
+      },
+      {
+       "ne": "160529000012026NE000012",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 180825.75,
+       "dias": 288
+      },
+      {
+       "ne": "160529000012026NE000487",
+       "favorecido": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO -",
+       "valor": 165824.46,
+       "dias": 20
+      },
+      {
+       "ne": "160529000012026NE000475",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 144936.92,
+       "dias": 34
+      },
+      {
+       "ne": "160529000012026NE000468",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 144422.77,
+       "dias": 40
+      },
+      {
+       "ne": "160529000012026NE000443",
+       "favorecido": "RACINE COMPANY COMERCIO E REPRESENTACOES LTDA",
+       "valor": 122150.0,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000467",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 120217.62,
+       "dias": 40
+      },
+      {
+       "ne": "160529000012026NE000469",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 102213.51,
+       "dias": 40
+      },
+      {
+       "ne": "160529000012026NE000473",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 100000.0,
+       "dias": 34
+      },
+      {
+       "ne": "160529000012026NE000474",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 100000.0,
+       "dias": 34
+      },
+      {
+       "ne": "160529000012026NE000251",
+       "favorecido": "FRANCA MAQUINAS LTDA",
+       "valor": 94940.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000365",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 93615.85,
+       "dias": 91
+      },
+      {
+       "ne": "160529000012026NE000482",
+       "favorecido": "IDV BRASIL LTDA.",
+       "valor": 89987.52,
+       "dias": 26
+      },
+      {
+       "ne": "160529000012026NE000324",
+       "favorecido": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO -",
+       "valor": 89243.95,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000291",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 74901.0,
+       "dias": 140
+      },
+      {
+       "ne": "160529000012026NE000470",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 74669.7,
+       "dias": 36
+      },
+      {
+       "ne": "160529000012026NE000449",
+       "favorecido": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO -",
+       "valor": 73290.0,
+       "dias": 47
+      },
+      {
+       "ne": "160529000012026NE000344",
+       "favorecido": "JCS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 70340.0,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000197",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 65507.03,
+       "dias": 209
+      },
+      {
+       "ne": "160529000012026NE000415",
+       "favorecido": "FLEXWAYS SOLUCOES INDUSTRIAIS LTDA",
+       "valor": 64831.32,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000297",
+       "favorecido": "AREA MILITAR COMERCIAL E SERVICOS LTDA",
+       "valor": 61710.0,
+       "dias": 131
+      },
+      {
+       "ne": "160529000012026NE000445",
+       "favorecido": "VICENTE XISTO CUPERTINO LTDA",
+       "valor": 59500.0,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000417",
+       "favorecido": "PATRICIA CRISTINA DE ABREU",
+       "valor": 56490.2,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000374",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 45991.15,
+       "dias": 89
+      },
+      {
+       "ne": "160529000012026NE000452",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 45991.15,
+       "dias": 47
+      },
+      {
+       "ne": "160529000012026NE000373",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 45988.85,
+       "dias": 89
+      },
+      {
+       "ne": "160529000012026NE000451",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 45988.85,
+       "dias": 47
+      },
+      {
+       "ne": "160529000012026NE000296",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 42595.76,
+       "dias": 131
+      },
+      {
+       "ne": "160529000012026NE000507",
+       "favorecido": "PEG COMERCIO E SERVICOS LTDA",
+       "valor": 41867.0,
+       "dias": 14
+      },
+      {
+       "ne": "160529000012026NE000214",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 41079.0,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000466",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 37786.55,
+       "dias": 40
+      },
+      {
+       "ne": "160529000012026NE000351",
+       "favorecido": "MARISTELA DA SILVA SOUSA",
+       "valor": 34954.93,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000439",
+       "favorecido": "NOVA MESA COMERCIO DE UTILIDADES E ALIMENTOS LTDA",
+       "valor": 34336.2,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000316",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 33676.98,
+       "dias": 111
+      },
+      {
+       "ne": "160529000012026NE000442",
+       "favorecido": "DSBRITO COMERCIO DE ARTEFATOS EM ACO INOX LTDA",
+       "valor": 32600.0,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000290",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 31000.0,
+       "dias": 140
+      },
+      {
+       "ne": "160529000012026NE000169",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 29614.59,
+       "dias": 212
+      },
+      {
+       "ne": "160529000012026NE000347",
+       "favorecido": "NUTRITE COMERCIO DE ALIMENTOS LTDA",
+       "valor": 29238.71,
+       "dias": 104
+      },
+      {
+       "ne": "160529000012026NE000446",
+       "favorecido": "TELES E SANTOS COMERCIO LTDA",
+       "valor": 28700.0,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000418",
+       "favorecido": "D & C COMERCIO E SERVICOS LTDA",
+       "valor": 27360.0,
+       "dias": 68
+      },
+      {
+       "ne": "160529000012026NE000267",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 27313.11,
+       "dias": 149
+      },
+      {
+       "ne": "160529000012026NE000510",
+       "favorecido": "E.S.L.C CONSTRUCAO CIVIL E MANUTENCAO LTDA",
+       "valor": 25321.16,
+       "dias": 8
+      },
+      {
+       "ne": "160529000012026NE000210",
+       "favorecido": "FABIANE KROLOW LTDA",
+       "valor": 24600.0,
+       "dias": 202
+      },
+      {
+       "ne": "160529000012026NE000329",
+       "favorecido": "AMA COMERCIO E SERVICOS DE INSTALACOES DE GAS LTDA.",
+       "valor": 24270.0,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000461",
+       "favorecido": "JCS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+       "valor": 23322.62,
+       "dias": 43
+      },
+      {
+       "ne": "160529000012026NE000223",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 22996.23,
+       "dias": 183
+      },
+      {
+       "ne": "160529000012026NE000326",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 22995.08,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000325",
+       "favorecido": "ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.",
+       "valor": 22994.92,
+       "dias": 106
+      },
+      {
+       "ne": "160529000012026NE000224",
+       "favorecido": "MATRIX COMERCIALIZADORA DE ENERGIA ELETRICA S/A",
+       "valor": 22993.77,
+       "dias": 183
+      },
+      {
+       "ne": "160529000012026NE000239",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 20970.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000240",
+       "favorecido": "BRASTECNICA EQUIPAMENTOS INDUSTRIAIS E REFRIGERACAO LTD",
+       "valor": 17350.0,
+       "dias": 163
+      },
+      {
+       "ne": "160529000012026NE000440",
+       "favorecido": "TOPEMA COZINHAS PROFISSIONAIS INDUSTRIA E COMERCIO LTDA",
+       "valor": 16850.0,
+       "dias": 49
+      },
+      {
+       "ne": "160529000012026NE000483",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 15835.49,
+       "dias": 22
+      }
+     ]
     },
     {
      "ug": "160529",
@@ -8006,7 +11685,65 @@
      "titulo": "RPNP de 2025 a liquidar",
      "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
      "valor": 339975.93,
-     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º",
+     "n_itens": 11,
+     "itens": [
+      {
+       "ne": "160529000012025NE000657",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 159059.44
+      },
+      {
+       "ne": "160529000012025NE000653",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 50112.66
+      },
+      {
+       "ne": "160529000012025NE000564",
+       "favorecido": "GTF COMERCIO DE PECAS E SERVICOS LTDA",
+       "valor": 42240.0
+      },
+      {
+       "ne": "160529000012025NE000443",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 28729.26
+      },
+      {
+       "ne": "160529000012025NE000654",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 28256.24
+      },
+      {
+       "ne": "160529000012025NE000205",
+       "favorecido": "SUPER FINISHING DO BRASIL COMERCIAL LTDA.",
+       "valor": 23076.05
+      },
+      {
+       "ne": "160529000012025NE000507",
+       "favorecido": "GASBALL ARMAZENADORA E DISTRIBUIDORA LTDA",
+       "valor": 4935.5
+      },
+      {
+       "ne": "160529000012025NE000609",
+       "favorecido": "EMPRESA BRASIL DE COMUNICACAO S.A",
+       "valor": 2000.0
+      },
+      {
+       "ne": "160529000012025NE000345",
+       "favorecido": "CLARO S.A.",
+       "valor": 726.78
+      },
+      {
+       "ne": "160529000012025NE000493",
+       "favorecido": "CLARO S.A.",
+       "valor": 420.0
+      },
+      {
+       "ne": "160529000012025NE000585",
+       "favorecido": "CLARO S.A.",
+       "valor": 420.0
+      }
+     ]
     },
     {
      "ug": "167529",
@@ -8014,7 +11751,298 @@
      "titulo": "Empenhos de 2026 a liquidar",
      "texto": "Indicar no SIAFI, de 01/12 a 23/12, as NE que vão para restos a pagar; a não indicada é anulada no fechamento.",
      "valor": 261311.05,
-     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"
+     "fundamento": "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º",
+     "n_itens": 48,
+     "itens": [
+      {
+       "ne": "167529000012026NE000144",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 94425.0,
+       "dias": 215
+      },
+      {
+       "ne": "167529000012026NE000141",
+       "favorecido": "MINAS STEEL MECANICA E COMERCIO LTDA",
+       "valor": 48133.36,
+       "dias": 215
+      },
+      {
+       "ne": "167529000012026NE000380",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 26181.59,
+       "dias": 62
+      },
+      {
+       "ne": "167529000012026NE000449",
+       "favorecido": "HQI SAUDE - SERVICOS MEDICOS LTDA",
+       "valor": 21583.0,
+       "dias": 15
+      },
+      {
+       "ne": "167529000012026NE000389",
+       "favorecido": "META PAPER COMERCIO DE PAPEIS E INSUMOS LTDA",
+       "valor": 21078.04,
+       "dias": 47
+      },
+      {
+       "ne": "167529000012026NE000338",
+       "favorecido": "CLINICA DE OFTALMOLOGIA DE OSASCO LTDA",
+       "valor": 3723.29,
+       "dias": 99
+      },
+      {
+       "ne": "167529000012026NE000388",
+       "favorecido": "KLAS SUPRIMENTOS LTDA",
+       "valor": 3564.6,
+       "dias": 51
+      },
+      {
+       "ne": "167529000012026NE000436",
+       "favorecido": "ECOLAB QUIMICA LTDA",
+       "valor": 3211.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000327",
+       "favorecido": "61.634.664 MARIA DE FATIMA DA COSTA SILVA",
+       "valor": 3163.93,
+       "dias": 124
+      },
+      {
+       "ne": "167529000012026NE000326",
+       "favorecido": "61.634.664 MARIA DE FATIMA DA COSTA SILVA",
+       "valor": 3003.34,
+       "dias": 124
+      },
+      {
+       "ne": "167529000012026NE000409",
+       "favorecido": "KLAS SUPRIMENTOS LTDA",
+       "valor": 2053.85,
+       "dias": 29
+      },
+      {
+       "ne": "167529000012026NE000437",
+       "favorecido": "TORCMETAL COMERCIO E SERVICOS DE MAQUINAS EQUIPAMENTOS",
+       "valor": 1786.4,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000387",
+       "favorecido": "CBD DISTRIBUIDORA OFICIAL DE MEDICAMENTOS E MATERIAIS",
+       "valor": 1551.0,
+       "dias": 51
+      },
+      {
+       "ne": "167529000012026NE000435",
+       "favorecido": "IGOR SILVA FERREIRA",
+       "valor": 1540.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000202",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 1534.54,
+       "dias": 202
+      },
+      {
+       "ne": "167529000012026NE000328",
+       "favorecido": "CAMALEAO ENGENHARIA LTDA",
+       "valor": 1299.91,
+       "dias": 121
+      },
+      {
+       "ne": "167529000012026NE000340",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 1014.07,
+       "dias": 99
+      },
+      {
+       "ne": "167529000012026NE000410",
+       "favorecido": "KLAS SUPRIMENTOS LTDA",
+       "valor": 962.1,
+       "dias": 29
+      },
+      {
+       "ne": "167529000012026NE000098",
+       "favorecido": "59.999.498 MARCIO AGUIAR BRAGA",
+       "valor": 960.0,
+       "dias": 243
+      },
+      {
+       "ne": "167529000012026NE000411",
+       "favorecido": "GUILHERME JUN YAMAGUCHI",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000412",
+       "favorecido": "LEVY PEREIRA RIBEIRO",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000413",
+       "favorecido": "THIAGO MASATOSHI KIRIHARA",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000414",
+       "favorecido": "HENRIQUE OLIVEIRA GALVAO",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000415",
+       "favorecido": "OTAVIO SARAIVA ARANHA",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000416",
+       "favorecido": "CAIO MENDES PINHEIRO",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000417",
+       "favorecido": "EMERSON JOSE DE ALMEIDA SILVA",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000418",
+       "favorecido": "MONALISA PAULA DE OLIVEIRA",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000419",
+       "favorecido": "JOAO PEDRO DE SOUZA MEIRELES",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000420",
+       "favorecido": "MATEUS FELIPE SILVA DE MACEDO",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000421",
+       "favorecido": "THIAGO CASSAGO RIVA",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000422",
+       "favorecido": "CAROL MARTINS MELLO",
+       "valor": 837.5,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000423",
+       "favorecido": "ANDERSON JOSE MOREIRA",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000424",
+       "favorecido": "JOAO VITOR ARAUJO",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000425",
+       "favorecido": "NICOLAS ROBERTO BENEDICTO",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000426",
+       "favorecido": "RIAN WEVHILY MOREIRA DE MIRANDA",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000427",
+       "favorecido": "JOAO VICTOR OLIVEIRA DA SILVA",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000428",
+       "favorecido": "CLEYTON NOJOSAS ALVES",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000429",
+       "favorecido": "JULIO CESAR PEREIRA NEVES DOS SANTOS",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000430",
+       "favorecido": "IGOR SILVA FERREIRA",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000431",
+       "favorecido": "VICTOR HUGO SOUZA REIS",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000432",
+       "favorecido": "GUILHERME BARBOSA SILVA",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000433",
+       "favorecido": "DOUGLAS FIDENCIO DOS SANTOS",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000434",
+       "favorecido": "DAVID RICHARD GONCALVES",
+       "valor": 700.0,
+       "dias": 27
+      },
+      {
+       "ne": "167529000012026NE000308",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 593.04,
+       "dias": 127
+      },
+      {
+       "ne": "167529000012026NE000397",
+       "favorecido": "CLINICA DE OFTALMOLOGIA DE OSASCO LTDA",
+       "valor": 590.71,
+       "dias": 41
+      },
+      {
+       "ne": "167529000012026NE000447",
+       "favorecido": "T.K.S. SISTEMAS HOSPITALARES E CONSULTORIOS MEDICOS LTD",
+       "valor": 457.68,
+       "dias": 15
+      },
+      {
+       "ne": "167529000012026NE000453",
+       "favorecido": "SANDPLAST COMERCIO DE PLASTICOS LTDA",
+       "valor": 450.0,
+       "dias": 13
+      },
+      {
+       "ne": "167529000012026NE000299",
+       "favorecido": "CLINICA CIRURGICA JANDIRA LTDA",
+       "valor": 0.6,
+       "dias": 127
+      }
+     ]
     },
     {
      "ug": "167529",
@@ -8022,7 +12050,25 @@
      "titulo": "RPNP de 2025 a liquidar",
      "texto": "Será reinscrito em 31/12/2026 e bloqueado em 30/06/2027 se não for liquidado. Ultimar a liquidação.",
      "valor": 93579.33,
-     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"
+     "fundamento": "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º",
+     "n_itens": 3,
+     "itens": [
+      {
+       "ne": "167529000012025NE000009",
+       "favorecido": "SUPER FINISHING DO BRASIL COMERCIAL LTDA.",
+       "valor": 84479.33
+      },
+      {
+       "ne": "167529000012025NE000466",
+       "favorecido": "THADIG INDUSTRIA MECANICA LTDA",
+       "valor": 4900.0
+      },
+      {
+       "ne": "167529000012025NE000404",
+       "favorecido": "BIGI LAVANDERIA LTDA",
+       "valor": 4200.0
+      }
+     ]
     },
     {
      "ug": "160529",
@@ -8030,7 +12076,28 @@
      "titulo": "3 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 139.84,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 3,
+     "itens": [
+      {
+       "ne": "160529000012026NE000490",
+       "favorecido": "NILZETE SALLES MACHADO COMERCIO DE MATERIAIS ELETRICOS",
+       "valor": 81.0,
+       "dias": 20
+      },
+      {
+       "ne": "160529000012026NE000491",
+       "favorecido": "RM COMERCIO DE MERCADORIAS E MATERIAIS LTDA",
+       "valor": 58.4,
+       "dias": 20
+      },
+      {
+       "ne": "160529000012026NE000305",
+       "favorecido": "TOPEMA COZINHAS PROFISSIONAIS INDUSTRIA E COMERCIO LTDA",
+       "valor": 0.44,
+       "dias": 121
+      }
+     ]
     },
     {
      "ug": "167529",
@@ -8038,7 +12105,16 @@
      "titulo": "1 NE com saldo residual",
      "texto": "Saldo abaixo de R$ 100 por NE: cancelar.",
      "valor": 0.6,
-     "fundamento": "Dtz 6.d.2"
+     "fundamento": "Dtz 6.d.2",
+     "n_itens": 1,
+     "itens": [
+      {
+       "ne": "167529000012026NE000299",
+       "favorecido": "CLINICA CIRURGICA JANDIRA LTDA",
+       "valor": 0.6,
+       "dias": 127
+      }
+     ]
     }
    ]
   },
