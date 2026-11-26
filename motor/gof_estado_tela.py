@@ -92,7 +92,7 @@ def aplicar(regua, hoje, marcos, prorrogacoes=()):
     data_dado = dt.date.fromisoformat(regua.get("data_dado") or hoje.isoformat())
     prorr = {str(p["ug"]): dt.date.fromisoformat(p["ate"]) for p in (prorrogacoes or [])}
     fora_total = 0.0
-    for o, r in regua["por_omds"].items():
+    for r in regua["por_omds"].values():
         piores = []
         for ug, x in (r.get("por_ug") or {}).items():
             x["estado"] = estado_ug(x, hoje, data_dado, d_rec, prorr.get(ug))
