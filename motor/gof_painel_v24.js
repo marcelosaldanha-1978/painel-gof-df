@@ -9,7 +9,7 @@ if(RP!==undefined){var el=sec("rpano","trpano");
  var h='<p class="kicker">Restos a pagar · Diretriz e Dec. 93.872/1986, art. 68</p><h2 id="trpano">Restos a pagar por ano de inscrição</h2>';
  if(!RP||RP.ausente){h+='<div class="card"><p class="note orange">'+esc((RP&&RP.ressalva)||"Leitura do TG por NE ainda não disponível.")+'</p></div>';}
  else{h+='<p class="sub">Dados do TG até '+dbr(RP.data_dado)+'. Índice = (liquidado + cancelado) ÷ (inscrito + reinscrito). Conferido: soma por NE = restos a pagar da régua, UG a UG.</p>';
-  (RP.alertas||[]).forEach(function(a){h+='<div class="card"><p class="note '+(a.evento==="cancelamento"?"red":"orange")+'"><b>'+esc(NOME[a.omds]||a.omds)+' · UG '+esc(a.ug)+' · '+esc(a.ano)+':</b> '+esc(a.texto)+' — '+rs(a.saldo)+'</p></div>';});
+  (RP.alertas||[]).forEach(function(a){h+='<div class="card"><p class="note '+(a.evento==="cancelamento"?"red":"orange")+'"><b>'+brasao(a.omds,"brs")+' '+esc(NOME[a.omds]||a.omds)+' · UG '+esc(a.ug)+' · '+esc(a.ano)+':</b> '+esc(a.texto)+' — '+rs(a.saldo)+'</p></div>';});
   var por={};(RP.por_omds||[]).forEach(function(x){(por[x.omds]=por[x.omds]||[]).push(x);});
   Object.keys(por).forEach(function(o){var L=por[o];
    h+='<div class="card"><h3 class="cb">'+brasao(o,"brm")+'<span>'+esc(L[0].rotulo||o)+'</span></h3><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl.replace("padding","font-weight:600;padding")+'>Ano</th><th '+th+'>Inscrito + reinscrito</th><th '+th+'>Liquidado</th><th '+th+'>Cancelado</th><th '+th+'>A liquidar</th><th '+th+'>Bloqueado</th><th '+th+'>Índice</th><th '+th+'>Prazo legal</th></tr></thead><tbody>';

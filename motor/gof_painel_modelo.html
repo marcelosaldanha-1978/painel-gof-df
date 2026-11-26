@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-title" content="__TITULO__">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-title" content="__TITULO__">
 <title>__TITULO__</title>
 <style>
 /* Painel GOF-BaApLog — v2 «Encerramento do exercício» (23/11/2026). Ordem = Portaria SEF/C Ex nº 399/2026:
@@ -62,7 +68,8 @@ h2{font-size:34px;line-height:1.1;font-weight:700;letter-spacing:-.03em;margin:0
 .ot{display:flex;align-items:center;gap:14px;min-width:0}
 img.br{width:auto;height:56px;flex:none}
 .mini-br{display:inline-flex;gap:4px;vertical-align:middle;margin-left:6px}
-img.brs{width:auto;height:20px}
+img.brs{width:auto;height:20px;vertical-align:-4px}
+img.brh{display:block;width:auto;height:64px;margin:0 0 16px}img.brn{width:auto;height:18px;flex:none}
 .th2{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.trio{display:flex;gap:10px;align-items:center}img.brt{width:auto;height:44px;flex:none}
 h3.cb{display:flex;align-items:center;gap:12px;margin:0 0 14px}img.brm{width:auto;height:36px;flex:none}
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;white-space:nowrap;padding:5px 12px;border-radius:999px}
@@ -87,7 +94,7 @@ h3.cb{display:flex;align-items:center;gap:12px;margin:0 0 14px}img.brm{width:aut
 nav.seg{position:sticky;top:0;z-index:10;background:var(--nav);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--sep)}
 nav.seg .in{max-width:1080px;margin:0 auto;padding:10px 22px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
 nav.seg .in::-webkit-scrollbar{display:none}
-nav.seg a{flex:none;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;padding:6px 12px;border-radius:999px;background:var(--fill)}
+nav.seg a{flex:none;display:inline-flex;align-items:center;gap:5px;display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;padding:6px 12px;border-radius:999px;background:var(--fill)}
 nav.seg a:hover{background:var(--sep)}
 nav.seg a .dot{display:inline-block;width:6px;height:6px;margin:0 6px 1px 0;vertical-align:middle}
 section,.omds>.card{scroll-margin-top:64px}
@@ -114,6 +121,7 @@ footer details summary{font-size:13px}
 <nav class="seg" aria-label="Seções"><div class="in" id="nav"></div></nav>
 <div class="wrap">
 <header>
+<div id="marca"></div>
 <p class="eyebrow">__EYEBROW__</p>
 <h1>__TITULO_H1__</h1>
 <p class="lead" id="lead"></p>
@@ -153,6 +161,8 @@ var ORDEM=__ORDEM_JS__;
 var QNOME=(function(q){var x=["","uma","duas","três","quatro","cinco","seis","sete","oito","nove","dez"][q];return x||String(q);})(ORDEM.length);  // «três», «seis»: sai do config
 var UGNOME=__UGNOME_JS__;
 var BR={};try{BR=JSON.parse(document.getElementById("brasoes").textContent)||{};}catch(e){BR={};}
+(function(){function lk(r,h,s){var l=document.createElement("link");l.rel=r;l.href=h;if(s)l.setAttribute("sizes",s);document.head.appendChild(l);}if(BR._icone)lk("icon",BR._icone,"64x64");if(BR._apple)lk("apple-touch-icon",BR._apple,"180x180");var mk=document.getElementById("marca");if(mk&&ORDEM.length)mk.innerHTML=brasao(ORDEM[0],"brh");})();  // ícone da aba/tela inicial e brasão do topo
+(function(){function lk(r,h,s){var l=document.createElement("link");l.rel=r;l.href=h;if(s)l.setAttribute("sizes",s);document.head.appendChild(l);}if(BR._icone)lk("icon",BR._icone,"64x64");if(BR._apple)lk("apple-touch-icon",BR._apple,"180x180");var mk=document.getElementById("marca");if(mk&&ORDEM.length)mk.innerHTML=brasao(ORDEM[0],"brh");})();  // ícone da aba/tela inicial e brasão do topo
 function slug(s){return "o-"+String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9]+/g,"-").toLowerCase();}
 function brasao(nome,cls){return BR[nome]?'<img class="'+(cls||"br")+'" src="'+BR[nome]+'" alt="Brasão '+esc(nome)+'">':"";}
 
@@ -220,7 +230,7 @@ document.getElementById("rodape").innerHTML=f;
 // navegação fixa: prazos, resumo e as 6 OMDS
 (function(){var nv='<a href="#prazos">Prazos</a><a href="#resumo">'+(ORDEM.length===1?'Resumo':'As '+QNOME+' juntas')+'</a>';
 ORDEM.forEach(function(o){var g=G&&G.por_omds[o];var c=g?({VERMELHO:"red",AMARELO:"orange",VERDE:"green"}[g.semaforo]||""):"";
- nv+='<a href="#'+slug(o)+'">'+(c?'<span class="dot '+c+'" style="background:currentColor"></span>':'')+esc(o)+'</a>';});
+ nv+='<a href="#'+slug(o)+'">'+(c?'<span class="dot '+c+'" style="background:currentColor"></span>':'')+brasao(o,"brn")+esc(o)+'</a>';});
 document.getElementById("nav").innerHTML=nv;})();
 })();
 </script>
