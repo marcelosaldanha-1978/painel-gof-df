@@ -48,7 +48,8 @@
     "capacidade": false,
     "dispensa": false,
     "rp_por_ano": true,
-    "contratos": true
+    "contratos": true,
+    "vedados_rpnp": true
   },
   "janelas": {
     "execucao_desde": "2026-01-01",

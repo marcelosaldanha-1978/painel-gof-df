@@ -496,6 +496,8 @@ def main(argv=None):
                     help="crédito em tela e régua por OMDS (leitura datada do TG, manual); ausente = sem o bloco")
     ap.add_argument("--rp-por-ano", default="dados/encerramento/rp_por_ano.json",
                     help="v2.4: RPNP por ano de inscrição (gof_rp_por_ano.py); só com o bloco rp_por_ano ligado")
+    ap.add_argument("--vedados", default="dados/encerramento/vedados_rpnp.json",
+                    help="aviso 8: diárias, ajuda de custo e suprimento a liquidar (gof_vedados_rpnp.py); bloco vedados_rpnp")
     ap.add_argument("--contratos", default="dados/contratos/contratos.json",
                     help="v2.4: contratos vigentes (gof_contratos.py); só com o bloco contratos ligado")
     ap.add_argument("--saida")
@@ -607,8 +609,16 @@ def main(argv=None):
             dados[bloco] = {"ausente": True, "ressalva": ressalva}
     # avisos do encerramento por OMDS e UG, recalculados a cada montagem (decisão do usuário de 26/11/2026, opção B)
     rp_ok = dados.get("rp_por_ano") if isinstance(dados.get("rp_por_ano"), dict) else None
+    ved = None
+    if cfg.bloco_ligado("vedados_rpnp") and o.vedados and Path(o.vedados).exists():
+        try:
+            ved = json.load(open(o.vedados, encoding="utf-8"))
+            dados["meta"]["fontes"].append({"nome": "vedados_rpnp", "arquivo": Path(o.vedados).name,
+                                            "sha256": sha256(o.vedados), "data_dado": ved.get("data_dado")})
+        except (OSError, ValueError):
+            ved = None  # ilegível: o aviso 8 não sai e a página publica
     dados["avisos"] = gof_avisos.montar(hoje, cfg.exercicio(), dados.get("regua"), dados.get("liquidacao"), rp_ok,
-                                        cfg.calendario(), gof_estado_tela.data_recolhimento(MARCOS_ENCERRAMENTO))
+                                        cfg.calendario(), gof_estado_tela.data_recolhimento(MARCOS_ENCERRAMENTO), ved)
     s = Path(o.saida)
     s.mkdir(parents=True, exist_ok=True)
     (s / "dados.json").write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")

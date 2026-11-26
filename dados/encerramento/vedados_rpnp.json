@@ -1,0 +1,82 @@
+{
+ "data_dado": "2026-11-25",
+ "por_ug": [
+  {
+   "ug": "160285",
+   "omds": "AGR",
+   "n_ne": 6,
+   "valor": 36440.24,
+   "por_tipo": {
+    "diárias": {
+     "n_ne": 3,
+     "valor": 1695.0
+    },
+    "ajuda de custo": {
+     "n_ne": 1,
+     "valor": 27372.16
+    },
+    "ressarcimento de passagens": {
+     "n_ne": 1,
+     "valor": 1130.92
+    },
+    "indenização de transporte": {
+     "n_ne": 1,
+     "valor": 6242.16
+    }
+   }
+  },
+  {
+   "ug": "160336",
+   "omds": "DF",
+   "n_ne": 21,
+   "valor": 29420.23,
+   "por_tipo": {
+    "diárias": {
+     "n_ne": 21,
+     "valor": 29420.23
+    }
+   }
+  },
+  {
+   "ug": "160529",
+   "omds": "AGSP",
+   "n_ne": 13,
+   "valor": 16415.0,
+   "por_tipo": {
+    "diárias": {
+     "n_ne": 13,
+     "valor": 16415.0
+    }
+   }
+  },
+  {
+   "ug": "167336",
+   "omds": "DF",
+   "n_ne": 4,
+   "valor": 4516.84,
+   "por_tipo": {
+    "diárias": {
+     "n_ne": 4,
+     "valor": 4516.84
+    }
+   }
+  },
+  {
+   "ug": "167529",
+   "omds": "AGSP",
+   "n_ne": 25,
+   "valor": 19990.0,
+   "por_tipo": {
+    "diárias": {
+     "n_ne": 25,
+     "valor": 19990.0
+    }
+   }
+  }
+ ],
+ "n_ne": 69,
+ "total": 106782.31,
+ "conferencia": "Σ (622920101 + 622920102) por UG = item 24 da régua, mesma data, ao centavo",
+ "regra": "Diretriz 6.d.3 da Portaria SEF/C Ex nº 399/2026: vedada a inscrição em RPNP; liquidar ou anular",
+ "fonte": "TG, exportação manual de 26/11/2026 do «PAINEL-DF-CONF-A liquidar por NE e natureza detalhada 2026 (v0.1)», conferida (6 UG = item 24); a assinatura diária assume a partir de 27/11"
+}

@@ -88,6 +88,17 @@ jobs:
           if [ "$ligado" != "1" ]; then echo "bloco rp_por_ano desligado"; exit 0; fi
           set -o pipefail
           python gof_rp_por_ano.py --regua ../dados/encerramento/regua.json --saida ../dados/encerramento/rp_por_ano.json 2>&1 | tee -a ../resumo_etapas.log || echo "::warning::RPNP por NE sem arquivo novo ou reprovado nos portoes; segue com o anterior"
+      - name: Ponte do TG - diarias, ajuda de custo e suprimento a liquidar (aviso 8); falha mantem o anterior
+        timeout-minutes: 15
+        continue-on-error: true  # falha do bloco nunca impede a publicacao (segue o arquivo anterior)
+        env:
+          GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+        run: |
+          cd motor
+          ligado="$(python gof_config.py --bloco vedados_rpnp)"
+          if [ "$ligado" != "1" ]; then echo "bloco vedados_rpnp desligado"; exit 0; fi
+          set -o pipefail
+          python gof_vedados_rpnp.py --regua ../dados/encerramento/regua.json --saida ../dados/encerramento/vedados_rpnp.json 2>&1 | tee -a ../resumo_etapas.log || echo "::warning::vedados sem arquivo novo ou reprovado no portao; segue com o anterior"
       - name: Contratos vigentes (v2.4, bloco contratos; API publica do Contratos.gov.br); falha mantem o anterior
         timeout-minutes: 15
         continue-on-error: true  # falha do bloco nunca impede a publicacao (segue o arquivo anterior)
@@ -134,7 +145,7 @@ jobs:
           (cd "dados/painel/$hoje" && sha256sum ./* > SHA256SUMS)
           # v2.3: so o que existe (OM sem carteira GCALC nao tem carteira, KPI nem atas)
           git add dados/painel
-          for p in dados/carteira_processos.json dados/kpis_painel.json dados/execucao dados/liquidacao dados/encerramento/regua.json dados/encerramento/rp_por_ano.json dados/contratos dados/portal; do
+          for p in dados/carteira_processos.json dados/kpis_painel.json dados/execucao dados/liquidacao dados/encerramento/regua.json dados/encerramento/rp_por_ano.json dados/encerramento/vedados_rpnp.json dados/contratos dados/portal; do
             if [ -e "$p" ]; then git add "$p"; fi
           done
           if git diff --cached --quiet; then echo "sem mudanca"; exit 0; fi

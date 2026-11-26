@@ -43,6 +43,7 @@ DADOS_DO_BLOCO = {
     # v2.4: sem arquivo obrigatório; sem o dado, a página publica o bloco com ressalva (P-RP-3)
     "rp_por_ano": [],
     "contratos": [],
+    "vedados_rpnp": [],
 }
 
 

@@ -13,6 +13,7 @@ Entradas (todas opcionais; o aviso que depende de uma entrada ausente simplesmen
   regua       dados/encerramento/regua.json (com `estado` de gof_estado_tela; itens 26 e 45 desde a v1.1 da régua)
   liquidacao  dados/liquidacao/ultimo.json (a liquidar por UG, +60 dias; `por_ne` só quando o config libera)
   rp          dados/encerramento/rp_por_ano.json (RPNP por UG e ano de inscrição)
+  vedados     dados/encerramento/vedados_rpnp.json (diárias, ajuda de custo e suprimento a liquidar; v1.1, aviso 8)
 """
 import datetime as dt
 
@@ -40,7 +41,8 @@ def _av(ug, nivel, titulo, texto, valor, fund):
     return {"ug": ug, "cor": nivel, "titulo": titulo, "texto": texto, "valor": round(valor, 2), "fundamento": fund}
 
 
-def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=None, data_recolhimento=None):
+def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=None, data_recolhimento=None,
+           vedados=None):
     """-> {"por_omds": {omds: [aviso…]}, "n": total, "regra": texto}. Avisos ordenados por gravidade e UG."""
     D = datas(calendario, exercicio)
     por = {}
@@ -139,6 +141,19 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
                            "Pagar ainda em %d: ordem bancária até 14h de %s (liquidação até %s)."
                            % (exercicio, _br(D["prazo_final"]), _br(D["liquidar_para_pagar"])),
                            ap, "Portaria 399, ev. 27 e 28; Dtz 4.c.1"))
+
+    # 8 · diárias, ajuda de custo e suprimento a liquidar: não vão para restos a pagar (gof_vedados_rpnp)
+    for x in ((vedados or {}).get("por_ug") or []) if not (vedados or {}).get("ausente") else []:
+        if (x.get("valor") or 0) <= TOL or hoje > D["prazo_final"]:
+            continue
+        nn = x.get("n_ne") or 0
+        ts = sorted(x.get("por_tipo") or {})
+        tipos = ts[0] if len(ts) == 1 else ", ".join(ts[:-1]) + " e " + ts[-1]
+        add(x.get("omds"), _av(x["ug"], "red" if hoje > D["indicacao_fim"] else "orange",
+                               "%d NE de %s a liquidar" % (nn, tipos) if nn != 1 else "1 NE de %s a liquidar" % tipos,
+                               "Não podem ir para restos a pagar: liquidar até %s para pagar ainda em %d, ou anular."
+                               % (_br(D["liquidar_para_pagar"]), exercicio),
+                               x["valor"], "Dtz 6.d.3; Portaria 399, ev. 27"))
 
     for o in por:
         por[o].sort(key=lambda a: (NIVEL.get(a["cor"], 9), a["ug"], -a["valor"]))
