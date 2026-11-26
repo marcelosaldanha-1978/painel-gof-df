@@ -19,7 +19,7 @@ if(RP!==undefined){var el=sec("rpano","trpano");
    // cada ano (e o total) aberto nas UG da OMDS, 160xxx e 167xxx (pedido do usuário, 26/11)
    var U=(RP.por_ug||[]).filter(function(u){return u.omds===o;}),ugs=[];U.forEach(function(u){if(ugs.indexOf(u.ug)<0)ugs.push(u.ug);});ugs.sort();
    function linhaUG(u,rot){var s='style="text-align:right;padding:2px 6px 4px;white-space:nowrap;font-size:12px;opacity:.75"';
-    return '<tr><td style="text-align:left;padding:2px 6px 4px 18px;font-size:12px;opacity:.75">'+rot+'</td><td '+s+'>'+rs(u.inscrito)+'</td><td '+s+'>'+rs(u.liquidado)+'</td><td '+s+'>'+rs(u.cancelado)+'</td><td '+s+'>'+rs(u.a_liquidar+(u.em_liquidacao||0))+'</td><td '+s+'>'+rs(u.bloqueado)+'</td><td '+s+'>'+(u.indice==null?"—":pc(u.indice))+'</td><td '+s+'></td></tr>';}
+    return '<tr><td style="text-align:left;padding:2px 6px 4px 18px;font-size:12px;opacity:.75;white-space:nowrap">'+rot+'</td><td '+s+'>'+rs(u.inscrito)+'</td><td '+s+'>'+rs(u.liquidado)+'</td><td '+s+'>'+rs(u.cancelado)+'</td><td '+s+'>'+rs(u.a_liquidar+(u.em_liquidacao||0))+'</td><td '+s+'>'+rs(u.bloqueado)+'</td><td '+s+'>'+(u.indice==null?"—":pc(u.indice))+'</td><td '+s+'></td></tr>';}
    function somaUG(ug){var z={inscrito:0,liquidado:0,cancelado:0,a_liquidar:0,em_liquidacao:0,bloqueado:0};U.forEach(function(u){if(u.ug===ug)for(var k in z)z[k]+=u[k]||0;});
     z.indice=z.inscrito>0.005?Math.round((z.liquidado+z.cancelado)/z.inscrito*1000)/10:null;return z;}
    L.forEach(function(x){var tot=x.ano==="total";
