@@ -27,7 +27,7 @@ RE_CPF_SO_DIGITOS = cfg._RE_CPF
 CAMPOS_PESSOA = ("favorecido", "fornecedor", "documento", "objeto", "ressalva", "ressalvas", "ressalva_favorecido",
                  "texto", "nome", "avisos", "regra")
 # onde a chave «favorecido» pode aparecer quando o config libera (detalhes por NE e contratos)
-CAMINHOS_FAVORECIDO = (("liquidacao", "por_ne"), ("rp_por_ano", "por_ne"))
+CAMINHOS_FAVORECIDO = (("liquidacao", "por_ne"), ("rp_por_ano", "por_ne"), ("avisos", "por_omds"))  # avisos: detalhe por NE (26/11)
 
 
 def textos_de_pessoa(obj, acc, dentro=False):

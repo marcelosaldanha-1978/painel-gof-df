@@ -37,8 +37,38 @@ def _br(d):
     return d.strftime("%d/%m")
 
 
-def _av(ug, nivel, titulo, texto, valor, fund):
-    return {"ug": ug, "cor": nivel, "titulo": titulo, "texto": texto, "valor": round(valor, 2), "fundamento": fund}
+def _av(ug, nivel, titulo, texto, valor, fund, det=None):
+    a = {"ug": ug, "cor": nivel, "titulo": titulo, "texto": texto, "valor": round(valor, 2), "fundamento": fund}
+    if det:
+        a["_det"] = det  # resolvido em itens() no fim de montar(); não vai à saída
+    return a
+
+
+MAX_ITENS = 60  # NE por aviso no detalhe (as de maior saldo); o resto vira «e mais N»
+
+
+def itens(det, ug, rp, liquidacao, vedados):
+    """NE que compõem o aviso (maior saldo primeiro). Só usa listas por NE que já vão ao dados.json da OM."""
+    k = det[0]
+    if k == "rp":
+        ls = [{"ne": x["ne"], "favorecido": x.get("favorecido") or "", "valor": x.get("a_liquidar") or 0}
+              for x in (rp or {}).get("por_ne") or [] if x.get("ug") == ug and x.get("ano") == det[1]]
+    elif k == "liq":
+        f = {"todas": lambda x: True, "mais60": lambda x: (x.get("dias") or 0) > 60,
+             "resid": lambda x: (x.get("a_liquidar") or 0) < RESIDUAL}[det[1]]
+        ls = [{"ne": x["ne"], "favorecido": x.get("favorecido") or "", "valor": x.get("a_liquidar") or 0,
+               "dias": x.get("dias")}
+              for x in (liquidacao or {}).get("por_ne") or []
+              if x.get("ug") == ug and (x.get("a_liquidar") or 0) > TOL and f(x)]
+    elif k == "ved":
+        u = next((x for x in (vedados or {}).get("por_ug") or [] if x.get("ug") == ug), {})
+        ls = [{"ne": x["ne"], "natureza": x.get("tipo") or x.get("nd"), "valor": x.get("valor") or 0}
+              for x in u.get("ne") or []]
+    else:
+        ls = []
+    ls = [dict(x, valor=round(x["valor"], 2)) for x in ls if x["valor"] > TOL]
+    ls.sort(key=lambda x: (-x["valor"], x["ne"]))
+    return ls
 
 
 def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=None, data_recolhimento=None,
@@ -61,11 +91,11 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
                     add(o, _av(ug, "red", "RPNP de %d a liquidar" % ano,
                                "Liquidar até %s para pagar ainda em %d; prazo final %s. O que restar é cancelado em 31/12 "
                                "e a UGE justifica à UGR." % (_br(D["liquidar_para_pagar"]), exercicio, _br(D["prazo_final"])),
-                               saldo, "Portaria 399, ev. 26 e 27; Dtz 6.b.1; Dec. 93.872, art. 68, § 7º"))
+                               saldo, "Portaria 399, ev. 26 e 27; Dtz 6.b.1; Dec. 93.872, art. 68, § 7º", det=("rp", ano, "a_liquidar")))
                 else:
                     add(o, _av(ug, "red", "RPNP de %d com saldo depois do prazo" % ano,
                                "Conferir o cancelamento automático e a justificativa à UGR.", saldo,
-                               "Dec. 93.872, art. 68, § 7º; Dtz 6.b.1"))
+                               "Dec. 93.872, art. 68, § 7º; Dtz 6.b.1", det=("rp", ano, "a_liquidar")))
             if bloq > TOL:
                 add(o, _av(ug, "orange", "RPNP de %d ainda bloqueado" % ano,
                            "O prazo de desbloqueio terminou em 31/12/%d. Conferir a situação com o CGCFEx." % (ano + 2),
@@ -80,11 +110,11 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
         if ano == exercicio - 2 and saldo > TOL:
             add(o, _av(ug, "blue", "RPNP de %d a liquidar" % ano,
                        "Priorizar a liquidação até %s. Se não for liquidado, é cancelado em 31/12/%d."
-                       % (_br(D["prazo_final"]), exercicio + 1), saldo, "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º"))
+                       % (_br(D["prazo_final"]), exercicio + 1), saldo, "Dtz 6.b.2; Dec. 93.872, art. 68, § 7º", det=("rp", ano, "a_liquidar")))
         elif ano == exercicio - 1 and saldo > TOL:
             add(o, _av(ug, "blue", "RPNP de %d a liquidar" % ano,
                        "Será reinscrito em 31/12/%d e bloqueado em 30/06/%d se não for liquidado. Ultimar a liquidação."
-                       % (exercicio, exercicio + 1), saldo, "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º"))
+                       % (exercicio, exercicio + 1), saldo, "Dtz 6.b.3; Dec. 93.872, art. 68, § 2º", det=("rp", ano, "a_liquidar")))
 
     # 3 · NE do exercício a liquidar: indicação para RPNP · 6 · mais de 60 dias
     for o, r in ((liquidacao or {}).get("por_omds") or {}).items():
@@ -101,14 +131,14 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
                     cor, txt = "gray", ("Indicação encerrada em %s. A NE não indicada que restar é anulada até %s."
                                         % (_br(D["indicacao_fim"]), _br(D["prazo_final"])))
                 add(o, _av(ug, cor, "Empenhos de %d a liquidar" % exercicio, txt, al,
-                           "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º"))
+                           "Portaria 399, ev. 9, 20 e 32; Dec. 93.872, art. 68, § 1º", det=("liq", "todas")))
             m60 = x.get("mais60_valor") or 0
             if m60 > TOL:
                 nn = x.get("mais60_ne") or 0
                 add(o, _av(ug, "orange", "%d NE sem liquidação há mais de 60 dias" % nn if nn != 1 else
                            "1 NE sem liquidação há mais de 60 dias",
                            "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
-                           m60, "Dtz 6.d.1 e 6.e.1"))
+                           m60, "Dtz 6.d.1 e 6.e.1", det=("liq", "mais60")))
 
     # 5 · saldos residuais de NE (só quando a lista por NE existe)
     resid = {}
@@ -121,7 +151,7 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
             resid[k][1] += v
     for (o, ug), (nn, v) in resid.items():
         add(o, _av(ug, "gray", ("%d NE com saldo residual" % nn) if nn != 1 else "1 NE com saldo residual",
-                   "Saldo abaixo de R$ 100 por NE: cancelar.", v, "Dtz 6.d.2"))
+                   "Saldo abaixo de R$ 100 por NE: cancelar.", v, "Dtz 6.d.2", det=("liq", "resid")))
 
     # 4 · crédito em tela com prazo da NC · 3 · liquidado a pagar
     d_rec = data_recolhimento
@@ -153,8 +183,16 @@ def montar(hoje, exercicio, regua=None, liquidacao=None, rp=None, calendario=Non
                                "%d NE de %s a liquidar" % (nn, tipos) if nn != 1 else "1 NE de %s a liquidar" % tipos,
                                "Não podem ir para restos a pagar: liquidar até %s para pagar ainda em %d, ou anular."
                                % (_br(D["liquidar_para_pagar"]), exercicio),
-                               x["valor"], "Dtz 6.d.3; Portaria 399, ev. 27"))
+                               x["valor"], "Dtz 6.d.3; Portaria 399, ev. 27", det=("ved",)))
 
+    for lst in por.values():  # detalhe clicável: as NE de cada aviso (pedido do usuário, 26/11)
+        for a in lst:
+            det = a.pop("_det", None)
+            if det:
+                ls = itens(det, a["ug"], rp, liquidacao, vedados)
+                if ls:
+                    a["n_itens"] = len(ls)
+                    a["itens"] = ls[:MAX_ITENS]
     for o in por:
         por[o].sort(key=lambda a: (NIVEL.get(a["cor"], 9), a["ug"], -a["valor"]))
     return {"por_omds": por, "n": sum(len(v) for v in por.values()),

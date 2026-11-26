@@ -10,7 +10,8 @@ SEF de encerramento). Naturezas (8 dígitos): 339014* e 339015* (diárias), 3390
 Entrada (assinatura do TG copiada pela ponte, SEM a coluna do favorecido):
   <entrega>_a_liquidar_natureza.csv  «<prefixo>A liquidar por NE e natureza detalhada 2026 (v1.0…)»: por UG, NE e
                                      natureza detalhada, contas 622920101..104 (a liquidar, em liquidação, a pagar, pago)
-Saída: `dados/encerramento/vedados_rpnp.json`, só agregado por UG/OMDS e tipo (nenhuma NE, nenhuma pessoa).
+Saída: `dados/encerramento/vedados_rpnp.json`, por UG/OMDS e tipo, com a lista das NE para o detalhe do aviso
+(número da NE, tipo e saldo; nenhuma pessoa).
 
 Portões (a montagem não escreve se falharem; segue o arquivo anterior):
   P-VD-1  Σ (622920101 + 622920102) por UG = a_liquidar (item 24) da régua, mesma data do dado, ao centavo.
@@ -108,7 +109,8 @@ def calcular(b, regua, data_dado, permitir_favorecido=False):
     for (ug, _ne, t), v in por_ne.items():
         if v <= TOL:
             continue
-        x = agg.setdefault(ug, {"ug": ug, "omds": om.get(ug), "n_ne": 0, "valor": 0.0, "por_tipo": {}})
+        x = agg.setdefault(ug, {"ug": ug, "omds": om.get(ug), "n_ne": 0, "valor": 0.0, "por_tipo": {}, "ne": []})
+        x["ne"].append({"ne": _ne, "tipo": t, "valor": round(v, 2)})
         x["n_ne"] += 1
         x["valor"] += v
         pt = x["por_tipo"].setdefault(t, {"n_ne": 0, "valor": 0.0})
