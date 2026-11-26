@@ -3,6 +3,8 @@
 // config da OM permite (dados_pessoais.favorecido); sem isso, os dados não trazem esses campos e nada aparece.
 (function(){var nv=document.getElementById("nav"),mainEl=document.querySelector("main");
 function sec(id,tid){var s=document.createElement("section");s.id=id;s.setAttribute("aria-labelledby",tid);mainEl.appendChild(s);return s;}
+// Lista no padrão Apple, agrupada por OMDS e UG: linha com a NE curta e o saldo; abaixo, favorecido e dados.
+function listaNE(L,f){var ON=Object.keys(NOME),G={},ord=[];L.forEach(function(x){var k=x.omds+'|'+x.ug;if(!G[k]){G[k]={o:x.omds,u:x.ug,n:0,s:0,r:[]};ord.push(k);}var y=f(x);G[k].n++;G[k].s+=y.v||0;G[k].r.push(y);});ord.sort(function(a,b){var A=G[a],B=G[b],i=ON.indexOf(A.o),j=ON.indexOf(B.o);return i!==j?i-j:(A.u<B.u?-1:1);});function lin(s){s=(s||[]).filter(function(z){return z;});return s.length?'<small>'+s.join(' · ')+'</small>':'';}return '<div class="avd lne">'+ord.map(function(k){var g=G[k];var cab='<span>'+esc(NOME[g.o]||g.o)+' · UG '+esc(g.u)+' · '+n(g.n)+' NE</span><span class="vg">'+rs(g.s)+'</span>';var rows=g.r.map(function(y){return '<div class="avr"><div class="avn"><span class="ne">'+esc(String(y.ne).slice(11))+'</span>'+lin(y.l1)+lin(y.l2)+'</div><span class="vl">'+rs(y.v)+'</span></div>';}).join('');return L.length>60?'<details class="lng"><summary class="avg">'+cab+'</summary>'+rows+'</details>':'<div class="avg">'+cab+'</div>'+rows;}).join('')+'</div>';}
 var tb='style="width:100%;border-collapse:collapse;font-size:13px;min-width:560px"',th='style="text-align:right;padding:4px 6px;border-bottom:1px solid currentColor;white-space:nowrap"',td='style="text-align:right;padding:4px 6px;white-space:nowrap"',tl='style="text-align:left;padding:4px 6px"';
 var RP=D.rp_por_ano;
 if(RP!==undefined){var el=sec("rpano","trpano");
@@ -17,7 +19,7 @@ if(RP!==undefined){var el=sec("rpano","trpano");
   Object.keys(por).forEach(function(o){var L=por[o];
    h+='<div class="card"><h3 class="cb">'+brasao(o,"brm")+'<span>'+esc(L[0].rotulo||o)+'</span></h3><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl.replace("padding","font-weight:600;padding")+'>Ano</th><th '+th+'>Inscrito + reinscrito</th><th '+th+'>Liquidado</th><th '+th+'>Cancelado</th><th '+th+'>A liquidar</th><th '+th+'>Bloqueado</th><th '+th+'>Índice</th><th '+th+'>Prazo legal</th></tr></thead><tbody>';
    // cada ano (e o total) aberto nas UG da OMDS, 160xxx e 167xxx (pedido do usuário, 26/11)
-   var U=(RP.por_ug||[]).filter(function(u){return u.omds===o;}),ugs=[];U.forEach(function(u){if(ugs.indexOf(u.ug)<0)ugs.push(u.ug);});ugs.sort();
+   var U=(RP.por_ug||[]).filter(function(u){return u.omds===o;}),ugs=[];U.forEach(function(u){if(ugs.indexOf(u.ug)<0)ugs.push(u.ug);});Object.keys((((D.regua||{}).por_omds||{})[o]||{}).por_ug||{}).forEach(function(g){if(ugs.indexOf(g)<0)ugs.push(g);});ugs.sort();
    function linhaUG(u,rot){var s='style="text-align:right;padding:2px 6px 4px;white-space:nowrap;font-size:12px;opacity:.75"';
     return '<tr><td style="text-align:left;padding:2px 6px 4px 18px;font-size:12px;opacity:.75;white-space:nowrap">'+rot+'</td><td '+s+'>'+rs(u.inscrito)+'</td><td '+s+'>'+rs(u.liquidado)+'</td><td '+s+'>'+rs(u.cancelado)+'</td><td '+s+'>'+rs(u.a_liquidar+(u.em_liquidacao||0))+'</td><td '+s+'>'+rs(u.bloqueado)+'</td><td '+s+'>'+(u.indice==null?"—":pc(u.indice))+'</td><td '+s+'></td></tr>';}
    function somaUG(ug){var z={inscrito:0,liquidado:0,cancelado:0,a_liquidar:0,em_liquidacao:0,bloqueado:0};U.forEach(function(u){if(u.ug===ug)for(var k in z)z[k]+=u[k]||0;});
@@ -25,19 +27,15 @@ if(RP!==undefined){var el=sec("rpano","trpano");
    L.forEach(function(x){var tot=x.ano==="total";
     h+='<tr'+(tot?' style="font-weight:600"':'')+'><td '+tl+'>'+(tot?"Total":esc(x.ano))+'</td><td '+td+'>'+rs(x.inscrito)+'</td><td '+td+'>'+rs(x.liquidado)+'</td><td '+td+'>'+rs(x.cancelado)+'</td><td '+td+'>'+rs(x.a_liquidar+(x.em_liquidacao||0))+'</td><td '+td+'>'+rs(x.bloqueado)+'</td><td '+td+'>'+(x.indice==null?"—":pc(x.indice))+'</td><td '+td+'>'+(tot?"":"bloq. "+esc(String(x.bloqueio).split("-").reverse().join("/"))+"<br>canc. "+esc(String(x.cancelamento).split("-").reverse().join("/")))+'</td></tr>';
     if(ugs.length){if(tot)ugs.forEach(function(g){h+=linhaUG(somaUG(g),'UG '+esc(g));});
-     else U.filter(function(u){return u.ano===x.ano;}).sort(function(a,b){return a.ug<b.ug?-1:1;}).forEach(function(u){h+=linhaUG(u,'UG '+esc(u.ug));});}});
+     else ugs.forEach(function(g){var u=U.filter(function(z){return z.ano===x.ano&&z.ug===g;})[0]||{inscrito:0,liquidado:0,cancelado:0,a_liquidar:0,em_liquidacao:0,bloqueado:0,indice:null};h+=linhaUG(u,'UG '+esc(g));});}});
    h+='</tbody></table></div>'+(L.some(function(x){return x.excetuado>0.005;})?'<p class="note">Inclui saldo excetuado do cancelamento (Lei 14.133/2021, art. 105).</p>':'')+AL.filter(function(a){return a.omds===o;}).map(alertaRP).join("")+'</div>';});
-  if(RP.por_ne&&RP.por_ne.length){h+='<div class="card"><details><summary>Restos a pagar a liquidar por NE e favorecido ('+n(RP.por_ne.length)+' NE)</summary><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl+'>NE</th><th '+tl+'>OM</th><th '+th+'>Ano</th><th '+tl+'>Favorecido</th><th '+th+'>A liquidar</th></tr></thead><tbody>';
-   RP.por_ne.forEach(function(x){h+='<tr><td '+tl+'>'+esc(x.ne)+'</td><td '+tl+'>'+esc(NOME[x.omds]||x.omds)+'</td><td '+td+'>'+esc(x.ano)+'</td><td '+tl+'>'+esc(x.favorecido)+'</td><td '+td+'>'+rs(x.a_liquidar)+'</td></tr>';});
-   h+='</tbody></table></div></details></div>';}}
+  if(RP.por_ne&&RP.por_ne.length){h+='<div class="card"><details><summary>Restos a pagar a liquidar por NE e favorecido ('+n(RP.por_ne.length)+' NE)</summary>'+listaNE(RP.por_ne,function(x){return {ne:x.ne,v:x.a_liquidar,l1:[esc(x.favorecido)],l2:['inscrito em '+esc(x.ano)]};})+'</details></div>';}}
  el.innerHTML=h;if(nv)nv.innerHTML+='<a href="#rpano">Restos a pagar</a>';}
 var LQ=D.liquidacao;
 if(LQ&&LQ.por_ne){var el2=sec("aliqne","taliqne");
  var q='<p class="kicker">Execução do exercício · TG, contas 6229201xx</p><h2 id="taliqne">Empenhos a liquidar por favorecido</h2><p class="sub">Dados até '+dbr(LQ.data_dado)+'. CPF de pessoa física mascarado.</p>'+((LQ.ressalva_favorecido||(LQ.fonte_favorecido&&LQ.fonte_favorecido.ressalva))?'<p class="note orange">'+esc(LQ.ressalva_favorecido||LQ.fonte_favorecido.ressalva)+'</p>':'');
  if(!LQ.por_ne.length){q+='<div class="card"><p class="note">Nenhum empenho do exercício a liquidar.</p></div>';}
- else{q+='<div class="card"><details><summary>Ver as '+n(LQ.por_ne.length)+' NE</summary><div style="overflow-x:auto"><table '+tb+'><thead><tr><th '+tl+'>NE</th><th '+tl+'>OM</th><th '+th+'>Emissão</th><th '+th+'>Dias</th><th '+tl+'>Favorecido</th><th '+tl+'>CNPJ/CPF</th><th '+th+'>Liquidado</th><th '+th+'>A liquidar</th></tr></thead><tbody>';
-  LQ.por_ne.forEach(function(x){var cor=x.dias>90?"red":(x.dias>60?"orange":"");q+='<tr><td '+tl+'>'+esc(x.ne)+'</td><td '+tl+'>'+esc(x.omds)+'</td><td '+td+'>'+esc(x.dia)+'</td><td '+td+'><span class="'+cor+'">'+n(x.dias)+'</span></td><td '+tl+'>'+esc(x.favorecido||"—")+'</td><td '+tl+'>'+esc(x.documento||"")+'</td><td '+td+'>'+rs(x.liquidado)+'</td><td '+td+'>'+rs(x.a_liquidar)+'</td></tr>';});
-  q+='</tbody></table></div></details></div>';}
+ else{q+='<div class="card"><details><summary>Ver as '+n(LQ.por_ne.length)+' NE</summary>'+listaNE(LQ.por_ne,function(x){var cor=x.dias>90?"red":(x.dias>60?"orange":"");return {ne:x.ne,v:x.a_liquidar,l1:[esc(x.favorecido||"—"),esc(x.documento||"")],l2:['emitida em '+esc(x.dia),'<span class="'+cor+'">'+n(x.dias)+' dias</span>',x.liquidado>0.005?'liquidado '+rs(x.liquidado):'']};})+'</details></div>';}
  el2.innerHTML=q;if(nv)nv.innerHTML+='<a href="#aliqne">A liquidar por favorecido</a>';}
 var CT=D.contratos;
 if(CT!==undefined){var ec=sec("contratos","tcontratos");
