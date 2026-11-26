@@ -30,6 +30,12 @@
     "arquivo": "rp_por_ano.json",
     "sha256": "e90b75f96c055ccc1ba001834db72d745cf25b20312236c811b464fdf8b852d4",
     "data_dado": "2026-11-25"
+   },
+   {
+    "nome": "vedados_rpnp",
+    "arquivo": "vedados_rpnp.json",
+    "sha256": "f79fbc2db3ad675a1489251a9378748320df8e7211849d7d097b1f9ad114fea8",
+    "data_dado": "2026-11-25"
    }
   ],
   "fonte_b1": "tg",
@@ -7783,12 +7789,28 @@
      "fundamento": "Dtz 6.d.1 e 6.e.1"
     },
     {
+     "ug": "160336",
+     "cor": "orange",
+     "titulo": "21 NE de diárias a liquidar",
+     "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
+     "valor": 29420.23,
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+    },
+    {
      "ug": "167336",
      "cor": "orange",
      "titulo": "7 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 23825.57,
      "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "167336",
+     "cor": "orange",
+     "titulo": "4 NE de diárias a liquidar",
+     "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
+     "valor": 4516.84,
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
     },
     {
      "ug": "160336",
@@ -7855,6 +7877,14 @@
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 716591.06,
      "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "160285",
+     "cor": "orange",
+     "titulo": "6 NE de ajuda de custo, diárias, indenização de transporte e ressarcimento de passagens a liquidar",
+     "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
+     "valor": 36440.24,
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
     },
     {
      "ug": "167285",
@@ -7939,12 +7969,28 @@
      "fundamento": "Dtz 6.d.1 e 6.e.1"
     },
     {
+     "ug": "160529",
+     "cor": "orange",
+     "titulo": "13 NE de diárias a liquidar",
+     "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
+     "valor": 16415.0,
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
+    },
+    {
      "ug": "167529",
      "cor": "orange",
      "titulo": "12 NE sem liquidação há mais de 60 dias",
      "texto": "Avaliar novo fornecedor, devolução do crédito ou anulação, e se cabe inscrever em restos a pagar.",
      "valor": 184032.67,
      "fundamento": "Dtz 6.d.1 e 6.e.1"
+    },
+    {
+     "ug": "167529",
+     "cor": "orange",
+     "titulo": "25 NE de diárias a liquidar",
+     "texto": "Não podem ir para restos a pagar: liquidar até 29/12 para pagar ainda em 2026, ou anular.",
+     "valor": 19990.0,
+     "fundamento": "Dtz 6.d.3; Portaria 399, ev. 27"
     },
     {
      "ug": "160529",
@@ -7996,7 +8042,7 @@
     }
    ]
   },
-  "n": 27,
+  "n": 32,
   "regra": "Avisos recalculados a cada publicação pela Portaria SEF/C Ex nº 399/2026 e pelo Dec. 93.872/1986, art. 68; somem quando a situação se resolve."
  }
 }
