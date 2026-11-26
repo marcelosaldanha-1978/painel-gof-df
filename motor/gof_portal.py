@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+"""
+gof_portal.py (v1, 07nov2026) — Portal da Transparência como RESERVA do B1 (D17 revista, PLANO v2.4; P-039).
+
+Coleta os empenhos (fase 1) das 12 UG (160xxx e 167xxx) numa janela de dias úteis, faz o vínculo NE -> pregão com as
+fichas PNCP e grava um EXTRATO SEM PESSOA no mesmo formato do extrato do TG (`gof_painel.gerar_extrato`), mesclado ao
+extrato anterior: dentro da janela o Portal manda (NE anulada some, NE nova entra); fora da janela fica o que havia.
+NE com valor 0,00 no Portal não entram (regra 5 do plano); a contagem das retiradas fica em `meta`.
+`data_execucao` = último dia de emissão presente no extrato (é com ela que a D17 escolhe a fonte).
+A chave da API vem só de PORTAL_TRANSPARENCIA_API_KEY; nunca é impressa.
+Uso: python gof_portal.py --fichas dados/pncp/ultimo.json --saida dados/portal [--dias-uteis 10 | --desde AAAA-MM-DD] [--ate AAAA-MM-DD]
+"""
+import argparse
+import datetime as dt
+import json
+import sys
+from pathlib import Path
+
+import gcalc_transparencia as tr
+import gof_painel as gp
+
+ARQ = "extrato_portal.json"
+LIMITE_FALHAS = 0.02  # ate 2% dos pares (UG, dia) podem falhar; nesses pares fica o que o extrato anterior tinha
+
+
+def janela(ate, dias_uteis):
+    d, n = ate, 0
+    while n < dias_uteis:
+        d -= dt.timedelta(days=1)
+        if d.weekday() < 5:
+            n += 1
+    return d
+
+
+def mesclar(antigas, novas):
+    """Uma linha por NE. O Portal devolve a NE de novo, com data e valor atualizados, quando ela tem movimento posterior
+    (reforco, anulacao): a mesma NE chegava duas vezes, uma fora da janela (data antiga) e outra dentro (data nova), e o
+    motor recusava a montagem («NE repetida na entrada», 12/11/2026). Fica a linha mais recente; a coleta nova vence."""
+    por = {}
+    for x in list(antigas) + list(novas):
+        a = por.get(x["documento"])
+        if a is None or (tr._data(x["data"]) or dt.date.min) >= (tr._data(a["data"]) or dt.date.min):
+            por[x["documento"]] = x
+    return list(por.values())
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--fichas", default=None, help="fichas PNCP da carteira GCALC; sem ele (OM sem o bloco), nenhum pregão")
+    ap.add_argument("--saida", default="dados/portal")
+    ap.add_argument("--dias-uteis", type=int, default=10, help="janela recoletada a cada dia (o Portal atrasa ~7 dias)")
+    ap.add_argument("--desde", default=None, help="início fixo (carga inicial); ignora --dias-uteis")
+    ap.add_argument("--ate", default=None)
+    o = ap.parse_args(argv)
+    ate = dt.date.fromisoformat(o.ate) if o.ate else dt.date.today()
+    desde = dt.date.fromisoformat(o.desde) if o.desde else janela(ate, o.dias_uteis)
+    fichas = tr.ficha_de_pncp(json.load(open(o.fichas, encoding="utf-8"))) if o.fichas else []
+    regs, falhas = tr.coletar(desde, ate)
+    # segunda tentativa, so nos pares (UG, dia) que falharam
+    resta = []
+    for f in falhas:
+        r2, f2 = tr.coletar(dt.date.fromisoformat(f["dia"]), dt.date.fromisoformat(f["dia"]), {f["ug"]: tr.UGS[f["ug"]]})
+        regs += r2
+        resta += f2
+    pares = sum(1 for i in range((ate - desde).days + 1) if (desde + dt.timedelta(days=i)).weekday() < 5) * len(tr.UGS)
+    if pares and len(resta) > max(1, int(LIMITE_FALHAS * pares)):
+        print("PORTAL: %d de %d pares (UG, dia) falharam mesmo apos nova tentativa; abortado sem gravar (ex.: %s)" % (len(resta), pares, resta[0]))
+        return 1
+    falhos = {(f["ug"], f["dia"]) for f in resta}
+    # no Portal, "modalidade" e a MODALIDADE DE APLICACAO (ex.: "90 - Aplicacoes Diretas"), nao a de licitacao: se fosse
+    # passada ao vinculo, toda NE que cita pregao e e de fornecedor de ata viraria ALERTA (medido em 07/11/2026: 72 falsos).
+    # O Portal nao traz a modalidade de licitacao neste endpoint; fica vazia e o vinculo usa texto + favorecido (regra v1.2).
+    for r in regs:
+        r["modalidade_aplicacao"] = r.get("modalidade")
+        r["modalidade"] = ""
+    zero = [r for r in regs if round(tr._num(r.get("valor")), 2) == 0.0]
+    regs = [r for r in regs if round(tr._num(r.get("valor")), 2) != 0.0]
+    novo = gp.gerar_extrato(regs, fichas, None, "Portal da Transparência, API despesas/documentos fase 1, coleta de %s a %s em %s"
+                            % (desde.isoformat(), ate.isoformat(), dt.date.today().isoformat()))
+    # mescla com o extrato anterior: fora da janela fica o que havia
+    s = Path(o.saida)
+    s.mkdir(parents=True, exist_ok=True)
+    antigo = json.load(open(s / ARQ, encoding="utf-8")) if (s / ARQ).exists() else {"ne": []}
+    # fora da janela, ou num par (UG, dia) que falhou: fica o que o extrato anterior tinha
+    fora = [x for x in antigo["ne"] if not (desde <= tr._data(x["data"]) <= ate) or (x["ug"], tr._data(x["data"]).isoformat()) in falhos]
+    novo["ne"] = sorted(mesclar(fora, novo["ne"]), key=lambda x: (tr._data(x["data"]) or dt.date.min, x["documento"]))
+    datas = [tr._data(x["data"]) for x in novo["ne"] if tr._data(x["data"])]
+    novo["data_execucao"] = max(datas).isoformat() if datas else None
+    novo["meta"] = {"janela": [desde.isoformat(), ate.isoformat()], "ne_na_janela": len(regs), "ne_zero_retiradas": len(zero),
+                    "ne_fora_da_janela_mantidas": len(fora), "pares_falhos": sorted("%s %s" % k for k in falhos), "coletado_em": dt.datetime.now().isoformat(timespec="seconds")}
+    json.dump(novo, open(s / ARQ, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    dia = s / ate.isoformat()
+    dia.mkdir(exist_ok=True)
+    json.dump(novo, open(dia / ARQ, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    print("PORTAL: %d NE na janela %s..%s (%d a 0,00 retiradas), %d mantidas de antes, %d par(es) falho(s); último dia de emissão %s"
+          % (len(regs), desde, ate, len(zero), len(fora), len(falhos), novo["data_execucao"]))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
