@@ -6494,7 +6494,19 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 6500.16,
       "vencido_teto": 17802.66,
-      "celulas_em_tela": 132170.22
+      "celulas_em_tela": 132170.22,
+      "estado": {
+       "cod": "PRAZO_HOJE",
+       "nivel": 4,
+       "cor": "orange",
+       "rotulo": "Prazo hoje: recolher",
+       "valor": 132170.22,
+       "material": true,
+       "faixa": [
+        6500.16,
+        17802.66
+       ]
+      }
      },
      "167336": {
       "provisao": 220416.1,
@@ -6508,7 +6520,15 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 0.0,
       "vencido_teto": 0.0,
-      "celulas_em_tela": 0.0
+      "celulas_em_tela": 0.0,
+      "estado": {
+       "cod": "TELA_ZERADA",
+       "nivel": 0,
+       "cor": "green",
+       "rotulo": "Tela zerada",
+       "valor": 0.0,
+       "material": false
+      }
      }
     },
     "provisao": 94394555.66,
@@ -6522,7 +6542,21 @@
     "vencido_teto": 17802.66,
     "pct_empenhado": 99.86,
     "pct_liquidado": 2.06,
-    "semaforo": "VERDE"
+    "semaforo": "AMARELO",
+    "estado": {
+     "cod": "PRAZO_HOJE",
+     "nivel": 4,
+     "cor": "orange",
+     "rotulo": "Prazo hoje: recolher",
+     "valor": 132170.22,
+     "material": true,
+     "faixa": [
+      6500.16,
+      17802.66
+     ],
+     "n_ug": 1,
+     "de_ug": 2
+    }
    },
    "AGR": {
     "por_ug": {
@@ -6538,7 +6572,19 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 22318.45,
       "vencido_teto": 22318.45,
-      "celulas_em_tela": 22458.45
+      "celulas_em_tela": 22458.45,
+      "estado": {
+       "cod": "PRAZO_HOJE",
+       "nivel": 4,
+       "cor": "orange",
+       "rotulo": "Prazo hoje: recolher",
+       "valor": 22458.45,
+       "material": false,
+       "faixa": [
+        22318.45,
+        22318.45
+       ]
+      }
      },
      "167285": {
       "provisao": 6041846.8,
@@ -6552,7 +6598,19 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 978.69,
       "vencido_teto": 978.69,
-      "celulas_em_tela": 978.69
+      "celulas_em_tela": 978.69,
+      "estado": {
+       "cod": "PRAZO_HOJE",
+       "nivel": 4,
+       "cor": "orange",
+       "rotulo": "Prazo hoje: recolher",
+       "valor": 978.69,
+       "material": false,
+       "faixa": [
+        978.69,
+        978.69
+       ]
+      }
      }
     },
     "provisao": 10424353.54,
@@ -6566,7 +6624,21 @@
     "vencido_teto": 23297.14,
     "pct_empenhado": 99.78,
     "pct_liquidado": 44.41,
-    "semaforo": "AMARELO"
+    "semaforo": "AMARELO",
+    "estado": {
+     "cod": "PRAZO_HOJE",
+     "nivel": 4,
+     "cor": "orange",
+     "rotulo": "Prazo hoje: recolher",
+     "valor": 23437.14,
+     "material": false,
+     "faixa": [
+      22318.45,
+      22318.45
+     ],
+     "n_ug": 2,
+     "de_ug": 2
+    }
    },
    "AGSP": {
     "por_ug": {
@@ -6582,7 +6654,19 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 40.15,
       "vencido_teto": 40.15,
-      "celulas_em_tela": 6274.61
+      "celulas_em_tela": 6274.61,
+      "estado": {
+       "cod": "PRAZO_HOJE",
+       "nivel": 4,
+       "cor": "orange",
+       "rotulo": "Prazo hoje: recolher",
+       "valor": 6274.61,
+       "material": false,
+       "faixa": [
+        40.15,
+        40.15
+       ]
+      }
      },
      "167529": {
       "provisao": 2478128.04,
@@ -6596,7 +6680,19 @@
       "rpnp_bloqueado": 0.0,
       "vencido_piso": 46878.31,
       "vencido_teto": 57813.4,
-      "celulas_em_tela": 57813.4
+      "celulas_em_tela": 57813.4,
+      "estado": {
+       "cod": "PRAZO_HOJE",
+       "nivel": 4,
+       "cor": "orange",
+       "rotulo": "Prazo hoje: recolher",
+       "valor": 57813.4,
+       "material": false,
+       "faixa": [
+        46878.31,
+        57813.4
+       ]
+      }
      }
     },
     "provisao": 13216591.66,
@@ -6610,7 +6706,21 @@
     "vencido_teto": 57853.55,
     "pct_empenhado": 99.52,
     "pct_liquidado": 43.22,
-    "semaforo": "AMARELO"
+    "semaforo": "AMARELO",
+    "estado": {
+     "cod": "PRAZO_HOJE",
+     "nivel": 4,
+     "cor": "orange",
+     "rotulo": "Prazo hoje: recolher",
+     "valor": 64088.01,
+     "material": false,
+     "faixa": [
+      40.15,
+      40.15
+     ],
+     "n_ug": 2,
+     "de_ug": 2
+    }
    }
   },
   "total": {
@@ -6624,7 +6734,8 @@
    "vencido_piso": 76715.76,
    "vencido_teto": 98953.35,
    "pct_empenhado": 99.81,
-   "pct_liquidado": 10.41
+   "pct_liquidado": 10.41,
+   "fora_portaria": 0.0
   },
   "recolhido_no_ano": {
    "ncs": 255,
@@ -6634,7 +6745,8 @@
   "posicao_siafi": "TG, assinaturas entregues em 26/11 (dados até 25/11)",
   "fonte": "TG, assinaturas «Execução Crédito e RPNP por UG», «Crédito e empenho por UG, PI, ND e UGR» e «NC recebidas documento», pela ponte; NC ligadas às células pelo endereço (UG, PI, grupo da ND, UGR)",
   "regra_vencido": "vencido = saldo da célula coberto por NC de outra UG com prazo escrito anterior a 26/11; NC de «empenho imediato» conta como vencida; piso e teto porque o TG não dá saldo por NC; ajuste de ND da própria UG não é rastreado à NC de origem (piso conservador)",
-  "atualizacao": "diária (assinaturas do TG, ponte P-041)"
+  "atualizacao": "diária (assinaturas do TG, ponte P-041)",
+  "regra_estado": "etiqueta pela Portaria: a UGR recolhe todo o crédito em tela em 26/11; depois disso, saldo sem prazo escrito futuro (ou prorrogação registrada) fica «fora da Portaria»; menos de R$ 10 é resíduo"
  },
  "rp_por_ano": {
   "por_ug": [
