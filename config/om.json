@@ -27,7 +27,7 @@
       "ug160": "160285",
       "ug167": "167285",
       "uasg": "160285",
-      "nota_ug": "Arsenal de Guerra do Rio (UASG 160285 ativa no Compras.gov.br em 25/11/2026)"
+      "nota_ug": "Arsenal de Guerra do Rio (UASG 160285)"
     },
     {
       "chave": "AGSP",
@@ -37,7 +37,7 @@
       "ug160": "160529",
       "ug167": "167529",
       "uasg": "160529",
-      "nota_ug": "Arsenal de Guerra de São Paulo (UASG 160529 ativa no Compras.gov.br em 25/11/2026)"
+      "nota_ug": "Arsenal de Guerra de São Paulo (UASG 160529)"
     }
   ],
   "ugs_alvo_extras": [],
@@ -70,7 +70,7 @@
   },
   "textos": {
     "titulo_pagina": "Painel GOF-DF",
-    "eyebrow": "DF · 3 UG executoras · UG 160 e 167",
+    "eyebrow": "DF · 3 OMDS · 6 UG (160 e 167)",
     "titulo": "Encerramento do exercício de 2026",
     "b1_marco": "Marco de empenho da Tabela 2 da Diretriz 26-27 (a validar com o Ordenador de Despesas da DF)."
   }

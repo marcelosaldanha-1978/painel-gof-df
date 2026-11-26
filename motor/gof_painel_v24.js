@@ -43,3 +43,7 @@ if(CT!==undefined){var ec=sec("contratos","tcontratos");
    c+='</div>';});}
  ec.innerHTML=c;if(nv)nv.innerHTML+='<a href="#contratos">Contratos</a>';}
 })();
+// rodapé conforme o favorecido (config dados_pessoais.favorecido): a frase «sem dado pessoal» só vale sem ele
+(function(){function tem(L){return (L||[]).some(function(r){return r&&r.favorecido!==undefined;});}
+var lq=(D.liquidacao||{}).por_ne,rp=(D.rp_por_ano||{}).por_ne,rd=document.getElementById("rodape");
+if(rd&&(tem(lq)||tem(rp)))rd.innerHTML=rd.innerHTML.replace("Sem dado pessoal por construção.","Favorecido identificado só nas listas por NE; CPF de pessoa física mascarado.");})();

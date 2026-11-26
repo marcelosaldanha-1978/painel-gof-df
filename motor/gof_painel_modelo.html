@@ -35,6 +35,7 @@ h2{font-size:34px;line-height:1.1;font-weight:700;letter-spacing:-.03em;margin:0
 .sub{color:var(--sec);margin:8px 0 20px;max-width:800px}
 .card{background:var(--card);border-radius:var(--r);padding:28px 30px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 22px rgba(0,0,0,.05)}
 .card+.card{margin-top:16px}
+.card table th:first-child,.card table td:first-child{position:sticky;left:0;background:var(--card);z-index:1}
 .lbl{font-size:14px;color:var(--sec);margin:0 0 6px}
 .big{font-size:56px;line-height:1;font-weight:700;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
 .mid{font-size:30px;line-height:1.05;font-weight:650;letter-spacing:-.025em;font-variant-numeric:tabular-nums}
@@ -74,7 +75,7 @@ img.brs{width:auto;height:20px}
 .ugtop .v{font-size:26px;font-weight:650;letter-spacing:-.025em;font-variant-numeric:tabular-nums;white-space:nowrap}
 .ugtop .cap{font-size:13px;color:var(--sec);text-align:right}
 .kv{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid var(--sep);font-size:15px}
-.kv>span{color:var(--sec)}
+.kv>span{color:var(--sec);white-space:nowrap}
 .kv b{font-weight:600;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .kv b small{display:block;font-weight:400;color:var(--sec);font-size:13px;white-space:normal}
 .kv b.zero{color:var(--ter);font-weight:400}
@@ -132,8 +133,8 @@ var D;
 try{D=JSON.parse(document.getElementById("dados").textContent);}catch(e){
  document.querySelector("main").innerHTML='<section><h2>Dados ilegíveis</h2><p class="sub">O bloco de dados embutido está corrompido. Use a última versão boa do painel.</p></section>';return;}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
-function rs(v){return "R$ "+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});}
-function mi(v){v=Number(v||0);return Math.abs(v)>=1e6?"R$ "+(v/1e6).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2})+" mi":"R$ "+(v/1e3).toLocaleString("pt-BR",{minimumFractionDigits:1,maximumFractionDigits:1})+" mil";}
+function rs(v){return "R$\u00a0"+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});}
+function mi(v){v=Number(v||0);return Math.abs(v)>=1e6?"R$\u00a0"+(v/1e6).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2})+" mi":"R$\u00a0"+(v/1e3).toLocaleString("pt-BR",{minimumFractionDigits:1,maximumFractionDigits:1})+" mil";}
 function pc(v){return Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:1,maximumFractionDigits:1})+"%";}
 function n(v){return Number(v||0).toLocaleString("pt-BR");}
 function dbr(iso){if(!iso)return "—";var p=String(iso).slice(0,10).split("-");return p.length===3?p[2]+"/"+p[1]:esc(iso);}
@@ -187,7 +188,7 @@ var R=G&&G.referencia_1rm;if(R){el.innerHTML+='<details><summary>Restos a pagar:
 // ---------- 3. OMDS UMA A UMA, UG 160 E 167
 (function(){var el=document.getElementById("omds");
 var b1={};B.omds.forEach(function(o){b1[NOME[o.omds]||o.rotulo]=o;});
-var h='<p class="kicker">Uma a uma</p><h2 id="tomds">Cada OMDS, UG 160 e UG 167</h2><p class="sub">'+(gManual?'Empenho e liquidação são atualizados todo dia útil. Crédito em tela, percentual do crédito recebido e restos a pagar vêm de leitura do TG com data própria.':'Tudo atualizado todo dia útil, direto das assinaturas do Tesouro Gerencial.')+'</p><div class="omds">';
+var h='<p class="kicker">Uma a uma</p><h2 id="tomds">Cada OMDS, UG 160 e UG\u00a0167</h2><p class="sub">'+(gManual?'Empenho e liquidação são atualizados todo dia útil. Crédito em tela, percentual do crédito recebido e restos a pagar vêm de leitura do TG com data própria.':'Tudo atualizado todo dia útil, direto das assinaturas do Tesouro Gerencial.')+'</p><div class="omds">';
 ORDEM.forEach(function(o){var g=G&&G.por_omds[o],l=L&&L.por_omds[o],e=b1[o];if(!g&&!l&&!e)return;
  var ugs=[];[g&&g.por_ug,l&&l.por_ug].forEach(function(x){if(x)Object.keys(x).forEach(function(u){if(ugs.indexOf(u)<0)ugs.push(u);});});
  if(!ugs.length&&e)ugs=[e.ug160,e.ug167];ugs.sort();

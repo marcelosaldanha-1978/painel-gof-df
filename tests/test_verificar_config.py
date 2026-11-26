@@ -87,7 +87,7 @@ def test_exemplo_df_monta_sem_blocos_do_gcalc(tmp_path):
     pagina = (saida / "index.html").read_text(encoding="utf-8")
     assert "<title>Painel GOF-DF</title>" in pagina
     assert 'var NOME={DF:"DF",AGR:"AGR",AGSP:"AGSP"};' in pagina
-    assert '<p class="eyebrow">DF · 3 UG executoras · UG 160 e 167</p>' in pagina
+    assert '<p class="eyebrow">DF · 3 OMDS · 6 UG (160 e 167)</p>' in pagina
     assert "1ª RM" not in pagina  # sem referência regional no exemplo da DF
     _rodar([str(MOTOR / "recalculo_independente.py"), "--dados", str(saida / "dados.json"), "--extrato", str(EXTRATO_DF),
             "--hoje", HOJE.isoformat()], env)
