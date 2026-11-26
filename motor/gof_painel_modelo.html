@@ -147,6 +147,7 @@ var E=D.encerramento||{},G=D.regua,L=D.liquidacao,B=D.b1;
 // mapeia o rótulo do B1 para o da régua/liquidação
 var NOME=__NOME_JS__;
 var ORDEM=__ORDEM_JS__;
+var QNOME=(function(q){var x=["","uma","duas","três","quatro","cinco","seis","sete","oito","nove","dez"][q];return x||String(q);})(ORDEM.length);  // «três», «seis»: sai do config
 var UGNOME=__UGNOME_JS__;
 var BR={};try{BR=JSON.parse(document.getElementById("brasoes").textContent)||{};}catch(e){BR={};}
 function slug(s){return "o-"+String(s).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9]+/g,"-").toLowerCase();}
@@ -174,7 +175,7 @@ if(pas.length){h+='<details><summary>'+pas.length+' prazo'+(pas.length>1?"s":"")
 el.innerHTML=h+'</div>';})();
 
 // ---------- 2. AS 6 OMDS JUNTAS (resumo de 4 números)
-(function(){var el=document.getElementById("resumo"),h='<p class="kicker">Itens 6.a, 6.d e 6.b</p><h2 id="tresumo">As seis OMDS juntas</h2><p class="sub">Quatro números para a decisão. O detalhe de cada OMDS, UG a UG, vem logo abaixo.</p><div class="tiles">';
+(function(){var el=document.getElementById("resumo"),h='<p class="kicker">Itens 6.a, 6.d e 6.b</p><h2 id="tresumo">'+(ORDEM.length===1?'A OMDS':'As '+QNOME+' OMDS juntas')+'</h2><p class="sub">Quatro números para a decisão. O detalhe de cada OMDS, UG a UG, vem logo abaixo.</p><div class="tiles">';
 if(G)h+='<div class="tile"><p class="lbl">Crédito em tela</p><div class="mid">'+mi(G.total.em_tela)+'</div><p class="note"><span class="red">vencido: no mínimo '+mi(G.total.vencido_piso)+'</span><br>tirar da tela; o que sobrar a UGR recolhe (6.a.3)</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">Liquidado do empenhado</p><div class="mid">'+pc(L.total.pct_liquidado)+'</div><p class="note">a liquidar '+mi(L.total.a_liquidar)+'<br>liquidar até 29/12 (evento 27)</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">A liquidar há mais de 60 dias</p><div class="mid orange">'+mi(L.total.mais60_valor)+'</div><p class="note">'+n(L.total.mais60_ne)+' NE · '+mi(L.total.mais60_sem_nenhuma_liq_valor)+' sem nenhuma liquidação</p></div>';
@@ -214,7 +215,7 @@ var f='<p>Norma balizadora: __NORMA_RODAPE__. Sem dado pessoal por construção.
 f+='.</p>'+(G?'<p>Crédito em tela e RPNP: '+esc(G.posicao_siafi)+'. '+esc(G.regra_vencido)+'.</p>':'')+(L?'<p>Empenho e liquidação: '+esc(L.fonte)+'; '+esc(L.regra)+'.</p>':'')+'<p>Motor v'+esc(D.meta.versao_motor)+' · hash dos dados <code>__HASH__</code>.</p></details>';
 document.getElementById("rodape").innerHTML=f;
 // navegação fixa: prazos, resumo e as 6 OMDS
-(function(){var nv='<a href="#prazos">Prazos</a><a href="#resumo">As seis juntas</a>';
+(function(){var nv='<a href="#prazos">Prazos</a><a href="#resumo">'+(ORDEM.length===1?'Resumo':'As '+QNOME+' juntas')+'</a>';
 ORDEM.forEach(function(o){var g=G&&G.por_omds[o];var c=g?({VERMELHO:"red",AMARELO:"orange",VERDE:"green"}[g.semaforo]||""):"";
  nv+='<a href="#'+slug(o)+'">'+(c?'<span class="dot '+c+'" style="background:currentColor"></span>':'')+esc(o)+'</a>';});
 document.getElementById("nav").innerHTML=nv;})();

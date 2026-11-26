@@ -7,7 +7,7 @@
   "exercicio": 2026,
   "metas": "metas/dtz_esp_econ_fin_cmt_ex_2026_2027.json",
   "calendario": "calendario/encerramento_2026.json",
-  "brasoes": null,
+  "brasoes": "brasoes_df.json",
   "omds": [
     {
       "chave": "DF",
