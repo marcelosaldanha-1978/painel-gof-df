@@ -63,6 +63,7 @@ h2{font-size:34px;line-height:1.1;font-weight:700;letter-spacing:-.03em;margin:0
 img.br{width:auto;height:56px;flex:none}
 .mini-br{display:inline-flex;gap:4px;vertical-align:middle;margin-left:6px}
 img.brs{width:auto;height:20px}
+.th2{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.trio{display:flex;gap:10px;align-items:center}img.brt{width:auto;height:44px;flex:none}
 h3.cb{display:flex;align-items:center;gap:12px;margin:0 0 14px}img.brm{width:auto;height:36px;flex:none}
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;white-space:nowrap;padding:5px 12px;border-radius:999px}
 .tag.red{background:var(--redbg)}.tag.orange{background:var(--orangebg)}.tag.green{background:var(--greenbg)}
@@ -177,7 +178,7 @@ if(pas.length){h+='<details><summary>'+pas.length+' prazo'+(pas.length>1?"s":"")
 el.innerHTML=h+'</div>';})();
 
 // ---------- 2. AS 6 OMDS JUNTAS (resumo de 4 números)
-(function(){var el=document.getElementById("resumo"),h='<p class="kicker">Itens 6.a, 6.d e 6.b</p><h2 id="tresumo">'+(ORDEM.length===1?'A OMDS':'As '+QNOME+' OMDS juntas')+'</h2><p class="sub">Quatro números para a decisão. O detalhe de cada OMDS, UG a UG, vem logo abaixo.</p><div class="tiles">';
+(function(){var el=document.getElementById("resumo"),h='<p class="kicker">Itens 6.a, 6.d e 6.b</p><div class="th2"><h2 id="tresumo">'+(ORDEM.length===1?'A OMDS':'As '+QNOME+' OMDS juntas')+'</h2><span class="trio">'+ORDEM.map(function(o){return brasao(o,"brt");}).join("")+'</span></div><p class="sub">Quatro números para a decisão. O detalhe de cada OMDS, UG a UG, vem logo abaixo.</p><div class="tiles">';
 if(G)h+='<div class="tile"><p class="lbl">Crédito em tela</p><div class="mid">'+mi(G.total.em_tela)+'</div><p class="note"><span class="red">vencido: no mínimo '+mi(G.total.vencido_piso)+'</span><br>tirar da tela; o que sobrar a UGR recolhe (6.a.3)</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">Liquidado do empenhado</p><div class="mid">'+pc(L.total.pct_liquidado)+'</div><p class="note">a liquidar '+mi(L.total.a_liquidar)+'<br>liquidar até 29/12 (evento 27)</p></div>';
 if(L)h+='<div class="tile"><p class="lbl">A liquidar há mais de 60 dias</p><div class="mid orange">'+mi(L.total.mais60_valor)+'</div><p class="note">'+n(L.total.mais60_ne)+' NE · '+mi(L.total.mais60_sem_nenhuma_liq_valor)+' sem nenhuma liquidação</p></div>';
