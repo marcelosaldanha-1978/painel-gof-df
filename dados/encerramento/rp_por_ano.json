@@ -119,14 +119,14 @@
    "bloqueio": "2027-06-30",
    "cancelamento": "2028-12-31",
    "inscrito": 15082524.24,
-   "liquidado": 9510094.34,
+   "liquidado": 9517126.34,
    "cancelado": 0.0,
-   "a_liquidar": 5572429.9,
+   "a_liquidar": 5565397.9,
    "em_liquidacao": 0.0,
    "bloqueado": 0.0,
    "excetuado": 0.0,
    "a_classificar": 0.0,
-   "indice": 63.05
+   "indice": 63.1
   },
   {
    "omds": "AGSP",
@@ -295,28 +295,28 @@
    "bloqueio": "2027-06-30",
    "cancelamento": "2028-12-31",
    "inscrito": 19179744.96,
-   "liquidado": 13033661.06,
+   "liquidado": 13040693.06,
    "cancelado": 17961.4,
-   "a_liquidar": 6128122.5,
+   "a_liquidar": 6121090.5,
    "em_liquidacao": 0.0,
    "bloqueado": 0.0,
    "excetuado": 0.0,
    "a_classificar": 0.0,
-   "indice": 68.05
+   "indice": 68.09
   },
   {
    "omds": "AGR",
    "rotulo": "AGR",
    "ano": "total",
    "inscrito": 34639889.49,
-   "liquidado": 26349847.98,
+   "liquidado": 26356879.98,
    "cancelado": 357718.36,
-   "a_liquidar": 7932323.15,
+   "a_liquidar": 7925291.15,
    "em_liquidacao": 0.0,
    "bloqueado": 0.0,
    "excetuado": 0.0,
    "a_classificar": 0.0,
-   "indice": 77.1
+   "indice": 77.12
   },
   {
    "omds": "AGSP",
@@ -373,7 +373,7 @@
    "saldo": 438121.61,
    "evento": "cancelamento",
    "data": "2026-12-31",
-   "texto": "RPNP de 2023 com saldo: cancela em 31/12/2026 se não liquidado"
+   "texto": "RPNP de 2023 com saldo: liquidar até 30/12 (até 29/12 para pagar ainda em 2026; Portaria 399, ev. 26 e 27). O que restar é cancelado em 31/12/2026 (Dec. 93.872, art. 68, § 7º) e a UGE justifica à UGR (Dtz 6.b.1)"
   }
  ],
  "por_ne": [
@@ -842,14 +842,6 @@
    "a_liquidar": 13800.0
   },
   {
-   "omds": "AGR",
-   "ug": "167285",
-   "ne": "167285000012025NE000102",
-   "ano": 2025,
-   "favorecido": "SPEED FORM INDUSTRIA E COMERCIO LTDA",
-   "a_liquidar": 7032.0
-  },
-  {
    "omds": "DF",
    "ug": "160336",
    "ne": "160336000012024NE000222",
@@ -1010,10 +1002,10 @@
    "a_liquidar": 0.4
   }
  ],
- "data_dado": "2026-11-25",
+ "data_dado": "2026-11-26",
  "avisos": {},
  "nes": 515,
  "conferencia": "Σ 631100000 por NE = item 43 da régua em todas as UG; Σ531 = Σ631 em cada NE",
  "criterio_indice": "(liquidado + cancelado) ÷ (inscrito + reinscrito), Diretriz 26-27",
- "fonte": "TG, assinatura «PAINEL-DF-CONF-RPNP por NE» (2026-11-26_rpnp_por_ne.csv (assinatura do TG via ponte))"
+ "fonte": "TG, assinatura «PAINEL-DF-CONF-RPNP por NE» (2026-11-27_rpnp_por_ne.csv (assinatura do TG via ponte))"
 }
