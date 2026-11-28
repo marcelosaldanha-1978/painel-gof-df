@@ -1002,10 +1002,10 @@
    "a_liquidar": 0.4
   }
  ],
- "data_dado": "2026-11-26",
+ "data_dado": "2026-11-27",
  "avisos": {},
  "nes": 515,
  "conferencia": "Σ 631100000 por NE = item 43 da régua em todas as UG; Σ531 = Σ631 em cada NE",
  "criterio_indice": "(liquidado + cancelado) ÷ (inscrito + reinscrito), Diretriz 26-27",
- "fonte": "TG, assinatura «PAINEL-DF-CONF-RPNP por NE» (2026-11-27_rpnp_por_ne.csv (assinatura do TG via ponte))"
+ "fonte": "TG, assinatura «PAINEL-DF-CONF-RPNP por NE» (2026-11-28_rpnp_por_ne.csv (assinatura do TG via ponte))"
 }

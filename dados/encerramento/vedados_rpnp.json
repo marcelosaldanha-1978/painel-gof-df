@@ -1,5 +1,5 @@
 {
- "data_dado": "2026-11-26",
+ "data_dado": "2026-11-27",
  "por_ug": [
   {
    "ug": "160285",
@@ -179,81 +179,46 @@
   {
    "ug": "160529",
    "omds": "AGSP",
-   "n_ne": 11,
-   "valor": 9927.5,
+   "n_ne": 4,
+   "valor": 2470.0,
    "por_tipo": {
     "diárias": {
-     "n_ne": 11,
-     "valor": 9927.5
+     "n_ne": 4,
+     "valor": 2470.0
     }
    },
    "ne": [
     {
-     "ne": "160529000012026NE000471",
-     "tipo": "diárias",
-     "valor": 2375.0
-    },
-    {
-     "ne": "160529000012026NE000478",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "160529000012026NE000479",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "160529000012026NE000480",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
      "ne": "160529000012026NE000484",
      "tipo": "diárias",
-     "valor": 1157.5
+     "valor": 95.0
     },
     {
-     "ne": "160529000012026NE000499",
+     "ne": "160529000012026NE000517",
      "tipo": "diárias",
-     "valor": 167.5
+     "valor": 837.5
     },
     {
-     "ne": "160529000012026NE000500",
+     "ne": "160529000012026NE000519",
      "tipo": "diárias",
-     "valor": 167.5
+     "valor": 837.5
     },
     {
-     "ne": "160529000012026NE000501",
+     "ne": "160529000012026NE000520",
      "tipo": "diárias",
-     "valor": 167.5
-    },
-    {
-     "ne": "160529000012026NE000502",
-     "tipo": "diárias",
-     "valor": 1172.5
-    },
-    {
-     "ne": "160529000012026NE000503",
-     "tipo": "diárias",
-     "valor": 1172.5
-    },
-    {
-     "ne": "160529000012026NE000504",
-     "tipo": "diárias",
-     "valor": 1172.5
+     "valor": 700.0
     }
    ]
   },
   {
    "ug": "167336",
    "omds": "DF",
-   "n_ne": 4,
-   "valor": 4516.84,
+   "n_ne": 5,
+   "valor": 4744.34,
    "por_tipo": {
     "diárias": {
-     "n_ne": 4,
-     "valor": 4516.84
+     "n_ne": 5,
+     "valor": 4744.34
     }
    },
    "ne": [
@@ -276,133 +241,28 @@
      "ne": "167336000012026NE000072",
      "tipo": "diárias",
      "valor": 1500.0
+    },
+    {
+     "ne": "167336000012026NE000080",
+     "tipo": "diárias",
+     "valor": 227.5
     }
    ]
   },
   {
    "ug": "167529",
    "omds": "AGSP",
-   "n_ne": 24,
-   "valor": 19152.5,
+   "n_ne": 2,
+   "valor": 2240.0,
    "por_tipo": {
     "diárias": {
-     "n_ne": 24,
-     "valor": 19152.5
+     "n_ne": 2,
+     "valor": 2240.0
     }
    },
    "ne": [
     {
-     "ne": "167529000012026NE000411",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000412",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000413",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000414",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000415",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000416",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000417",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000418",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000419",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000420",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000422",
-     "tipo": "diárias",
-     "valor": 837.5
-    },
-    {
-     "ne": "167529000012026NE000423",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000424",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000425",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000426",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000427",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000428",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000429",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000430",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
      "ne": "167529000012026NE000431",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000432",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000433",
-     "tipo": "diárias",
-     "valor": 700.0
-    },
-    {
-     "ne": "167529000012026NE000434",
      "tipo": "diárias",
      "valor": 700.0
     },
@@ -414,9 +274,9 @@
    ]
   }
  ],
- "n_ne": 66,
- "total": 98439.81,
+ "n_ne": 38,
+ "total": 74297.31,
  "conferencia": "Σ (622920101 + 622920102) por UG = item 24 da régua, mesma data, ao centavo",
  "regra": "Diretriz 6.d.3 da Portaria SEF/C Ex nº 399/2026: vedada a inscrição em RPNP; liquidar ou anular",
- "fonte": "TG, assinatura «PAINEL-DF-CONF-A liquidar por NE e natureza detalhada» (2026-11-27_a_liquidar_natureza.csv, via ponte)"
+ "fonte": "TG, assinatura «PAINEL-DF-CONF-A liquidar por NE e natureza detalhada» (2026-11-28_a_liquidar_natureza.csv, via ponte)"
 }
